@@ -1,6 +1,6 @@
 REM 中文
 @echo off
-set release=11-09-30 23:28
+set release=11-10-01 23:28
 set CU=1245
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
@@ -46,12 +46,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo 1.修正一闪而过的问题
-echo 2.减小下载器的大小
-echo 3.修正fx等其他浏览器的证书问题（无需进行任何修改）
-echo 4.自动清除产生的垃圾文件
-echo 5.加入upload.facebook.com
-echo 6.修改search.twitter.com的IP
+echo 加入groups.google.com
 echo.
 echo.
 pause
@@ -200,6 +195,7 @@ echo %IP%	www.google.com #THISISNOTE #此条可能会导致Google Reader无法使用 >>%win
 echo %IP%	google.com #THISISNOTE >>%windir%\System32\drivers\etc\hosts
 echo %IP%	talk.google.com #THISISNOTE >>%windir%\System32\drivers\etc\hosts
 echo %IP%	talkgadget.google.com #THISISNOTE >>%windir%\System32\drivers\etc\hosts
+echo %IP%	groups.google.com #THISISNOTE >>%windir%\System32\drivers\etc\hosts
 echo %IP%	talkx.l.google.com #THISISNOTE >>%windir%\System32\drivers\etc\hosts
 echo %IP%	themes.googleusercontent.com #THISISNOTE >>%windir%\System32\drivers\etc\hosts
 echo %IP%	market.android.com #THISISNOTE >>%windir%\System32\drivers\etc\hosts
