@@ -1,10 +1,11 @@
-#update: 2011-10-01 12:35
+#UPDATE: 2011-10-04 23:30
+
 #Google Services
-203.208.45.206	www.google.com
+203.208.46.180	www.google.com#此条可能会导致Google Reader无法使用 
 203.208.45.206	google.com
-203.208.45.206	groups.google.com
 203.208.45.206	talk.google.com
 203.208.45.206	talkgadget.google.com
+203.208.45.206	groups.google.com
 203.208.45.206	talkx.l.google.com
 203.208.45.206	themes.googleusercontent.com
 203.208.45.206	market.android.com
@@ -27,7 +28,6 @@
 203.208.45.206	accounts.google.com
 203.208.45.206	adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
 203.208.45.206	ajax.googleapis.com
-203.208.45.206	android.l.google.com
 203.208.45.206	a-oz-opensocial.googleusercontent.com
 203.208.45.206	apis.google.com
 203.208.45.206	bks0.books.google.com
@@ -242,7 +242,6 @@
 203.208.45.206	writely-com.l.google.com
 203.208.45.206	dl.google.com
 203.208.45.206	dl.l.google.com
-203.208.45.206	dl-ssl.google.com #THISISNOTE
 203.208.45.206	spreadsheets.l.google.com
 203.208.45.206	earth.google.com
 203.208.45.206	auth.keyhole.com
