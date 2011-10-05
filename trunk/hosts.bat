@@ -1,6 +1,6 @@
 REM жпнд
 @echo off
-set release=11-10-03 18:30
+set release=11-10-05 20:35
 set CU=1245
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
