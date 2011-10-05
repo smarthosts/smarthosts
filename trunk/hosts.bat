@@ -46,7 +46,8 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo 解决Google Music客户端不能上传的问题 
+echo 解决Google Music客户端不能上传的问题(10-4)
+echo 解决appengine.google.com不能访问的问题(10-5)
 echo.
 echo.
 pause
@@ -236,6 +237,7 @@ echo %IP%	www.gmail.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogsearch.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	apps.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	appengine.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	browserchannel-docs.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	browserchannel-spreadsheets.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	browsersync.google.com #HAC>>%windir%\System32\drivers\etc\hosts
