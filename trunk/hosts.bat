@@ -5,9 +5,8 @@ set CU=1245
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 ipconfig /flushdns
-icacls %windir%\System32\drivers\etc\hosts /grant administrators:F
-takeown /f %windir%\System32\drivers\etc\hosts
-attrib %windir%\System32\drivers\etc\hosts -s -h -r
+echo y|cacls %windir%\system32\drivers\etc\hosts /g everyone:f
+attrib -r -a -s -h %windir%\system32\drivers\etc\hosts
 if "%1" == "auto" (goto auto) else goto begin
 
 :begin
