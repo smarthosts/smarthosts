@@ -54,16 +54,21 @@ Private Declare Sub InitCommonControls Lib "comctl32.dll" ()
 End Sub
 Private Sub Command1_Click()
 Command1.Caption = "请稍等.."
+Command1.Enabled = False
 R = URLDownloadToFile(0, "https://smarthosts.googlecode.com/svn/trunk/hosts.bat", "temp.bat", 0, 0)
 Shell "temp.bat auto", vbNormalFocus
-
+Command1.Enabled = True
+Command1.Caption = "自动安装"
 End
 End Sub
 
 Private Sub Command2_Click()
 Command2.Caption = "请稍等.."
+Command2.Enabled = False
 R = URLDownloadToFile(0, "https://smarthosts.googlecode.com/svn/trunk/hosts.bat", "temp.bat", 0, 0)
 Shell "temp.bat manualset", vbNormalFocus
+Command2.Enabled = True
+Command1.Caption = "高级选项.."
 End Sub
 
 Private Sub Command3_Click()
