@@ -192,6 +192,12 @@ echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services START>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	www.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	music.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	music.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	music-streaming.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	talk.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -308,7 +314,6 @@ echo %IP%	khm.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	khms0.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	khms1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	labs.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh1.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh1.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh2.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -331,9 +336,6 @@ echo %IP%	mt2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mt3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mts0.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mts1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	music.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	music.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	music-streaming.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mw2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	news.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	newsfeed-dot-latest-dot-rovio-ad-engine.appspot.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -561,7 +563,6 @@ echo %IP%	t0.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	t1.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	t2.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	t3.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogger.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	doc-00-7o-docs.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -625,7 +626,7 @@ echo %IP%	toolbarqueries.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	tools.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	translate.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+
 echo %IP%	upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	goo.gl #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g.co #HAC>>%windir%\System32\drivers\etc\hosts
@@ -2122,17 +2123,10 @@ echo #HAC_hosts END>>%windir%\System32\drivers\etc\hosts
 ipconfig /flushdns
 cls
 echo.
-echo.
-echo.
 
 echo 您的hosts编辑完成.
 echo.
 echo.
-
-echo Google+、Twitter和Facebook需要以HTTPS方式访问。地址是：
-echo https://plus.google.com
-echo https://www.twitter.com
-echo https://www.facebook.com
 echo.
 pause
 
