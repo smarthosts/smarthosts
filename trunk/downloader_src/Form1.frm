@@ -68,8 +68,9 @@ Command2.Enabled = False
 R = URLDownloadToFile(0, "https://smarthosts.googlecode.com/svn/trunk/hosts.bat", "temp.bat", 0, 0)
 Shell "temp.bat manualset", vbNormalFocus
 Command2.Enabled = True
-Command1.Caption = "高级选项.."
+Command2.Caption = "高级选项.."
 Sleep (3000)
+End
 End Sub
 
 Private Sub Command3_Click()
