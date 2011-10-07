@@ -49,16 +49,16 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Declare Function URLDownloadToFile Lib "urlmon" Alias "URLDownloadToFileA" (ByVal pCaller As Long, ByVal szURL As String, ByVal szFileName As String, ByVal dwReserved As Long, ByVal lpfnCB As Long) As Long
 Private Declare Sub InitCommonControls Lib "comctl32.dll" ()
-  Private Sub Form_Initialize()
-  InitCommonControls
-End Sub
+Private Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long)
 Private Sub Command1_Click()
+
 Command1.Caption = "请稍等.."
 Command1.Enabled = False
 R = URLDownloadToFile(0, "https://smarthosts.googlecode.com/svn/trunk/hosts.bat", "temp.bat", 0, 0)
 Shell "temp.bat auto", vbNormalFocus
 Command1.Enabled = True
 Command1.Caption = "自动安装"
+Sleep (3000)
 End
 End Sub
 
@@ -69,6 +69,7 @@ R = URLDownloadToFile(0, "https://smarthosts.googlecode.com/svn/trunk/hosts.bat"
 Shell "temp.bat manualset", vbNormalFocus
 Command2.Enabled = True
 Command1.Caption = "高级选项.."
+Sleep (3000)
 End Sub
 
 Private Sub Command3_Click()
