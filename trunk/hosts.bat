@@ -1,13 +1,12 @@
-REM 中文
 @echo off
-set release=11-10-06 19:35
-set CU=1245
+set release=11-10-07 23:10
+set CU=124567
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 ipconfig /flushdns
 echo y|cacls %windir%\system32\drivers\etc\hosts /g everyone:f
 attrib -r -a -s -h %windir%\system32\drivers\etc\hosts
-if "%1" == "auto" (goto auto) else goto begin
+if "%1" == "auto" (goto auto) else if "%1" == "typical" (goto typical) else goto begin
 
 :begin
 cls
@@ -45,9 +44,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo 整理文件。
-echo 解决不能拿到hosts修改权限的问题。
-echo 自本版本起更新暂停。
+echo 加入apple服务器加速和adobe激活服务器屏蔽功能。
 echo.
 echo.
 pause
@@ -90,13 +87,15 @@ echo HOSTSp v5_a1 Tools @ %release%
 echo ---------------------------------------------------------------------------
 echo.
 echo 1.Google服务
-echo 2.去广告
+echo 2.屏蔽广告
 echo 3.YouTube（不建议加入，目前不能加载视频）
 echo 4.Twitter+Facebook
 echo 5.Dropbox
+echo 6.苹果服务加速
+echo 7.屏蔽Adobe更新服务器
 echo.
 
-SET /P CU= 请输入相应序号(支持多选,如"134","12345")：
+SET /P CU= 请输入相应序号(支持多选,如"1346","1234567")：
 echo.
 goto install
 exit
@@ -124,7 +123,8 @@ echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
 for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208" >nul && echo 获取到正确IP：%IP% ||echo 获取到非203.208开头的IP：%IP%，可能无法使用。 && SET /P ERR= 是否继续？(y/n)： && if /I "%ERR%"=="n" goto begin
+echo %IP%|findstr "203.208" >nul && echo 获取到正确IP：%IP% ||echo 获取到非203.208开头的IP：%IP%，可能无法使用。 && SET /P ERR= 是否继续？(y/n)： 
+if /I "%ERR%"=="n" goto begin
  
 cls
 echo ---------------------------------------------------------------------------
@@ -132,13 +132,15 @@ echo HOSTSp v5_a1 Tools @ %release%
 echo ---------------------------------------------------------------------------
 echo.
 echo 1.Google服务
-echo 2.去广告
+echo 2.屏蔽广告
 echo 3.YouTube（不建议加入，目前不能加载视频）
 echo 4.Twitter+Facebook
 echo 5.Dropbox
+echo 6.苹果服务加速
+echo 7.屏蔽Adobe更新服务器
 echo.
 
-SET /P CU= 请输入相应序号(支持多选,如"134","12345")：
+SET /P CU= 请输入相应序号(支持多选,如"1346","1234567")：
 echo.
 goto doit
 
@@ -160,13 +162,16 @@ echo HOSTSp v5_a1 Tools @ %release%
 echo ---------------------------------------------------------------------------
 echo.
 echo 1.Google服务
-echo 2.去广告
+echo 2.屏蔽广告
 echo 3.YouTube（不建议加入，目前不能加载视频）
 echo 4.Twitter+Facebook
 echo 5.Dropbox
+echo 6.苹果服务加速
+echo 7.屏蔽Adobe更新服务器
 echo.
 
-SET /P CU= 请输入相应序号(支持多选,如"134","12345")：
+SET /P CU= 请输入相应序号(支持多选,如"1346","1234567")：
+
 echo.
 
 goto doit
@@ -186,18 +191,20 @@ echo %CU%|findstr "2" >nul && call :antiad
 echo %CU%|findstr "3" >nul && call :YouTube
 echo %CU%|findstr "4" >nul && call :twfb
 echo %CU%|findstr "5" >nul && call :dropbox
+echo %CU%|findstr "6" >nul && call :apple
+echo %CU%|findstr "7" >nul && call :adobe
 
 :googlesrv
 echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services START>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	www.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	music.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	music.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	music-streaming.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.29	www.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.29	music.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.29	music.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.29	music-streaming.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.29	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.29	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.29	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	talk.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -641,6 +648,8 @@ echo %CU%|findstr "2" >nul && call :antiad
 echo %CU%|findstr "3" >nul && call :YouTube
 echo %CU%|findstr "4" >nul && call :twfb
 echo %CU%|findstr "5" >nul && call :dropbox
+echo %CU%|findstr "6" >nul && call :apple
+echo %CU%|findstr "7" >nul && call :adobe
 goto done
 
 :antiad
@@ -740,6 +749,8 @@ echo #HAC_AntiAD END>>%windir%\System32\drivers\etc\hosts
 echo %CU%|findstr "3" >nul && call :YouTube
 echo %CU%|findstr "4" >nul && call :twfb
 echo %CU%|findstr "5" >nul && call :dropbox
+echo %CU%|findstr "6" >nul && call :apple
+echo %CU%|findstr "7" >nul && call :adobe
 goto done
 
 :YouTube
@@ -1994,6 +2005,8 @@ echo %IP%	i.ytimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Youtube END>>%windir%\System32\drivers\etc\hosts
 echo %CU%|findstr "4" >nul && call :twfb
 echo %CU%|findstr "5" >nul && call :dropbox
+echo %CU%|findstr "6" >nul && call :apple
+echo %CU%|findstr "7" >nul && call :adobe
 goto done
 
 :twfb
@@ -2104,6 +2117,9 @@ echo 199.59.149.208	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 208.87.33.151	api.mobilepicture.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Twitter END>>%windir%\System32\drivers\etc\hosts
 echo %CU%|findstr "5" >nul && call :dropbox
+echo %CU%|findstr "6" >nul && call :apple
+echo %CU%|findstr "7" >nul && call :adobe
+goto done
 
 :dropbox
 echo.>>%windir%\System32\drivers\etc\hosts
@@ -2113,9 +2129,53 @@ echo 199.47.217.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
+echo %CU%|findstr "6" >nul && call :apple
+echo %CU%|findstr "7" >nul && call :adobe
 goto done
 
+:apple
+echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Apple START>>%windir%\System32\drivers\etc\hosts
+echo 203.78.36.40	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.78.36.40	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.78.36.40	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.78.36.40	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.78.36.40	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
+echo %CU%|findstr "7" >nul && call :adobe
+goto done
+
+:adobe
+echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Adobe activation block START>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 3dns-2.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 3dns-3.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 activate.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 activate-sea.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 activate-sjc0.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 adobe-dns.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 adobe-dns-2.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 adobe-dns-3.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 ereg.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 hl2rcv.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 practivate.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 wip3.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 activate.wip3.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 ereg.wip3.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 0.0.0.0 wwis-dubc1-vip60.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Adobe activation block END>>%windir%\System32\drivers\etc\hosts
+goto done
+
+REM :TEMPLATE
+REM echo.>>%windir%\System32\drivers\etc\hosts
+REM echo #HAC_NAME START>>%windir%\System32\drivers\etc\hosts
+REM echo 1.2.3.4	www.examples.tld #HAC>>%windir%\System32\drivers\etc\hosts
+REM echo #HAC_NAME END>>%windir%\System32\drivers\etc\hosts
+REM echo %CU%|findstr "8" >nul && call :NEXT
+REM echo %CU%|findstr "9" >nul && call :NNEXT
+REM goto done
 
 :done
 
