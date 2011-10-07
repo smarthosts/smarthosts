@@ -1,6 +1,6 @@
 @echo off
 set release=11-10-07 23:10
-set CU=124567
+set CU=1245
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 ipconfig /flushdns
