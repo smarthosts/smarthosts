@@ -1,6 +1,6 @@
 @echo off
 set release=11-10-08 0:40
-set CU=1245
+set CU=124567
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 ipconfig /flushdns
@@ -59,7 +59,7 @@ echo.
 echo 1.恢复备份
 echo 2.从IP添加..
 echo 3.自行编辑hosts
-echo 4.使用www.g.cn的ip
+echo 4.使用www.g.cn的IP
 echo.
 echo 5.返回上级
 echo 6.退出
@@ -198,13 +198,13 @@ echo %CU%|findstr "7" >nul && call :adobe
 echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services START>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.29	www.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.29	music.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.29	music.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.29	music-streaming.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.29	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.29	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.29	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	www.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	music.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	music.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	music-streaming.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	talk.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -893,11 +893,11 @@ goto done
 :apple
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple START>>%windir%\System32\drivers\etc\hosts
-echo 203.78.36.40	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.78.36.40	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.78.36.40	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.78.36.40	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.78.36.40	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
 echo %CU%|findstr "7" >nul && call :adobe
 goto done
