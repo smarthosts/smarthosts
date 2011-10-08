@@ -1,6 +1,6 @@
 @echo off
-set release=11-10-08 13:42
-set CU=124567
+set release=11-10-09 00:40
+set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 ipconfig /flushdns
@@ -29,7 +29,7 @@ echo.
 SET /P ST= 请输入相应序号(1-6)，回车键可直接安装:
 echo.
 if /I "%ST%"=="1" goto auto
-if /I "%ST%"=="2" goto custom
+if /I "%ST%"=="2" goto manualset
 if /I "%ST%"=="3" goto delchar
 if /I "%ST%"=="4" goto tools
 if /I "%ST%"=="5" goto readme
@@ -44,7 +44,9 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo 加入apple服务器加速和adobe激活服务器屏蔽功能。
+echo 1.整理文件
+echo 2.处理google talk不能使用的问题
+echo 3.删除YouTube相关内容
 echo.
 echo.
 pause
@@ -80,25 +82,18 @@ exit
 
 goto install
 
-:custom
+:manualset
+if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
 cls
-echo ---------------------------------------------------------------------------
-echo HOSTSp v5_a1 Tools @ %release%
-echo ---------------------------------------------------------------------------
-echo.
-echo 1.Google服务
-echo 2.屏蔽广告
-echo 3.YouTube（不建议加入，目前不能加载视频）
-echo 4.Twitter+Facebook
-echo 5.Dropbox
-echo 6.苹果服务加速
-echo 7.屏蔽Adobe更新服务器
+
+echo Hosts自动修改脚本
+echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
-SET /P CU= 请输入相应序号(支持多选,如"1346","1234567")：
-echo.
-goto install
-exit
+for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
+echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 2 gpcom.azlyfox.com') do set IP=%%i
+
+goto custom
 
 :install
 if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
@@ -126,23 +121,7 @@ for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
 echo %IP%|findstr "203.208" >nul && echo 获取到正确IP：%IP% ||echo 获取到非203.208开头的IP：%IP%，可能无法使用。 && SET /P ERR= 是否继续？(y/n)： 
 if /I "%ERR%"=="n" goto begin
  
-cls
-echo ---------------------------------------------------------------------------
-echo HOSTSp v5_a1 Tools @ %release%
-echo ---------------------------------------------------------------------------
-echo.
-echo 1.Google服务
-echo 2.屏蔽广告
-echo 3.YouTube（不建议加入，目前不能加载视频）
-echo 4.Twitter+Facebook
-echo 5.Dropbox
-echo 6.苹果服务加速
-echo 7.屏蔽Adobe更新服务器
-echo.
-
-SET /P CU= 请输入相应序号(支持多选,如"1346","1234567")：
-echo.
-goto doit
+goto custom
 
 :manualip
 
@@ -156,25 +135,31 @@ echo.
 SET /P pingname= 请输入一个IP：
 set IP=%pingname%
 echo %IP%|findstr "203.208" >nul && echo 您输入的IP是：%IP% ||echo 您输入的IP是：%IP%，可能无法使用。 && SET /P ERR= 是否继续？(y/n)： && if /I "%ERR%"=="n" goto manualip
+
+goto custom
+
+
+:custom
 cls
 echo ---------------------------------------------------------------------------
 echo HOSTSp v5_a1 Tools @ %release%
 echo ---------------------------------------------------------------------------
 echo.
-echo 1.Google服务
-echo 2.屏蔽广告
-echo 3.YouTube（不建议加入，目前不能加载视频）
-echo 4.Twitter+Facebook
-echo 5.Dropbox
-echo 6.苹果服务加速
-echo 7.屏蔽Adobe更新服务器
+echo                1.Google服务        2.Twitter         3.Facebook
+echo                    4.Dropbox       5.苹果服务加速    
+REM 8.SHSCRTS 9.TBD
+echo                 6.屏蔽广告      7.屏蔽Adobe更新服务器   
 echo.
-
-SET /P CU= 请输入相应序号(支持多选,如"1346","1234567")：
-
+echo                       c 取消修改并返回主菜单
+echo. 
+echo 请输入相应序号,留空使用默认设置。
+echo 支持多选,如"1346","1234567"。
 echo.
-
+SET /P CU=请选择：
+if /I "%CU%"=="c" goto begin
+echo.
 goto doit
+exit
 
 :doit
 
@@ -185,16 +170,16 @@ ren %windir%\System32\drivers\etc\hosts hosts_temp_del
 ren %windir%\System32\drivers\etc\hosts_temp hosts
 del %windir%\System32\drivers\etc\hosts_temp_del /s /q
 
-echo. >>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "1" >nul && call :googlesrv
-echo %CU%|findstr "2" >nul && call :antiad
-echo %CU%|findstr "3" >nul && call :YouTube
-echo %CU%|findstr "4" >nul && call :twfb
-echo %CU%|findstr "5" >nul && call :dropbox
-echo %CU%|findstr "6" >nul && call :apple
-echo %CU%|findstr "7" >nul && call :adobe
+echo.>>%windir%\System32\drivers\etc\hosts
+echo %CU%|findstr "1" >nul && call :1
+echo %CU%|findstr "2" >nul && call :2
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 
-:googlesrv
+:1
 echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services START>>%windir%\System32\drivers\etc\hosts
@@ -206,10 +191,10 @@ echo 203.208.46.180	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\e
 echo 203.208.46.180	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	talk.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+REM echo 74.125.71.125	talk.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+REM echo 74.125.71.125	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	groups.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	talkx.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+REM echo 74.125.71.125	talkx.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	themes.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	market.android.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	toolbar.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -244,7 +229,7 @@ echo %IP%	bks7.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	bks8.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	bks9.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogsearch.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	mail.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	mail.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www.gmail.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogsearch.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -644,15 +629,164 @@ echo %IP%	static.cache.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	accounts.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	magnifier.blogspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "2" >nul && call :antiad
-echo %CU%|findstr "3" >nul && call :YouTube
-echo %CU%|findstr "4" >nul && call :twfb
-echo %CU%|findstr "5" >nul && call :dropbox
-echo %CU%|findstr "6" >nul && call :apple
-echo %CU%|findstr "7" >nul && call :adobe
+echo %CU%|findstr "2" >nul && call :2
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
-:antiad
+:2
+echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Twitter START>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.210	t.co #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	upload.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	pic.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	oauth.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	www.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	mobile.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	api.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	search.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.148.139	userstream.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	ssl.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	status.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	assets0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	assets1.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	assets2.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	assets3.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.243	static.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.29.36.124	platform.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 219.76.10.138	platform0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.148.206	help.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.148.206	support.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.84.4.102	si0.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.84.4.102	si1.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.84.4.102	si2.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.84.4.102	si3.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.84.4.102	si4.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.84.4.102	si5.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.84.4.102	si5.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.148.243	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.148.138	betastream.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.106.20.99	posterous.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.144	oi40.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi41.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi42.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi43.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi44.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi45.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi46.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi47.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi48.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi49.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.143	oi50.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.144	oi51.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.144	oi52.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.144	oi53.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.144	oi54.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.144	oi55.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.17.70.144	oi56.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.58.234	twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.58.234	www.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.46.32	web7.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.58.204	web1.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.58.224	web2.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.58.200	web3.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.37.33.184	web4.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.37.75.16	web5.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.35.60	web6.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.228.120.92	web8.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 74.86.100.160	web9.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 74.86.87.236	web10.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.94.0.61	a.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.94.0.61	yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.94.0.61	www.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.208	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.87.33.151	api.mobilepicture.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Twitter END>>%windir%\System32\drivers\etc\hosts
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
+
+:3
+echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Facebook START>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.16	facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.16	www.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.31	m.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.20	login.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.57	secure.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.220.146.18	apps.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.31	touch.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 118.214.114.110	s-static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.220.147.47	api.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.16	zh-CN.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.98	static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.98	b.static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.57	secure-profile.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.57	secure-media-sf2p.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.15	ssl.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.190.18	apps.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 118.214.190.105	profile.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 97.65.135.139	external.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 120.29.145.50	vthumb.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 97.65.135.163	static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.181.16	graph.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.120	b.static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	creative.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.114	profile.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	s-hprofile-sf2p.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	photos-a.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	photos-b.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	photos-c.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	photos-d.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	photos-e.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.98	photos-f.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	photos-g.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 61.213.189.113	photos-h.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.180.51	upload.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Facebook END>>%windir%\System32\drivers\etc\hosts
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
+
+:4
+echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Dropbox START>>%windir%\System32\drivers\etc\hosts
+echo 199.47.217.179	dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.47.217.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
+
+
+:5
+echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Apple START>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
+
+:6
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_AntiAD START>>%windir%\System32\drivers\etc\hosts
 echo 0.0.0.0 analytics.ws.126.net img1.126.net img2.126.net adc.163.com adclient.163.com adgeo.163.com adimg.163.com allyes.nie.163.com analytics.163.com cpc.163.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -746,163 +880,11 @@ echo 0.0.0.0 ads.people.com.cn pro.people.com.cn #HAC>>%windir%\System32\drivers
 echo 0.0.0.0 adcenter.xinhuanet.com embed.xinhuanet.com entity.xinhuanet.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 0.0.0.0 dvs.china.com dvsend.china.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_AntiAD END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "3" >nul && call :YouTube
-echo %CU%|findstr "4" >nul && call :twfb
-echo %CU%|findstr "5" >nul && call :dropbox
-echo %CU%|findstr "6" >nul && call :apple
-echo %CU%|findstr "7" >nul && call :adobe
+
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
-:YouTube
-echo.>>%windir%\System32\drivers\etc\hosts
-echo #HAC_YouTube START>>%windir%\System32\drivers\etc\hosts
-
-echo #HAC_Youtube END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "4" >nul && call :twfb
-echo %CU%|findstr "5" >nul && call :dropbox
-echo %CU%|findstr "6" >nul && call :apple
-echo %CU%|findstr "7" >nul && call :adobe
-goto done
-
-:twfb
-echo.>>%windir%\System32\drivers\etc\hosts
-echo #HAC_Facebook START>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	www.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.31	m.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.20	login.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.57	secure.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 66.220.146.18	apps.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.31	touch.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 118.214.114.110	s-static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 66.220.147.47	api.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	zh-CN.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.98	static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.98	b.static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.57	secure-profile.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.57	secure-media-sf2p.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.15	ssl.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.190.18	apps.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 118.214.190.105	profile.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 97.65.135.139	external.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 120.29.145.50	vthumb.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 97.65.135.163	static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	graph.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.120	b.static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	creative.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.114	profile.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	s-hprofile-sf2p.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	photos-a.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	photos-b.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	photos-c.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	photos-d.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	photos-e.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.98	photos-f.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	photos-g.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 61.213.189.113	photos-h.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.180.51	upload.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo #HAC_Facebook END>>%windir%\System32\drivers\etc\hosts
-echo.>>%windir%\System32\drivers\etc\hosts
-echo #HAC_Twitter START>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.210	t.co #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	upload.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	pic.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	oauth.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	www.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	mobile.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	api.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	search.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.148.139	userstream.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	ssl.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	status.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	assets0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	assets1.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	assets2.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	assets3.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	static.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 184.29.36.124	platform.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 219.76.10.138	platform0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.148.206	help.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.148.206	support.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si0.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si1.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si2.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si3.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si4.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si5.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si5.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.148.243	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.148.138	betastream.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 184.106.20.99	posterous.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.144	oi40.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi41.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi42.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi43.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi44.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi45.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi46.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi47.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi48.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi49.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.143	oi50.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.144	oi51.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.144	oi52.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.144	oi53.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.144	oi54.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.144	oi55.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.17.70.144	oi56.tinypic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.58.234	twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.58.234	www.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.46.32	web7.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.58.204	web1.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.58.224	web2.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.58.200	web3.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.37.33.184	web4.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.37.75.16	web5.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.35.60	web6.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 66.228.120.92	web8.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 74.86.100.160	web9.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 74.86.87.236	web10.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 208.94.0.61	a.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 208.94.0.61	yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 208.94.0.61	www.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.208	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 208.87.33.151	api.mobilepicture.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo #HAC_Twitter END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "5" >nul && call :dropbox
-echo %CU%|findstr "6" >nul && call :apple
-echo %CU%|findstr "7" >nul && call :adobe
-goto done
-
-:dropbox
-echo.>>%windir%\System32\drivers\etc\hosts
-echo #HAC_Dropbox START>>%windir%\System32\drivers\etc\hosts
-echo 199.47.217.179	dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.47.217.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-
-echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "6" >nul && call :apple
-echo %CU%|findstr "7" >nul && call :adobe
-goto done
-
-:apple
-echo.>>%windir%\System32\drivers\etc\hosts
-echo #HAC_Apple START>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "7" >nul && call :adobe
-goto done
-
-:adobe
+:7
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Adobe activation block START>>%windir%\System32\drivers\etc\hosts
 echo 0.0.0.0 3dns-2.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -928,12 +910,12 @@ REM echo.>>%windir%\System32\drivers\etc\hosts
 REM echo #HAC_NAME START>>%windir%\System32\drivers\etc\hosts
 REM echo 1.2.3.4	www.examples.tld #HAC>>%windir%\System32\drivers\etc\hosts
 REM echo #HAC_NAME END>>%windir%\System32\drivers\etc\hosts
-REM echo %CU%|findstr "8" >nul && call :NEXT
-REM echo %CU%|findstr "9" >nul && call :NNEXT
+REM echo %CU%|findstr "8" >nul && call :8
+REM echo %CU%|findstr "9" >nul && call :9
 REM goto done
 
 :done
-
+echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_hosts END>>%windir%\System32\drivers\etc\hosts
 ipconfig /flushdns
 cls
@@ -986,6 +968,7 @@ del temp.bat /s /q
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 del %windir%\System32\drivers\etc\hosts_temp /s /q
+cls
 exit
 
 REM Original version: https://plus.google.com/u/1/102216617437795883914/posts/iYS8CCubLTU
