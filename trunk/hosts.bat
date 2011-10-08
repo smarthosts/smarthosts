@@ -4,7 +4,7 @@ set CU=124567
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 ipconfig /flushdns
-echo y|cacls %windir%\system32\drivers\etc\hosts /g everyone:f
+takeown /f "%windir%\system32\drivers\etc\hosts" && icacls "%windir%\system32\drivers\etc\hosts" /grant administrators:F
 attrib -r -a -s -h %windir%\system32\drivers\etc\hosts
 if "%1" == "auto" (goto auto) else if "%1" == "typical" (goto typical) else goto begin
 
