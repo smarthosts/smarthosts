@@ -1,5 +1,5 @@
 @echo off
-set release=11-10-09 22:55 
+set release=11-10-09 00:40
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
@@ -90,8 +90,8 @@ echo Hosts自动修改脚本
 echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
-for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 2 gpcom.azlyfox.com') do set IP=%%i
+for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
+echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
 
 goto custom
 
@@ -103,8 +103,8 @@ echo Hosts自动修改脚本
 echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
-for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 2 gpcom.azlyfox.com') do set IP=%%i
+for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
+echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
 
 goto doit
 
@@ -117,7 +117,7 @@ echo Hosts自动修改脚本
 echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
-for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
+for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
 echo %IP%|findstr "203.208" >nul && echo 获取到正确IP：%IP% ||echo 获取到非203.208开头的IP：%IP%，可能无法使用。 && SET /P ERR= 是否继续？(y/n)： 
 if /I "%ERR%"=="n" goto begin
  
