@@ -1,5 +1,5 @@
 @echo off
-set release=11-10-09 00:40
+set release=11-10-10 00:25
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
