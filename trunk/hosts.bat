@@ -3,6 +3,7 @@ set release=11-10-10 00:25
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
+del %windir%\System32\drivers\etc\hosts_temp /s /q
 ipconfig /flushdns
 takeown /f "%windir%\system32\drivers\etc\hosts" && icacls "%windir%\system32\drivers\etc\hosts" /grant administrators:F
 attrib -r -a -s -h %windir%\system32\drivers\etc\hosts
@@ -169,6 +170,7 @@ type %windir%\System32\drivers\etc\hosts|find "#THISISNOTE" /i /v|find "#HAC" /i
 ren %windir%\System32\drivers\etc\hosts hosts_temp_del
 ren %windir%\System32\drivers\etc\hosts_temp hosts
 del %windir%\System32\drivers\etc\hosts_temp_del /s /q
+cls
 
 echo.>>%windir%\System32\drivers\etc\hosts
 echo %CU%|findstr "1" >nul && call :1
@@ -965,9 +967,6 @@ REM takeown /a /f %windir%\System32\drivers\etc\hosts
 attrib %windir%\System32\drivers\etc\hosts +s +r
 REM echo y|cacls %windir%\System32\drivers\etc\hosts /g everyone:r
 del temp.bat /s /q
-del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
-del %windir%\System32\drivers\etc\hosts.tw /s /q
-del %windir%\System32\drivers\etc\hosts_temp /s /q
 cls
 exit
 
