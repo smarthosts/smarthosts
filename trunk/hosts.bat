@@ -1,6 +1,5 @@
 @echo off
-setlocal enabledelayedexpansion
-set release=11-10-09 22:55
+set release=11-10-09 22:55 
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
@@ -48,7 +47,6 @@ echo 更新内容：
 echo 1.整理文件
 echo 2.处理google talk不能使用的问题
 echo 3.删除YouTube相关内容
-echo 4.处理google talk网页小挂件问题
 echo.
 echo.
 pause
@@ -84,13 +82,6 @@ exit
 
 goto install
 
-:typical
-for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
-set CU=%2
-goto selfplus
-pause
-
 :manualset
 if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
 cls
@@ -99,8 +90,8 @@ echo Hosts自动修改脚本
 echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
-for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
+for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
+echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 2 gpcom.azlyfox.com') do set IP=%%i
 
 goto custom
 
@@ -112,10 +103,10 @@ echo Hosts自动修改脚本
 echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
-for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
+for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
+echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误的IP，正在获取gpcom.azlyfox.com的IP地址 && for /f "tokens=2 delims=[]" %%i in ('ping -n 2 gpcom.azlyfox.com') do set IP=%%i
 
-goto selfplus
+goto doit
 
 :gcn
 
@@ -126,7 +117,7 @@ echo Hosts自动修改脚本
 echo 请稍等一下,正在通过网络获取www.g.cn的IP地址...
 echo.
 
-for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
+for /f "tokens=2 delims=[]" %%i in ('ping -n 2 www.g.cn') do set IP=%%i
 echo %IP%|findstr "203.208" >nul && echo 获取到正确IP：%IP% ||echo 获取到非203.208开头的IP：%IP%，可能无法使用。 && SET /P ERR= 是否继续？(y/n)： 
 if /I "%ERR%"=="n" goto begin
  
@@ -167,15 +158,8 @@ echo.
 SET /P CU=请选择：
 if /I "%CU%"=="c" goto begin
 echo.
-goto selfplus
+goto doit
 exit
-
-:selfplus
-IF not DEFINED i set i=0
-set /a i=i+1
-if "%i%" == "9" goto done
-echo %CU%|findstr %i% >nul && call :%i%
-goto selfplus
 
 :doit
 
@@ -187,22 +171,13 @@ ren %windir%\System32\drivers\etc\hosts_temp hosts
 del %windir%\System32\drivers\etc\hosts_temp_del /s /q
 
 echo.>>%windir%\System32\drivers\etc\hosts
-
-REM for /f "delims=" %%i in (%2) do (
-REM echo "%%i" "!a!" 
-REM set /a i=i+1
-REM )
-
-REM echo %CU%|findstr "all" >nul && call :1
-REM echo %CU%|findstr "1" >nul && call :1
-REM echo %CU%|findstr "1" >nul && call :1
-REM echo %CU%|findstr "2" >nul && call :2
-REM echo %CU%|findstr "3" >nul && call :3
-REM echo %CU%|findstr "4" >nul && call :4
-REM echo %CU%|findstr "5" >nul && call :5
-REM echo %CU%|findstr "6" >nul && call :6
-REM echo %CU%|findstr "7" >nul && call :7
-goto done
+echo %CU%|findstr "1" >nul && call :1
+echo %CU%|findstr "2" >nul && call :2
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 
 :1
 echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
@@ -654,10 +629,15 @@ echo %IP%	static.cache.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	accounts.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	magnifier.blogspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services END>>%windir%\System32\drivers\etc\hosts
-goto selfplus
+echo %CU%|findstr "2" >nul && call :2
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
 
 :2
-set /a i=i+1
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Twitter START>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.210	t.co #HAC>>%windir%\System32\drivers\etc\hosts
@@ -726,7 +706,12 @@ echo 208.94.0.61	www.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.208	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 208.87.33.151	api.mobilepicture.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Twitter END>>%windir%\System32\drivers\etc\hosts
-goto selfplus
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
 
 :3
 echo.>>%windir%\System32\drivers\etc\hosts
@@ -767,7 +752,11 @@ echo 61.213.189.113	photos-g.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\ho
 echo 61.213.189.113	photos-h.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.63.180.51	upload.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Facebook END>>%windir%\System32\drivers\etc\hosts
-goto selfplus
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
 
 :4
 echo.>>%windir%\System32\drivers\etc\hosts
@@ -778,7 +767,10 @@ echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
-goto selfplus
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
 
 
 :5
@@ -790,7 +782,9 @@ echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
-goto selfplus
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
+goto done
 
 :6
 echo.>>%windir%\System32\drivers\etc\hosts
@@ -886,7 +880,9 @@ echo 0.0.0.0 ads.people.com.cn pro.people.com.cn #HAC>>%windir%\System32\drivers
 echo 0.0.0.0 adcenter.xinhuanet.com embed.xinhuanet.com entity.xinhuanet.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 0.0.0.0 dvs.china.com dvsend.china.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_AntiAD END>>%windir%\System32\drivers\etc\hosts
-goto selfplus
+
+echo %CU%|findstr "7" >nul && call :7
+goto done
 
 :7
 echo.>>%windir%\System32\drivers\etc\hosts
