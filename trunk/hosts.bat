@@ -1,5 +1,5 @@
 @echo off
-set release=11-10-10 00:25
+set release=11-10-11 00:32
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
@@ -46,8 +46,9 @@ echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
 echo 1.整理文件
-echo 2.处理google talk不能使用的问题
+echo 2.处理google talk及其控件不能使用的问题
 echo 3.删除YouTube相关内容
+echo 4.添加smarthosts的hosts
 echo.
 echo.
 pause
@@ -173,6 +174,7 @@ del %windir%\System32\drivers\etc\hosts_temp_del /s /q
 cls
 
 echo.>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	smarthosts.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %CU%|findstr "1" >nul && call :1
 echo %CU%|findstr "2" >nul && call :2
 echo %CU%|findstr "3" >nul && call :3
