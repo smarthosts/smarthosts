@@ -1,4 +1,6 @@
-#UPDATE:2011-10-10 1:00
+#UPDATE:2011-10-11 00:20
+#hosts START
+
 #Google Services START
 203.208.46.180	www.google.com
 203.208.46.180	music.google.com
@@ -441,6 +443,8 @@
 203.208.45.206	static.cache.l.google.com
 203.208.45.206	accounts.youtube.com
 203.208.45.206	magnifier.blogspot.com
+
+203.208.46.180	smarthosts.googlecode.com
 #Google Services END
 
 #Twitter START
@@ -512,16 +516,16 @@
 #Twitter END
 
 #Facebook START
-69.63.181.16	facebook.com
-69.63.181.16	www.facebook.com
-69.63.181.31	m.facebook.com
-69.63.181.20	login.facebook.com
-69.63.181.57	secure.facebook.com
-66.220.146.18	apps.facebook.com
+66.220.149.25	facebook.com
+66.220.149.25	www.facebook.com
+69.171.229.32	m.facebook.com
+66.220.146.28	login.facebook.com
+69.63.179.70	secure.facebook.com
+69.171.242.28	apps.facebook.com
 69.63.181.31	touch.facebook.com
 118.214.114.110	s-static.ak.facebook.com
 66.220.147.47	api.facebook.com
-69.63.181.16	zh-CN.facebook.com
+66.220.149.25	zh-CN.facebook.com
 61.213.189.98	static.ak.facebook.com
 61.213.189.98	b.static.ak.facebook.com
 69.63.181.57	secure-profile.facebook.com
@@ -533,7 +537,7 @@
 97.65.135.139	external.ak.fbcdn.net
 120.29.145.50	vthumb.ak.fbcdn.net
 97.65.135.163	static.ak.fbcdn.net
-69.63.181.16	graph.facebook.com
+66.220.149.25	graph.facebook.com
 61.213.189.120	b.static.ak.fbcdn.net
 61.213.189.113	creative.ak.fbcdn.net
 61.213.189.114	profile.ak.fbcdn.net
@@ -675,3 +679,5 @@
 0.0.0.0 ereg.wip3.adobe.com
 0.0.0.0 wwis-dubc1-vip60.adobe.com
 #Adobe activation block END
+
+#hosts END
