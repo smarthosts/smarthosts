@@ -1,24 +1,13 @@
 @echo off
-setlocal enabledelayedexpansion
-set release=11-10-11 22:52
+set release=11-10-11 23:00
 set CU=123456789
-set tool=0
-set begin=0
+del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
+del %windir%\System32\drivers\etc\hosts.tw /s /q
+del %windir%\System32\drivers\etc\hosts_temp /s /q
 ipconfig /flushdns
 takeown /f "%windir%\system32\drivers\etc\hosts" && icacls "%windir%\system32\drivers\etc\hosts" /grant administrators:F
 attrib -r -a -s -h %windir%\system32\drivers\etc\hosts
-if "%1" == "auto" (goto auto)
-if "%1" == "typical" (goto typical)
-
-goto begin
-
-:typical
-if "%2" == "4" goto tools
-if not "%2" == "" goto begin
-REM 为了向下兼容，也许有些地方不符合逻辑。
-if not "%3" == "" goto tools
-if "%3" == "" goto tools
-goto manualset
+if "%1" == "auto" (goto auto) else if "%1" == "typical" (goto typical) else goto begin
 
 :begin
 cls
@@ -38,12 +27,8 @@ echo 5.更新说明
 echo.
 echo 6.退出
 echo.
-set ST=%2
-if "%begin%" == "1" set ST=
-if "%ST%" == "" SET /P ST= 请输入相应序号(1-6)：
-
-set begin=1
-
+SET /P ST= 请输入相应序号(1-6)，回车键可直接安装:
+echo.
 if /I "%ST%"=="1" goto auto
 if /I "%ST%"=="2" goto manualset
 if /I "%ST%"=="3" goto delchar
@@ -60,7 +45,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo 1.结构小调整
+echo 更新facebook的IP
 echo.
 echo.
 pause
@@ -81,11 +66,8 @@ echo 5.返回上级
 echo 6.退出
 
 echo.
-set TT=%3
-if "%tool%" == "1" set TT=
-if "%TT%" == "" SET /P TT= 请输入相应序号(1-6)：
-
-set tool=1
+SET /P TT= 请输入相应序号(1-6)：
+echo.
 if /I "%TT%"=="1" goto remove
 if /I "%TT%"=="2" goto manualip
 if /I "%TT%"=="3" goto edithosts
@@ -93,7 +75,7 @@ if /I "%TT%"=="4" goto gcn
 if /I "%TT%"=="5" goto begin
 if /I "%TT%"=="6" goto exit
 if /I "%TT%"=="" goto tools
-goto tools
+exit
 
 :auto
 
@@ -179,28 +161,27 @@ goto doit
 exit
 
 :doit
-cls
+
 echo 正在将IP %IP% 写入hosts中。
-echo 显示“找不到文件”属于正常现象，请无视。
 
 type %windir%\System32\drivers\etc\hosts|find "#THISISNOTE" /i /v|find "#HAC" /i /v|find "#HostsAutoChanger" /i /v|find "#HWrite" /i /v|findstr ".">>%windir%\System32\drivers\etc\hosts_temp
 ren %windir%\System32\drivers\etc\hosts hosts_temp_del
 ren %windir%\System32\drivers\etc\hosts_temp hosts
 del %windir%\System32\drivers\etc\hosts_temp_del /s /q
+cls
 
 echo.>>%windir%\System32\drivers\etc\hosts
-echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	smarthosts.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
-REM echo %CU%|findstr "1" >nul && call :1
-REM echo %CU%|findstr "2" >nul && call :2
-REM echo %CU%|findstr "3" >nul && call :3
-REM echo %CU%|findstr "4" >nul && call :4
-REM echo %CU%|findstr "5" >nul && call :5
-REM echo %CU%|findstr "6" >nul && call :6
-REM echo %CU%|findstr "7" >nul && call :7
-if defined CU for /L %%i in (1,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+echo %CU%|findstr "1" >nul && call :1
+echo %CU%|findstr "2" >nul && call :2
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 
 :1
+echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services START>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	www.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -649,7 +630,12 @@ echo %IP%	static.cache.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	accounts.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	magnifier.blogspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services END>>%windir%\System32\drivers\etc\hosts
-if defined CU for /L %%i in (2,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+echo %CU%|findstr "2" >nul && call :2
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
 :2
@@ -721,7 +707,11 @@ echo 208.94.0.61	www.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.208	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 208.87.33.151	api.mobilepicture.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Twitter END>>%windir%\System32\drivers\etc\hosts
-if defined CU for /L %%i in (3,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+echo %CU%|findstr "3" >nul && call :3
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
 :3
@@ -763,7 +753,10 @@ echo 61.213.189.113	photos-g.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\ho
 echo 61.213.189.113	photos-h.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.63.180.51	upload.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Facebook END>>%windir%\System32\drivers\etc\hosts
-if defined CU for /L %%i in (4,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+echo %CU%|findstr "4" >nul && call :4
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
 :4
@@ -775,7 +768,9 @@ echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
-if defined CU for /L %%i in (5,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+echo %CU%|findstr "5" >nul && call :5
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
 
@@ -788,7 +783,8 @@ echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
-if defined CU for /L %%i in (6,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+echo %CU%|findstr "6" >nul && call :6
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
 :6
@@ -886,7 +882,7 @@ echo 0.0.0.0 adcenter.xinhuanet.com embed.xinhuanet.com entity.xinhuanet.com #HA
 echo 0.0.0.0 dvs.china.com dvsend.china.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_AntiAD END>>%windir%\System32\drivers\etc\hosts
 
-if defined CU for /L %%i in (7,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+echo %CU%|findstr "7" >nul && call :7
 goto done
 
 :7
@@ -915,7 +911,8 @@ REM echo.>>%windir%\System32\drivers\etc\hosts
 REM echo #HAC_NAME START>>%windir%\System32\drivers\etc\hosts
 REM echo 1.2.3.4	www.examples.tld #HAC>>%windir%\System32\drivers\etc\hosts
 REM echo #HAC_NAME END>>%windir%\System32\drivers\etc\hosts
-REM if defined CU for /L %%i in (x,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+REM echo %CU%|findstr "8" >nul && call :8
+REM echo %CU%|findstr "9" >nul && call :9
 REM goto done
 
 :done
@@ -923,6 +920,7 @@ echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_hosts END>>%windir%\System32\drivers\etc\hosts
 ipconfig /flushdns
 cls
+echo.
 
 echo 您的hosts编辑完成.
 echo.
