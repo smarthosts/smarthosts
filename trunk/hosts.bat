@@ -969,6 +969,7 @@ attrib %windir%\System32\drivers\etc\hosts +s +r
 REM echo y|cacls %windir%\System32\drivers\etc\hosts /g everyone:r
 del temp.bat /s /q
 cls
+pause
 exit
 
 REM Original version: https://plus.google.com/u/1/102216617437795883914/posts/iYS8CCubLTU
