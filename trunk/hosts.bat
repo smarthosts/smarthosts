@@ -1,5 +1,5 @@
 @echo off
-set release=11-10-11 00:32
+set release=11-10-11 23:00
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
@@ -45,10 +45,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo 1.整理文件
-echo 2.处理google talk及其控件不能使用的问题
-echo 3.删除YouTube相关内容
-echo 4.添加smarthosts的hosts
+echo 更新facebook的IP
 echo.
 echo.
 pause
@@ -720,16 +717,16 @@ goto done
 :3
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Facebook START>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	www.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.31	m.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.20	login.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.57	secure.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 66.220.146.18	apps.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.220.149.25	facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.220.149.25	www.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.171.229.32	m.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.220.146.28	login.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.63.179.70	secure.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.171.242.28	apps.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.63.181.31	touch.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 118.214.114.110	s-static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 66.220.147.47	api.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	zh-CN.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.220.149.25	zh-CN.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.98	static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.98	b.static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.63.181.57	secure-profile.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -741,7 +738,7 @@ echo 61.213.189.113	fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 97.65.135.139	external.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 120.29.145.50	vthumb.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 97.65.135.163	static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.16	graph.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.220.149.25	graph.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.120	b.static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.113	creative.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.114	profile.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
