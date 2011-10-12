@@ -45,7 +45,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo Facebook IP更新
+echo Google移动服务。
 echo.
 echo.
 pause
