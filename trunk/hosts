@@ -1,5 +1,5 @@
 #UPDATE:2011-10-11 00:20
-#hosts START
+#Hosts START
 
 #Google Services START
 203.208.46.180	www.google.com
@@ -680,4 +680,4 @@
 0.0.0.0 wwis-dubc1-vip60.adobe.com
 #Adobe activation block END
 
-#hosts END
+#Hosts END
