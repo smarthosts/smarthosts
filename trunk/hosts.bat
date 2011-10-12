@@ -1,12 +1,12 @@
 @echo off
-set release=11-10-11 23:00
+set release=11-10-12 23:20
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
 del %windir%\System32\drivers\etc\hosts_temp /s /q
 ipconfig /flushdns
 takeown /f "%windir%\system32\drivers\etc\hosts" && icacls "%windir%\system32\drivers\etc\hosts" /grant administrators:F
-attrib -r -a -s -h %windir%\system32\drivers\etc\hosts
+attrib -s -h -r %windir%\system32\drivers\etc\hosts
 if "%1" == "auto" (goto auto) else if "%1" == "typical" (goto typical) else goto begin
 
 :begin
@@ -161,27 +161,21 @@ goto doit
 exit
 
 :doit
-
+cls
 echo 正在将IP %IP% 写入hosts中。
-
+echo 显示“找不到文件”属正常现象。
 type %windir%\System32\drivers\etc\hosts|find "#THISISNOTE" /i /v|find "#HAC" /i /v|find "#HostsAutoChanger" /i /v|find "#HWrite" /i /v|findstr ".">>%windir%\System32\drivers\etc\hosts_temp
 ren %windir%\System32\drivers\etc\hosts hosts_temp_del
 ren %windir%\System32\drivers\etc\hosts_temp hosts
 del %windir%\System32\drivers\etc\hosts_temp_del /s /q
-cls
+
 
 echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	smarthosts.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "1" >nul && call :1
-echo %CU%|findstr "2" >nul && call :2
-echo %CU%|findstr "3" >nul && call :3
-echo %CU%|findstr "4" >nul && call :4
-echo %CU%|findstr "5" >nul && call :5
-echo %CU%|findstr "6" >nul && call :6
-echo %CU%|findstr "7" >nul && call :7
+if defined CU for /L %%i in (1,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 
 :1
-echo #HAC_hosts START>>%windir%\System32\drivers\etc\hosts
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services START>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	www.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -218,6 +212,8 @@ echo %IP%	accounts.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	ajax.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	appspot.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	www.appspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	apis.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	bks0.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	bks1.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -319,6 +315,7 @@ echo %IP%	lh5.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh5.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh6.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh6.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	m.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	maps.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	maps.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	maps-api-ssl.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -459,6 +456,7 @@ echo %IP%	cbks1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	cbks2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	cbks3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	khms.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	m.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mw1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mw2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mt.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -630,12 +628,7 @@ echo %IP%	static.cache.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	accounts.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	magnifier.blogspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "2" >nul && call :2
-echo %CU%|findstr "3" >nul && call :3
-echo %CU%|findstr "4" >nul && call :4
-echo %CU%|findstr "5" >nul && call :5
-echo %CU%|findstr "6" >nul && call :6
-echo %CU%|findstr "7" >nul && call :7
+if defined CU for /L %%i in (2,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
 
 :2
@@ -707,11 +700,7 @@ echo 208.94.0.61	www.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.208	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 208.87.33.151	api.mobilepicture.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Twitter END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "3" >nul && call :3
-echo %CU%|findstr "4" >nul && call :4
-echo %CU%|findstr "5" >nul && call :5
-echo %CU%|findstr "6" >nul && call :6
-echo %CU%|findstr "7" >nul && call :7
+if defined CU for /L %%i in (3,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
 
 :3
@@ -753,10 +742,7 @@ echo 61.213.189.113	photos-g.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\ho
 echo 61.213.189.113	photos-h.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.63.180.51	upload.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Facebook END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "4" >nul && call :4
-echo %CU%|findstr "5" >nul && call :5
-echo %CU%|findstr "6" >nul && call :6
-echo %CU%|findstr "7" >nul && call :7
+if defined CU for /L %%i in (4,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
 
 :4
@@ -768,9 +754,7 @@ echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "5" >nul && call :5
-echo %CU%|findstr "6" >nul && call :6
-echo %CU%|findstr "7" >nul && call :7
+if defined CU for /L %%i in (5,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
 
 
@@ -783,8 +767,7 @@ echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
-echo %CU%|findstr "6" >nul && call :6
-echo %CU%|findstr "7" >nul && call :7
+if defined CU for /L %%i in (6,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
 
 :6
@@ -882,7 +865,7 @@ echo 0.0.0.0 adcenter.xinhuanet.com embed.xinhuanet.com entity.xinhuanet.com #HA
 echo 0.0.0.0 dvs.china.com dvsend.china.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_AntiAD END>>%windir%\System32\drivers\etc\hosts
 
-echo %CU%|findstr "7" >nul && call :7
+if defined CU for /L %%i in (7,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
 
 :7
