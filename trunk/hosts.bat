@@ -1,5 +1,5 @@
 @echo off
-set release=11-10-12 23:20
+set release=11-10-13 13:10
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
@@ -187,7 +187,7 @@ echo 203.208.46.180	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\
 echo 203.208.46.180	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	google.com #HAC>>%windir%\System32\drivers\etc\hosts
 REM echo 74.125.71.125	talk.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	groups.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	talkx.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	themes.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
