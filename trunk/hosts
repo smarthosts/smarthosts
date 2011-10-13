@@ -565,15 +565,15 @@
 174.36.51.42	forums.dropbox.com
 #Dropbox 结束
 
-#Apple 开始
+#苹果服务器加速 开始
 60.172.80.106	adcdownload.apple.com
 60.172.80.106	deimos3.apple.com
 60.172.80.106	appldnld.apple.com
 60.172.80.106	swcdn.apple.com
 60.172.80.106	developer.apple.com
-#Apple 结束
+#苹果服务器加速 结束
 
-#AntiAD 开始
+#广告屏蔽 开始
 0.0.0.0 analytics.ws.126.net img1.126.net img2.126.net adc.163.com adclient.163.com adgeo.163.com adimg.163.com allyes.nie.163.com analytics.163.com cpc.163.com
 0.0.0.0 corp.163.com pro.163.com proimg.163.com union.163.com ht.hao120.cc
 0.0.0.0 ad4.sina.com.cn adsina.allyes.com beacon.sina.com.cn classadnew.sina.com.cn click.sina.com.cn counter.sina.com.cn sina.allyes.com sinasc.allyes.com
@@ -664,9 +664,9 @@
 0.0.0.0 ads.people.com.cn pro.people.com.cn
 0.0.0.0 adcenter.xinhuanet.com embed.xinhuanet.com entity.xinhuanet.com
 0.0.0.0 dvs.china.com dvsend.china.com
-#AntiAD 结束
+#广告屏蔽 结束
 
-#Adobe activation block 开始
+#adobe激活服务器屏蔽 开始
 0.0.0.0 3dns-2.adobe.com
 0.0.0.0 3dns-3.adobe.com
 0.0.0.0 activate.adobe.com
@@ -682,6 +682,6 @@
 0.0.0.0 activate.wip3.adobe.com
 0.0.0.0 ereg.wip3.adobe.com
 0.0.0.0 wwis-dubc1-vip60.adobe.com
-#Adobe activation block 结束
+#adobe激活服务器屏蔽 结束
 
 #Hosts 结束
