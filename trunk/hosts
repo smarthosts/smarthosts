@@ -1,7 +1,7 @@
 #UPDATE:2011-10-12 23:25
 #Hosts 开始
 
-#Google Services 开始
+#Google服务 开始
 203.208.46.180	www.google.com
 203.208.46.180	music.google.com
 203.208.46.180	music.googleusercontent.com
@@ -449,7 +449,7 @@
 203.208.45.206	magnifier.blogspot.com
 
 203.208.46.180	smarthosts.googlecode.com
-#Google Services 结束
+#Google服务 结束
 
 #Twitter 开始
 199.59.149.210	t.co
