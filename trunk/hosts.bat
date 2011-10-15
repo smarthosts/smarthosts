@@ -1,5 +1,5 @@
 @echo off
-set release=11-10-13 13:10
+set release=11-10-15 19:45
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
 del %windir%\System32\drivers\etc\hosts.tw /s /q
@@ -45,7 +45,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo Google移动服务。
+echo 更新了Dropbox的IP
 echo.
 echo.
 pause
