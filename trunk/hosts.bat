@@ -750,9 +750,10 @@ echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox START>>%windir%\System32\drivers\etc\hosts
 echo 199.47.217.179	dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.47.217.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 107.22.250.157	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 107.22.250.157	dl-web.dropbox.com	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.51.42	wiki.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (5,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
