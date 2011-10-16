@@ -1,8 +1,6 @@
-@echo off
-set release=11-10-15 19:45
+echo off
+set release=11-10-13 13:10
 set CU=123456789
-del %windir%\System32\drivers\etc\hosts#THISISNOTE /s /q
-del %windir%\System32\drivers\etc\hosts.tw /s /q
 del %windir%\System32\drivers\etc\hosts_temp /s /q
 ipconfig /flushdns
 takeown /f "%windir%\system32\drivers\etc\hosts" && icacls "%windir%\system32\drivers\etc\hosts" /grant administrators:F
@@ -45,7 +43,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo 更新了Dropbox的IP
+echo Google移动服务。
 echo.
 echo.
 pause
@@ -750,10 +748,9 @@ echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox START>>%windir%\System32\drivers\etc\hosts
 echo 199.47.217.179	dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.47.217.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 107.22.250.157	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 107.22.250.157	dl-web.dropbox.com	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 174.36.51.42	wiki.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (5,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
