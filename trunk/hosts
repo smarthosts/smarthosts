@@ -1,4 +1,4 @@
-#UPDATE:2011-10-15 19:45
+#UPDATE:2011-10-22 0:45
 #Hosts 开始
 
 #Google服务 开始
@@ -473,13 +473,14 @@
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
-209.84.4.102	si0.twimg.com
-209.84.4.102	si1.twimg.com
-209.84.4.102	si2.twimg.com
-209.84.4.102	si3.twimg.com
-209.84.4.102	si4.twimg.com
-209.84.4.102	si5.twimg.com
-209.84.4.102	si5.twimg.com
+120.88.53.33	p.twimg.com
+184.169.75.33	si0.twimg.com
+184.169.75.33	si1.twimg.com
+184.169.75.33	si2.twimg.com
+184.169.75.33	si3.twimg.com
+184.169.75.33	si4.twimg.com
+184.169.75.33	si5.twimg.com
+184.169.75.33	si5.twimg.com
 199.59.148.243	scribe.twitter.com
 199.59.148.138	betastream.twitter.com
 184.106.20.99	posterous.com
@@ -559,9 +560,9 @@
 
 #Dropbox 开始
 199.47.217.179	dropbox.com
-199.47.217.170	www.dropbox.com
-107.22.250.157	dl.dropbox.com
-107.22.250.157	dl-web.dropbox.com
+199.47.216.170	www.dropbox.com
+107.20.207.62	dl.dropbox.com
+107.20.207.62	dl-web.dropbox.com
 174.36.51.42	forums.dropbox.com
 174.36.51.42	wiki.dropbox.com
 #Dropbox 结束
