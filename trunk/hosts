@@ -1,7 +1,7 @@
 #UPDATE:2011-10-22 0:45
-#Hosts ¿ªÊ¼
+#Hosts å¼€å§‹
 
-#Google·şÎñ ¿ªÊ¼
+#GoogleæœåŠ¡ å¼€å§‹
 203.208.46.180	www.google.com
 203.208.46.180	music.google.com
 203.208.46.180	music.googleusercontent.com
@@ -449,9 +449,9 @@
 203.208.45.206	magnifier.blogspot.com
 
 203.208.46.180	smarthosts.googlecode.com
-#Google·şÎñ ½áÊø
+#GoogleæœåŠ¡ ç»“æŸ
 
-#Twitter ¿ªÊ¼
+#Twitter å¼€å§‹
 199.59.149.210	t.co
 199.59.149.243	upload.twitter.com
 199.59.149.243	pic.twitter.com
@@ -518,9 +518,9 @@
 208.94.0.61	www.yfrog.com
 199.59.149.208	scribe.twitter.com
 208.87.33.151	api.mobilepicture.com
-#Twitter ½áÊø
+#Twitter ç»“æŸ
 
-#Facebook ¿ªÊ¼
+#Facebook å¼€å§‹
 66.220.149.25	facebook.com
 66.220.149.25	www.facebook.com
 69.171.229.32	m.facebook.com
@@ -557,26 +557,26 @@
 61.213.189.113	photos-h.ak.fbcdn.net
 69.63.180.51	upload.facebook.com
 64.213.102.26	fbcdn-profile-a.akamaihd.net
-#Facebook ½áÊø
+#Facebook ç»“æŸ
 
-#Dropbox ¿ªÊ¼
+#Dropbox å¼€å§‹
 199.47.217.179	dropbox.com
 199.47.216.170	www.dropbox.com
 107.20.207.62	dl.dropbox.com
 107.20.207.62	dl-web.dropbox.com
 174.36.51.42	forums.dropbox.com
 174.36.51.42	wiki.dropbox.com
-#Dropbox ½áÊø
+#Dropbox ç»“æŸ
 
-#Æ»¹û·şÎñÆ÷¼ÓËÙ ¿ªÊ¼
+#è‹¹æœæœåŠ¡å™¨åŠ é€Ÿ å¼€å§‹
 60.172.80.106	adcdownload.apple.com
 60.172.80.106	deimos3.apple.com
 60.172.80.106	appldnld.apple.com
 60.172.80.106	swcdn.apple.com
 60.172.80.106	developer.apple.com
-#Æ»¹û·şÎñÆ÷¼ÓËÙ ½áÊø
+#è‹¹æœæœåŠ¡å™¨åŠ é€Ÿ ç»“æŸ
 
-#¹ã¸æÆÁ±Î ¿ªÊ¼
+#å¹¿å‘Šå±è”½ å¼€å§‹
 0.0.0.0 analytics.ws.126.net img1.126.net img2.126.net adc.163.com adclient.163.com adgeo.163.com adimg.163.com allyes.nie.163.com analytics.163.com cpc.163.com
 0.0.0.0 corp.163.com pro.163.com proimg.163.com union.163.com ht.hao120.cc
 0.0.0.0 ad4.sina.com.cn adsina.allyes.com beacon.sina.com.cn classadnew.sina.com.cn click.sina.com.cn counter.sina.com.cn sina.allyes.com sinasc.allyes.com
@@ -667,9 +667,9 @@
 0.0.0.0 ads.people.com.cn pro.people.com.cn
 0.0.0.0 adcenter.xinhuanet.com embed.xinhuanet.com entity.xinhuanet.com
 0.0.0.0 dvs.china.com dvsend.china.com
-#¹ã¸æÆÁ±Î ½áÊø
+#å¹¿å‘Šå±è”½ ç»“æŸ
 
-#adobe¼¤»î·şÎñÆ÷ÆÁ±Î ¿ªÊ¼
+#adobeæ¿€æ´»æœåŠ¡å™¨å±è”½ å¼€å§‹
 0.0.0.0 3dns-2.adobe.com
 0.0.0.0 3dns-3.adobe.com
 0.0.0.0 activate.adobe.com
@@ -685,6 +685,6 @@
 0.0.0.0 activate.wip3.adobe.com
 0.0.0.0 ereg.wip3.adobe.com
 0.0.0.0 wwis-dubc1-vip60.adobe.com
-#adobe¼¤»î·şÎñÆ÷ÆÁ±Î ½áÊø
+#adobeæ¿€æ´»æœåŠ¡å™¨å±è”½ ç»“æŸ
 
-#Hosts ½áÊø
+#Hosts ç»“æŸ
