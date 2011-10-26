@@ -1,4 +1,4 @@
-#UPDATE:2011-10-22 0:45
+#UPDATE:2011-10-27 0:30
 #Hosts 开始
 
 #Google服务 开始
@@ -560,6 +560,37 @@
 69.63.180.51	upload.facebook.com
 64.213.102.26	fbcdn-profile-a.akamaihd.net
 #Facebook 结束
+
+#Flickr 开始
+66.94.233.186 flickr.com
+66.94.233.186 www.flickr.com
+68.142.214.43 static.flickr.com
+66.196.118.49 farm1.static.flickr.com
+69.147.90.159 farm2.static.flickr.com
+76.13.18.78 farm3.static.flickr.com
+67.195.19.66 farm4.static.flickr.com
+76.13.18.79 farm5.static.flickr.com
+98.139.197.254 farm6.static.flickr.com
+98.139.102.46 farm7.static.flickr.com
+98.136.43.76 geo.yahoo.com
+74.125.224.255 ssl.gstatic.com
+68.142.250.161 l.yimg.com
+96.6.93.227 s.yimg.com
+98.137.88.88 d.yimg.com
+68.142.196.57 c5.ah.yahoo.com
+124.108.120.124 sa.edit.yahoo.com
+76.13.6.132 row.bc.yahoo.com
+66.163.168.247 open.login.yahoo.com
+74.125.224.251 s0.2mdn.net
+209.191.92.114 login.yahoo.com
+209.191.92.115 edit.yahoo.com
+209.191.121.31 up.flickr.com
+209.191.105.102 adjax.flickr.yahoo.com
+204.0.5.35 content.yieldmanager.edgesuite.net
+74.53.5.8 www.vadretro.com.ar
+76.13.6.132 us.bc.yahoo.com
+204.0.5.34 us.js2.yimg.com
+#Flickr 结束
 
 #Dropbox 开始
 199.47.217.179	dropbox.com
