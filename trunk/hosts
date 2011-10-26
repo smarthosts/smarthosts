@@ -184,11 +184,8 @@
 203.208.45.206	www-oz-opensocial.googleusercontent.com
 203.208.45.206	goto.google.com
 203.208.45.206	wire.l.google.com
-203.208.45.206	picasaweb.google.com.hk
 203.208.45.206	desktop.google.com.hk
 203.208.45.206	jmt0.google.com
-203.208.45.206	id.google.com.hk
-203.208.45.206	id.google.com
 203.208.45.206	id.l.google.com
 203.208.45.206	www.google.cn
 203.208.45.206	www.gstatic.cn
@@ -220,7 +217,6 @@
 203.208.45.206	toolbarqueries.google.com
 203.208.45.206	toolbarqueries.l.google.com
 203.208.45.206	chrome.angrybirds.com
-203.208.45.206	www.google-analytics.com
 203.208.45.206	r2303.latest.project-slingshot-hr.appspot.com
 203.208.45.206	code.l.google.com
 203.208.45.206	googlecode.l.google.com
@@ -229,7 +225,6 @@
 203.208.45.206	gmaps-samples-flash.googlecode.com
 203.208.45.206	google-code-feed-gadget.googlecode.com
 203.208.45.206	closure-library.googlecode.com
-203.208.45.206	desktop.google.com
 203.208.45.206	desktop.l.google.com
 203.208.45.206	docs3.google.com
 203.208.45.206	docs4.google.com
@@ -246,10 +241,8 @@
 203.208.45.206	5.docs.google.com
 203.208.45.206	spreadsheets-china.l.google.com
 203.208.45.206	writely-com.l.google.com
-203.208.45.206	dl.google.com
 203.208.45.206	dl.l.google.com
 203.208.45.206	spreadsheets.l.google.com
-203.208.45.206	earth.google.com
 203.208.45.206	auth.keyhole.com
 203.208.45.206	geoauth.google.com
 203.208.45.206	mars.google.com
@@ -269,8 +262,6 @@
 203.208.45.206	cbk2.google.com
 203.208.45.206	cbk3.google.com
 203.208.45.206	khms.google.com
-203.208.45.206	khms0.google.com
-203.208.45.206	khms1.google.com
 203.208.45.206	khms2.google.com
 203.208.45.206	khms3.google.com
 203.208.45.206	cbks0.google.com
@@ -278,14 +269,10 @@
 203.208.45.206	cbks2.google.com
 203.208.45.206	cbks3.google.com
 203.208.45.206	khms.l.google.com
-203.208.45.206	m.google.com
 203.208.45.206	mw1.google.com
-203.208.45.206	mw2.google.com
 203.208.45.206	mt.google.com
-203.208.45.206	mt3.google.com
 203.208.45.206	gg.google.cn
 203.208.45.206	csi.l.google.com
-203.208.45.206	id.google.cn
 203.208.45.206	ditu.google.cn
 203.208.45.206	mt.google.cn
 203.208.45.206	mt0.google.cn
@@ -293,32 +280,23 @@
 203.208.45.206	mt2.google.cn
 203.208.45.206	mt3.google.cn
 203.208.45.206	mts.google.com
-203.208.45.206	mts0.google.com
-203.208.45.206	mts1.google.com
 203.208.45.206	mts2.google.com
 203.208.45.206	mts3.google.com
 203.208.45.206	mts.l.google.com
 203.208.45.206	maps.gstatic.cn
 203.208.45.206	mobilemaps.clients.google.com
-203.208.45.206	nt0.ggpht.com
-203.208.45.206	nt1.ggpht.com
-203.208.45.206	nt2.ggpht.com
-203.208.45.206	nt3.ggpht.com
 203.208.45.206	nt4.ggpht.com
 203.208.45.206	nt5.ggpht.com
 203.208.45.206	photos.google.com
 203.208.45.206	picasaweb.l.google.com
-203.208.45.206	picasa.google.com
 203.208.45.206	lh2.l.google.com
 203.208.45.206	photos-ugc.l.google.com
 203.208.45.206	wifi.google.com
 203.208.45.206	wifi.l.google.com
-203.208.45.206	www.gstatic.com
 203.208.45.206	t0.gstatic.com
 203.208.45.206	t1.gstatic.com
 203.208.45.206	t2.gstatic.com
 203.208.45.206	t3.gstatic.com
-203.208.45.206	g0.gstatic.com
 203.208.45.206	g1.gstatic.com
 203.208.45.206	g2.gstatic.com
 203.208.45.206	g3.gstatic.com
@@ -333,7 +311,6 @@
 203.208.45.206	chart.apis.google.com
 203.208.45.206	googleapis.l.google.com
 203.208.45.206	chart.googleapis.com
-203.208.45.206	fonts.googleapis.com
 203.208.45.206	maps.googleapis.com
 203.208.45.206	translate.googleapis.com
 203.208.45.206	googleapis-ajax.google.com
@@ -370,11 +347,6 @@
 203.208.45.206	spreadsheets2.google.com
 203.208.45.206	ssl.google-analytics.com
 203.208.45.206	ssl.gstatic.com
-203.208.45.206	suggestqueries.google.com
-203.208.45.206	t0.gstatic.com
-203.208.45.206	t1.gstatic.com
-203.208.45.206	t2.gstatic.com
-203.208.45.206	t3.gstatic.com
 203.208.45.206	blogger.googleusercontent.com
 203.208.45.206	www.googleusercontent.com
 203.208.45.206	doc-00-7o-docs.googleusercontent.com
@@ -384,11 +356,9 @@
 203.208.45.206	doc-0s-7o-docs.googleusercontent.com
 203.208.45.206	doc-10-7o-docs.googleusercontent.com
 203.208.45.206	doc-14-7o-docs.googleusercontent.com
-203.208.45.206	feedback.googleusercontent.com
 203.208.45.206	lh0.googleusercontent.com
 203.208.45.206	music-onebox.googleusercontent.com
 203.208.45.206	static.googleusercontent.com
-203.208.45.206	themes.googleusercontent.com
 203.208.45.206	translate.googleusercontent.com
 203.208.45.206	code-opensocial.googleusercontent.com
 203.208.45.206	spreadsheets-opensocial.googleusercontent.com
@@ -397,11 +367,9 @@
 203.208.45.206	www-opensocial-sandbox.googleusercontent.com
 203.208.45.206	www-fc-opensocial.googleusercontent.com
 203.208.45.206	www-focus-opensocial.googleusercontent.com
-203.208.45.206	images0-focus-opensocial.googleusercontent.com
 203.208.45.206	images7-focus-opensocial.googleusercontent.com
 203.208.45.206	images8-focus-opensocial.googleusercontent.com
 203.208.45.206	images9-focus-opensocial.googleusercontent.com
-203.208.45.206	0-focus-opensocial.googleusercontent.com
 203.208.45.206	1-focus-opensocial.googleusercontent.com
 203.208.45.206	2-focus-opensocial.googleusercontent.com
 203.208.45.206	3-focus-opensocial.googleusercontent.com
@@ -417,28 +385,12 @@
 203.208.45.206	debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com
 203.208.45.206	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
 203.208.45.206	qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com
-203.208.45.206	bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
-203.208.45.206	rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com
-203.208.45.206	k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com
-203.208.45.206	8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com
-203.208.45.206	adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
-203.208.45.206	ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com
-203.208.45.206	53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com
 203.208.45.206	u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
-203.208.45.206	r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
-203.208.45.206	59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com
-203.208.45.206	i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
 203.208.45.206	upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
-203.208.45.206	debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com
-203.208.45.206	4fjvqid3r3oq66t548clrdj52df15coc-a-oz-opensocial.googleusercontent.com
-203.208.45.206	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
-203.208.45.206	qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com
 203.208.45.206	toolbarqueries.clients.google.com
 203.208.45.206	toolbarqueries.google.com.hk
 203.208.45.206	tools.google.com
 203.208.45.206	translate.google.com
-203.208.45.206	u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
-203.208.45.206	upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
 203.208.45.206	goo.gl
 203.208.45.206	g.co
 203.208.45.206	autoproxy-gfwlist.googlecode.com
@@ -480,7 +432,6 @@
 184.169.75.33	si3.twimg.com
 184.169.75.33	si4.twimg.com
 184.169.75.33	si5.twimg.com
-184.169.75.33	si5.twimg.com
 199.59.148.243	scribe.twitter.com
 199.59.148.138	betastream.twitter.com
 184.106.20.99	posterous.com
@@ -513,7 +464,6 @@
 66.228.120.92	web8.twitpic.com
 74.86.100.160	web9.twitpic.com
 74.86.87.236	web10.twitpic.com
-69.58.188.39	bit.ly
 69.58.188.34	bitly.com
 208.94.0.61	a.yfrog.com
 208.94.0.61	yfrog.com
@@ -561,6 +511,15 @@
 64.213.102.26	fbcdn-profile-a.akamaihd.net
 #Facebook 结束
 
+#Dropbox 开始
+199.47.217.179	dropbox.com
+199.47.216.170	www.dropbox.com
+107.20.207.62	dl.dropbox.com
+107.20.207.62	dl-web.dropbox.com
+174.36.51.42	forums.dropbox.com
+174.36.51.42	wiki.dropbox.com
+#Dropbox 结束
+
 #Flickr 开始
 66.94.233.186 flickr.com
 66.94.233.186 www.flickr.com
@@ -573,7 +532,6 @@
 98.139.197.254 farm6.static.flickr.com
 98.139.102.46 farm7.static.flickr.com
 98.136.43.76 geo.yahoo.com
-74.125.224.255 ssl.gstatic.com
 68.142.250.161 l.yimg.com
 96.6.93.227 s.yimg.com
 98.137.88.88 d.yimg.com
@@ -581,33 +539,14 @@
 124.108.120.124 sa.edit.yahoo.com
 76.13.6.132 row.bc.yahoo.com
 66.163.168.247 open.login.yahoo.com
-74.125.224.251 s0.2mdn.net
 209.191.92.114 login.yahoo.com
 209.191.92.115 edit.yahoo.com
 209.191.121.31 up.flickr.com
 209.191.105.102 adjax.flickr.yahoo.com
 204.0.5.35 content.yieldmanager.edgesuite.net
-74.53.5.8 www.vadretro.com.ar
 76.13.6.132 us.bc.yahoo.com
 204.0.5.34 us.js2.yimg.com
 #Flickr 结束
-
-#Dropbox 开始
-199.47.217.179	dropbox.com
-199.47.216.170	www.dropbox.com
-107.20.207.62	dl.dropbox.com
-107.20.207.62	dl-web.dropbox.com
-174.36.51.42	forums.dropbox.com
-174.36.51.42	wiki.dropbox.com
-#Dropbox 结束
-
-#苹果服务器加速 开始
-60.172.80.106	adcdownload.apple.com
-60.172.80.106	deimos3.apple.com
-60.172.80.106	appldnld.apple.com
-60.172.80.106	swcdn.apple.com
-60.172.80.106	developer.apple.com
-#苹果服务器加速 结束
 
 #广告屏蔽 开始
 0.0.0.0 analytics.ws.126.net img1.126.net img2.126.net adc.163.com adclient.163.com adgeo.163.com adimg.163.com allyes.nie.163.com analytics.163.com cpc.163.com
@@ -617,7 +556,7 @@
 0.0.0.0 api.ads.vip.cnh.yahoo.com cm.p4p.cn.yahoo.com cn.adserver.yahoo.com cn.promo.yahoo.com cn.rd.yahoo.com new.rd.cn.yahoo.com union.yahoo.com.cn yui.yahooapis.com
 0.0.0.0 ads.yimg.com richmedia.yimg.com ts.richmedia.yahoo.com us.ard.yahoo.com
 0.0.0.0 ad.yieldmanager.com content.yieldmanager.com content.yieldmanager.edgesuite.net mi.adinterax.com tr.adinterax.com
-0.0.0.0 adclick.bai.sohu.com cpc.sohu.com doc.go.sohu.com ip.cms.sohu.com partner.search.sohu.com pv.sohu.com scalink.sohu.com suvset.sohu.com txt.go.sohu.com 
+0.0.0.0 adclick.bai.sohu.com cpc.sohu.com doc.go.sohu.com ip.cms.sohu.com partner.search.sohu.com pv.sohu.com scalink.sohu.com suvset.sohu.com txt.go.sohu.com
 0.0.0.0 imp.ad-plus.cn sohu.ad-plus.cn u.ad-plus.cn sohusc.allyes.com
 0.0.0.0 ads1.msn.com ads2.msads.net analytics.live.com analytics.msn.com c.msn.com rad.msn.com msnportal.112.2o7.net msn.allyes.com msnms.allyes.cn
 0.0.0.0 801.tianya.cn 802.tianya.cn 803.tianya.cn 806.tianya.cn adview.tianya.cn advertisement.tianya.cn stat.tianya.cn
