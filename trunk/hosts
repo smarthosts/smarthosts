@@ -62,6 +62,8 @@
 203.208.45.206	cache.pack.google.com
 203.208.45.206	calendar.google.com
 203.208.45.206	chrome.google.com
+203.208.45.206	checkout.google.com
+203.208.45.206	checkout.l.google.com
 203.208.45.206	clients1.google.com
 203.208.45.206	clients1.googleusercontent.com
 203.208.45.206	clients2.google.com
@@ -402,6 +404,14 @@
 
 203.208.46.180	smarthosts.googlecode.com
 #Google服务 结束
+
+#苹果服务加速 开始
+echo 60.172.80.106	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+#苹果服务加速 结束
 
 #Twitter 开始
 199.59.149.210	t.co

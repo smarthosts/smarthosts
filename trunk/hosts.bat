@@ -43,7 +43,7 @@ echo Hosts自动修改脚本
 echo   更新时间：%release%
 echo ---------------------------------------------------------------------------
 echo 更新内容：
-echo Google移动服务。
+echo 整理代码，和图形版进行整合。
 echo.
 echo.
 pause
@@ -80,7 +80,7 @@ exit
 goto install
 
 :manualset
-if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
+
 cls
 
 echo Hosts自动修改脚本
@@ -93,7 +93,7 @@ echo %IP%|findstr "203.208.45" >nul && echo 获取到正确IP：%IP% ||echo 获取到错误
 goto custom
 
 :install
-if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
+
 cls
 
 echo Hosts自动修改脚本
@@ -107,7 +107,6 @@ goto doit
 
 :gcn
 
-if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
 cls
 
 echo Hosts自动修改脚本 
@@ -122,7 +121,6 @@ goto custom
 
 :manualip
 
-if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
 cls
 
 echo Hosts自动修改脚本 
@@ -144,7 +142,7 @@ echo ---------------------------------------------------------------------------
 echo.
 echo                1.Google服务        2.Twitter         3.Facebook
 echo                    4.Dropbox       5.苹果服务加速    
-REM 8.SHSCRTS 9.TBD
+
 echo                 6.屏蔽广告      7.屏蔽Adobe更新服务器   
 echo.
 echo                       c 取消修改并返回主菜单
@@ -159,6 +157,9 @@ goto doit
 exit
 
 :doit
+if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo 备份文件已存在。) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
+takeown /f "%windir%\system32\drivers\etc\hosts" && icacls "%windir%\system32\drivers\etc\hosts" /grant administrators:F
+attrib -s -h -r %windir%\system32\drivers\etc\hosts
 cls
 echo 正在将IP %IP% 写入hosts中。
 echo 显示“找不到文件”属正常现象。
@@ -184,8 +185,7 @@ echo 203.208.46.180	large-uploads.l.google.com #HAC>>%windir%\System32\drivers\e
 echo 203.208.46.180	uploadsj.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	t.doc-0-0-sj.sj.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	google.com #HAC>>%windir%\System32\drivers\etc\hosts
-REM echo 74.125.71.125	talk.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	talkgadget.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	groups.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	talkx.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	themes.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -237,6 +237,8 @@ echo %IP%	bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
 echo %IP%	cache.pack.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	calendar.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	chrome.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	checkout.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	checkout.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	clients1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	clients1.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	clients2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -359,11 +361,8 @@ echo %IP%	www-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\e
 echo %IP%	www-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	goto.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	wire.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	picasaweb.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	desktop.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	jmt0.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	id.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	id.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	id.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www.gstatic.cn #HAC>>%windir%\System32\drivers\etc\hosts
@@ -395,7 +394,6 @@ echo %IP%	browsersync.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	toolbarqueries.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	toolbarqueries.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	chrome.angrybirds.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	www.google-analytics.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	r2303.latest.project-slingshot-hr.appspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	code.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	googlecode.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -404,7 +402,6 @@ echo %IP%	earth-api-samples.googlecode.com #HAC>>%windir%\System32\drivers\etc\h
 echo %IP%	gmaps-samples-flash.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	google-code-feed-gadget.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	closure-library.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	desktop.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	desktop.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	docs3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	docs4.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -421,11 +418,8 @@ echo %IP%	4.docs.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	5.docs.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	spreadsheets-china.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	writely-com.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	dl.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	dl.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	dl-ssl.google.com #HAC >>%windir%\System32\drivers\etc\
 echo %IP%	spreadsheets.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	earth.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	auth.keyhole.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	geoauth.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mars.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -445,8 +439,6 @@ echo %IP%	cbk1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	cbk2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	cbk3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	khms.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	khms0.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	khms1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	khms2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	khms3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	cbks0.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -454,14 +446,10 @@ echo %IP%	cbks1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	cbks2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	cbks3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	khms.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	m.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mw1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	mw2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mt.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	mt3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	gg.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	csi.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	id.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	ditu.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mt.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mt0.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
@@ -469,32 +457,23 @@ echo %IP%	mt1.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mt2.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mt3.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mts.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	mts0.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	mts1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mts2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mts3.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mts.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	maps.gstatic.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	mobilemaps.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	nt0.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	nt1.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	nt2.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	nt3.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	nt4.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	nt5.ggpht.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	photos.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	picasaweb.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	picasa.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh2.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	photos-ugc.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	wifi.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	wifi.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	www.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	t0.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	t1.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	t2.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	t3.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	g0.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g1.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g2.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g3.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -509,7 +488,6 @@ echo %IP%	mt7.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	chart.apis.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	googleapis.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	chart.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	fonts.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	maps.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	translate.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	googleapis-ajax.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -539,7 +517,6 @@ echo %IP%	scholar.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	services.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	sites.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	sketchup.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-
 echo %IP%	spreadsheet.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	spreadsheets.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	spreadsheets0.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -547,11 +524,6 @@ echo %IP%	spreadsheets1.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	spreadsheets2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	ssl.google-analytics.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	ssl.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	suggestqueries.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	t0.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	t1.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	t2.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	t3.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogger.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	doc-00-7o-docs.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -561,11 +533,9 @@ echo %IP%	doc-0g-7o-docs.googleusercontent.com #HAC>>%windir%\System32\drivers\e
 echo %IP%	doc-0s-7o-docs.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	doc-10-7o-docs.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	doc-14-7o-docs.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	feedback.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	lh0.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	music-onebox.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	static.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	themes.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	translate.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	code-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	spreadsheets-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -574,11 +544,9 @@ echo %IP%	www-gm-opensocial.googleusercontent.com #HAC>>%windir%\System32\driver
 echo %IP%	www-opensocial-sandbox.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www-fc-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	images0-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	images7-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	images8-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	images9-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	0-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	1-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	2-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	3-focus-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -594,29 +562,12 @@ echo %IP%	4fjvqid3r3oq66t548clrdj52df15coc-a-oz-opensocial.googleusercontent.com
 echo %IP%	debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	4fjvqid3r3oq66t548clrdj52df15coc-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	toolbarqueries.clients.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	toolbarqueries.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	tools.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	translate.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
-
-echo %IP%	upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	goo.gl #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g.co #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	autoproxy-gfwlist.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -625,6 +576,7 @@ echo %IP%	ytstatic.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	static.cache.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	accounts.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	magnifier.blogspot.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 203.208.46.180	smarthosts.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (2,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
@@ -653,13 +605,13 @@ echo 184.29.36.124	platform.twitter.com #HAC>>%windir%\System32\drivers\etc\host
 echo 219.76.10.138	platform0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.206	help.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.206	support.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si0.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si1.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si2.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si3.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si4.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si5.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 209.84.4.102	si5.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 120.88.53.33	p.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.169.75.33	si0.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.169.75.33	si1.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.169.75.33	si2.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.169.75.33	si3.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.169.75.33	si4.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.169.75.33	si5.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.243	scribe.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.138	betastream.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 184.106.20.99	posterous.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -692,6 +644,7 @@ echo 174.36.35.60	web6.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 66.228.120.92	web8.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 74.86.100.160	web9.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 74.86.87.236	web10.twitpic.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.58.188.34	bitly.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 208.94.0.61	a.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 208.94.0.61	yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 208.94.0.61	www.yfrog.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -739,6 +692,7 @@ echo 61.213.189.98	photos-f.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hos
 echo 61.213.189.113	photos-g.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.113	photos-h.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.63.180.51	upload.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 64.213.102.26	fbcdn-profile-a.akamaihd.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Facebook END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (4,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
@@ -747,10 +701,11 @@ goto done
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox START>>%windir%\System32\drivers\etc\hosts
 echo 199.47.217.179	dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.47.217.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 50.16.237.97	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 50.16.237.97	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.47.216.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 107.20.207.62	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 107.20.207.62	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 174.36.51.42	wiki.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (5,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
@@ -885,6 +840,40 @@ echo 0.0.0.0 activate.wip3.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 0.0.0.0 ereg.wip3.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 0.0.0.0 wwis-dubc1-vip60.adobe.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Adobe activation block END>>%windir%\System32\drivers\etc\hosts
+
+if defined CU for /L %%i in (8,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
+goto done
+
+:8
+echo.>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Flickr START>>%windir%\System32\drivers\etc\hosts
+echo 66.94.233.186 flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.94.233.186 www.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 68.142.214.43 static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.196.118.49 farm1.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 69.147.90.159 farm2.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 76.13.18.78 farm3.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 67.195.19.66 farm4.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 76.13.18.79 farm5.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 98.139.197.254 farm6.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 98.139.102.46 farm7.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 98.136.43.76 geo.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 68.142.250.161 l.yimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 96.6.93.227 s.yimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 98.137.88.88 d.yimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 68.142.196.57 c5.ah.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 124.108.120.124 sa.edit.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 76.13.6.132 row.bc.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 66.163.168.247 open.login.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.191.92.114 login.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.191.92.115 edit.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.191.121.31 up.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 209.191.105.102 adjax.flickr.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 204.0.5.35 content.yieldmanager.edgesuite.net #HAC>>%windir%\System32\drivers\etc\hosts
+echo 76.13.6.132 us.bc.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 204.0.5.34 us.js2.yimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Flickr END>>%windir%\System32\drivers\etc\hosts
+
 goto done
 
 REM :TEMPLATE
