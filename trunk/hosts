@@ -406,11 +406,11 @@
 #Google服务 结束
 
 #苹果服务加速 开始
-echo 60.172.80.106	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+60.172.80.106	adcdownload.apple.com
+60.172.80.106	deimos3.apple.com
+60.172.80.106	appldnld.apple.com
+60.172.80.106	swcdn.apple.com
+60.172.80.106	developer.apple.com
 #苹果服务加速 结束
 
 #Twitter 开始
