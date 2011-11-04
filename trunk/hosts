@@ -11,6 +11,7 @@
 203.208.46.180	t.doc-0-0-sj.sj.googleusercontent.com
 203.208.45.206	google.com
 203.208.46.180	talkgadget.google.com
+
 203.208.45.206	groups.google.com
 203.208.46.180	talkx.l.google.com
 203.208.45.206	themes.googleusercontent.com
@@ -61,6 +62,7 @@
 203.208.45.206	bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
 203.208.45.206	cache.pack.google.com
 203.208.45.206	calendar.google.com
+
 203.208.45.206	chrome.google.com
 203.208.45.206	checkout.google.com
 203.208.45.206	checkout.l.google.com
@@ -84,6 +86,7 @@
 203.208.45.206	desktop2.google.com
 203.208.45.206	ditu.google.com
 203.208.45.206	dl.google.com
+203.208.45.206	dl-ssl.google.com
 203.208.45.206	docs.google.com
 203.208.45.206	domains.googlesyndication.com
 203.208.45.206	earth.google.com
@@ -101,6 +104,7 @@
 203.208.45.206	feedproxy.google.com
 203.208.45.206	feeds.feedburner.com
 203.208.45.206	finance.google.com
+203.208.45.206	filetransferenabled.mail.google.com
 203.208.45.206	fonts.googleapis.com
 203.208.45.206	g0.gstatic.com
 203.208.45.206	gg.google.com
@@ -406,11 +410,11 @@
 #Google服务 结束
 
 #苹果服务加速 开始
-60.172.80.106	adcdownload.apple.com
-60.172.80.106	deimos3.apple.com
-60.172.80.106	appldnld.apple.com
-60.172.80.106	swcdn.apple.com
-60.172.80.106	developer.apple.com
+202.175.5.121	adcdownload.apple.com
+202.175.5.121	deimos3.apple.com
+202.175.5.121	appldnld.apple.com
+202.175.5.121	swcdn.apple.com
+202.175.5.121	developer.apple.com
 #苹果服务加速 结束
 
 #Twitter 开始
