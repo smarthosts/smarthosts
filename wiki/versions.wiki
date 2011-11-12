@@ -1,18 +1,25 @@
-=我应该使用哪种版本？=
+=版本介绍=
 ----
  
  
 
-==hosts自动更新程序==
-推荐。只需打开本程序即可自动下载并修改您的hosts文件，无需人工干预。
-使用方法：打开即可。更新时不必重新下载这个exe文件，直接打开即可自动下载到最新的版本。
+如果您感觉说明有不清楚的地方，请到[https://code.google.com/p/smarthosts/issues/list Issues页]或者[https://plus.google.com/101163469761703498966 Google+]反馈。
+<br><br>
 
-==修改好的hosts文件==
-适用于担心修改程序是否安全和需要自己手动修改的朋友。您可以直接下载本文件查看其中是否有恶意代码。
-当然，您也可以将此文件覆盖系统中已有的hosts文件。
-使用方法：要查看文件，直接使用记事本打开即可。
-您也可以利用这个文件覆盖或者合并%windir%\system32\drivers\etc\hosts这个文件达到修改的目的。
+完整的hosts文件，直接覆盖系统的hosts文件即可，按需要加入系统中亦可：
 
-==bat文件==
-适合想知道其中是否有恶意代码的朋友使用。这是hosts自动下载+更新程序的主要部分，存储在服务器中，每次运行下载+更新程序就会下载这个bat文件并且以管理员身份运行这个bat。
-使用方法：xp直接打开，win7/vista需要右键以管理员身份运行。
+https://smarthosts.googlecode.com/svn/trunk/hosts
+
+墙内镜像：https://smarthosts.sinaapp.com/hosts
+<br><br>
+
+<font color="red">[推荐]</font> BAT版一键更新程序是目前比较稳定好用的版本，但因为bat批处理的局限性因而停止加入新功能，但仍旧更新它将写入的hosts文件：
+
+https://smarthosts.googlecode.com/svn/trunk/hostsp_auto.exe
+
+墙内镜像：https://smarthosts.sinaapp.com/hostsp_auto.exe
+
+<br><br>
+<font color="green">[测试]</font> 图形化版一键更新程序提供了各种有用的小功能，新功能飞速加入中。目前可能会有些许问题，如遇到还望在[https://code.google.com/p/smarthosts/issues/list Issues页]或者[https://plus.google.com/101163469761703498966 Google+]里反馈：
+https://smarthosts.googlecode.com/svn/trunk/SmartHosts_Alpha2.exe
+<br><br><br>
