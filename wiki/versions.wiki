@@ -13,14 +13,14 @@ https://smarthosts.googlecode.com/svn/trunk/hosts
 墙内镜像：https://smarthosts.sinaapp.com/hosts
 <br><br>
 
-<font color="red">[推荐]</font> BAT版一键更新程序是目前比较稳定好用的版本，但因为bat批处理的局限性因而停止加入新功能，但仍旧更新它将写入的hosts文件：
+<font color="red">[推荐]</font> 稳定版是目前比较稳定好用的版本，但因为bat批处理的局限性因而停止加入新功能，但仍旧更新它将写入的hosts文件：
 
 https://smarthosts.googlecode.com/svn/trunk/hostsp_auto.exe
 
 墙内镜像：https://smarthosts.sinaapp.com/hostsp_auto.exe
 
 <br><br>
-<font color="green">[测试]</font> 图形化版一键更新程序提供了各种有用的小功能，新功能飞速加入中。目前可能会有些许问题，如遇到还望在[https://code.google.com/p/smarthosts/issues/list Issues页]或者[https://plus.google.com/101163469761703498966 Google+]里反馈：
+<font color="green">[测试]</font> 测试版提供了各种有用的小功能，新功能飞速加入中。目前可能会有些许问题，如遇到还望在[https://code.google.com/p/smarthosts/issues/list Issues页]或者[https://plus.google.com/101163469761703498966 Google+]里反馈：
 https://smarthosts.googlecode.com/svn/trunk/SmartHosts_Alpha2.exe
 <br><br>
 
