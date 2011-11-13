@@ -25,11 +25,11 @@ https://smarthosts.googlecode.com/svn/trunk/SmartHosts_Alpha2.exe
 <br><br>
 
 ----
-bat版的原理则是下载下面的bat文件并自动以管理员身份运行。如果您想深入了解这个bat文件，不妨点击：
+稳定版的原理是下载下面的bat文件并自动以管理员身份运行。如果您想深入了解这个bat文件，不妨点击：
 https://smarthosts.googlecode.com/svn/trunk/hosts.bat
 
 
-bat版的源代码：https://smarthosts.googlecode.com/svn/trunk/downloader_src
+稳定版下载程序的源代码：https://smarthosts.googlecode.com/svn/trunk/downloader_src
 
 您也可以用subversion获取最新的代码：
 http://code.google.com/p/smarthosts/source/checkout
