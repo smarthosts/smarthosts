@@ -580,4 +580,8 @@
 0.0.0.0	wwis-dubc1-vip60.adobe.com
 #Adobe Activation Disable END
 
+#Wikipedia START
+208.80.152.211	upload.wikimedia.org
+#Wikipedia END
+
 #Hosts END

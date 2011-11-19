@@ -580,4 +580,8 @@
 0.0.0.0	wwis-dubc1-vip60.adobe.com
 #adobe激活服务器屏蔽 结束
 
+#维基百科 开始
+208.80.152.211	upload.wikimedia.or
+#维基百科 结束
+
 #Hosts 结束
