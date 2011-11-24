@@ -1,4 +1,4 @@
-#UPDATE:2011-11-19 23:50
+#UPDATE:2011-11-24 1:25
 #Hosts 开始
 
 #Google服务 开始
@@ -439,7 +439,7 @@
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
-184.28.97.55	p.twimg.com
+184.169.75.33	p.twimg.com
 184.169.75.33	si0.twimg.com
 184.169.75.33	si1.twimg.com
 184.169.75.33	si2.twimg.com
@@ -531,7 +531,7 @@
 #107.20.207.62	dl.dropbox.com
 #107.20.207.62	dl-web.dropbox.com
 174.36.51.42	forums.dropbox.com
-174.36.51.42wiki.dropbox.com
+174.36.51.42	wiki.dropbox.com
 #Dropbox 结束
 
 #Flickr 开始
@@ -642,6 +642,8 @@
 203.208.45.206	i4.ytimg.com
 203.208.45.206	insight.youtube.com
 203.208.45.206	m.youtube.com
+203.208.45.206	www.youtube.com
+203.208.45.206	youtube.com
 #YouTube 结束
 
 #Hosts 结束
