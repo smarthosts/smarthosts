@@ -1,5 +1,5 @@
 echo off
-set release=11-10-13 13:10
+set release=11-12-01 20:20
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts_temp /s /q
 ipconfig /flushdns
@@ -259,6 +259,7 @@ echo %IP%	desktop.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	desktop2.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	ditu.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	dl.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	dl-ssl.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	docs.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	domains.googlesyndication.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	earth.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -276,6 +277,7 @@ echo %IP%	feedburner.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	feedproxy.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	feeds.feedburner.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	finance.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	filetransferenabled.mail.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	fonts.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g0.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	gg.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -577,6 +579,20 @@ echo %IP%	static.cache.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	accounts.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	magnifier.blogspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 203.208.46.180	smarthosts.googlecode.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	www.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	ytimg.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	i.ytimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	apiblog.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	clients1.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	gdata.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	help.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	i1.ytimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	i2.ytimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	i3.ytimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	i4.ytimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	insight.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo %IP%	m.youtube.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Google Services END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (2,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
@@ -605,7 +621,7 @@ echo 184.29.36.124	platform.twitter.com #HAC>>%windir%\System32\drivers\etc\host
 echo 219.76.10.138	platform0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.206	help.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.206	support.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 120.88.53.33	p.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 184.28.97.55	p.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 184.169.75.33	si0.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 184.169.75.33	si1.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 184.169.75.33	si2.twimg.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -702,8 +718,8 @@ echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox START>>%windir%\System32\drivers\etc\hosts
 echo 199.47.217.179	dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.47.216.170	www.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 107.20.207.62	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 107.20.207.62	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #107.20.207.62	dl.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo #107.20.207.62	dl-web.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	forums.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 174.36.51.42	wiki.dropbox.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Dropbox END>>%windir%\System32\drivers\etc\hosts
@@ -714,109 +730,67 @@ goto done
 :5
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple START>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 60.172.80.106	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 202.175.5.121	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 202.175.5.121	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 202.175.5.121	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 202.175.5.121	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 202.175.5.121	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (6,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
 
 :6
 echo.>>%windir%\System32\drivers\etc\hosts
-echo #HAC_AntiAD START>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 analytics.ws.126.net img1.126.net img2.126.net adc.163.com adclient.163.com adgeo.163.com adimg.163.com allyes.nie.163.com analytics.163.com cpc.163.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 corp.163.com pro.163.com proimg.163.com union.163.com ht.hao120.cc #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad4.sina.com.cn adsina.allyes.com beacon.sina.com.cn classadnew.sina.com.cn click.sina.com.cn counter.sina.com.cn sina.allyes.com sinasc.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 d1.sina.com.cn d2.sina.com.cn d3.sina.com.cn d4.sina.com.cn d5.sina.com.cn dcads.sina.com.cn pfp.sina.com.cn pfpip.sina.com pfpclick.sina.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 api.ads.vip.cnh.yahoo.com cm.p4p.cn.yahoo.com cn.adserver.yahoo.com cn.promo.yahoo.com cn.rd.yahoo.com new.rd.cn.yahoo.com union.yahoo.com.cn yui.yahooapis.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ads.yimg.com richmedia.yimg.com ts.richmedia.yahoo.com us.ard.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.yieldmanager.com content.yieldmanager.com content.yieldmanager.edgesuite.net mi.adinterax.com tr.adinterax.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 adclick.bai.sohu.com cpc.sohu.com doc.go.sohu.com ip.cms.sohu.com partner.search.sohu.com pv.sohu.com scalink.sohu.com suvset.sohu.com txt.go.sohu.com  #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 imp.ad-plus.cn sohu.ad-plus.cn u.ad-plus.cn sohusc.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ads1.msn.com ads2.msads.net analytics.live.com analytics.msn.com c.msn.com rad.msn.com msnportal.112.2o7.net msn.allyes.com msnms.allyes.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 801.tianya.cn 802.tianya.cn 803.tianya.cn 806.tianya.cn adview.tianya.cn advertisement.tianya.cn stat.tianya.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 gg.mop.com in.dg.mop.com in.h.mop.com in.sg.mop.com in.sh.mop.com ovsmbt.mop.com p4pad.mop.com pub.mop.com stat.ent.mop.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 tj.itv.mop.com tj.mop.com tj.pet.mop.com union.mop.com yx.mop.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 click.jebe.renren.com cupid.jebe.renren.com shaft.jebe.renren.com jebe.renren.com jebe.xnimg.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.xici.net afpxici.allyes.com xiciafp.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0	aimg.qihoo.com clkstat.qihoo.com rd.qikoo.com code.qihoo.com qd.code.qihoo.com union.qihoo.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 analytics.21cn.com click.21cn.com market.21cn.com ranking.21cn.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.tom.com sc.tom.com tom.allyes.com xtrack.tomonline-inc.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 pic.fengniao.com stat.fengniao.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 adc.yidaba.com adfv.yidaba.com adj.yidaba.com adv.yidaba.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 d.5d6d.com un.5d6d.com v3.apic.51.com union.daqi.com union.phpwind.com jj.topzj.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ads.wopus.org adv.blogupp.com union.bolaa.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 adm.zol.com.cn bwp.zol.com.cn jspchome.zol.com.cn pv.zol.com.cn pvpchome.zol.com.cn pvsite.zol.com.cn stat.zol.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 11.mydrivers.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.pchome.net btm.pchome.net btn.pchome.net stat.pchome.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 33.pcpop.com count.pcpop.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 adv.pconline.com.cn count5.pconline.com.cn imgad1.3conline.com imgad2.3conline.com ivy.pconline.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 yahoo1.beareyes.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 media.yesky.com ucpn.yesky.com union.yesky.com yeskyafp.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 e.akamai.net stat.ccidnet.com www2.ccidnet.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 am.zdnet.com.cn pv.zdnet.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.ddvip.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 apic.xiyuit.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 pic.ea3w.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 clkservice.youdao.com clkservice2.dict.youdao.com impservice.union.youdao.com impservice.youdao.com shared.ydstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 goto.www.iciba.com u.iciba.com u.sl.iciba.com u.www.duba.net union.jx2.kingsoft.com union.kingsoft.com union.wps.kingsoft.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 counter.csdn.net z.csdn.net zi.csdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 gg.donews.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 trace.enet.com.cn enet4.enet.com.cn altfarm.mediaplex.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 adshow.it168.com 168.it168.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 img.rayfile.com raya.rayfile.com w105.rayfile.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 techweb.adsame.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 d1.xcar.com.cn d0.xcar.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 33.autohome.com.cn allyesbjafa.allyes.com ebooafa7.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 analyze.cheshi.com click.cheshi.com media.cheshi-img.com pv.cheshi.com fallyesbjafa.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 g.bitauto.com gimg.bitauto.com ip.bitauto.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 chinacarsafp.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 al.7pk.com client.7pk.com imgcache.7pk.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 allyes.the9.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 bmp.ali213.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 g.webgame.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 gg.cdcgames.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 stat.uuu9.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 market.duowan.com mstat.duowan.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 bill.tgbus.com g.tgbus.com g.tgbusdata.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.16wan.com bto.youxiya.com c.91wan.com dev.tongxue.com doc.70yx.com g.91sanguo.cn images.9zwar.com passport.fs5d.com tao.37wan.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 tg.70yx.com u.56wan.com u.7town.com u.molidao.com uimg.my4399.com unigg.kunlun.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.17k.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 img.a.07073.com image.86661.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ad.cmfu.com cj.qidian.com ploy.qidian.com uedas.qidian.com resource.igalive.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 images2.zhulang.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 static.atm.youku.com static.lstat.youku.com vid.atm.youku.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 adextensioncontrol.tudou.com adplay.tudou.com iwstat.tudou.com nstat.tudou.com stat.tudou.com stats.tudou.com 888.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 analytics.ku6.com stat1.888.ku6.com stat2.888.ku6.com stat3.888.ku6.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 86file.megajoy.com 86get.joy.cn 86log.joy.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 cast.ra.icast.cn js.icast.cn kw.ra.icast.cn post.ra.icast.cn pre.ra.icast.cn pv.ra.icast.cn rm.ra.icast.cn track.ra.icast.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 autou.vodone.cn bus.vodone.com busjs.vodone.cn cai.vodone.com ego.vodone.com images.vodone.com pic.vodone.com stat.vodone.cn stat2.vodone.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 u.vodone.com u3.vodone.com uflv.vodone.com v.vodone.com vlog.vodone.com vodone.com www.vodone.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 acs.56.com bill.agent.56.com union.56.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 simba.6.cn pole.6rooms.com shrek.6.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 m.openv.tv uniclick.openv.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 union.pomoho.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 jsunion.boodvd.cn jsunion.boodvd.com union.boodvd.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ay.eastmoney.com same.eastmoney.com g1.dfcfw.com eastmoney.allyes.com wonderadafa7.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 allyes.jrj.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 allyes.stockstar.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 click.cnfol.com wanmoafa7.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 xc.macd.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 analytics.tool.hexun.com hx.hexun.com itv.hexun.com union.hexun.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 a.emedia.cn fun.ynet.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 a4.yeshj.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 app-g.39.net dpvc.39.net dy.39.net 39net.datamaster.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 clickn.soufun.com flas.soufun.com imgd.soufun.com imgdn.soufun.com show.soufun.com shows1.soufun.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 sc.ifeng.com sta.ifeng.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ads.tiexue.net x.itiexue.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ads.zaobao.com lhzbafp.allyes.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 a.cctv.com ad.cctv.com cctv.adsunion.com adguanggao.eee114.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 ads.people.com.cn pro.people.com.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 adcenter.xinhuanet.com embed.xinhuanet.com entity.xinhuanet.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 0.0.0.0 dvs.china.com dvsend.china.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo #HAC_AntiAD END>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Wikipedia START>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	wikipedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.wikipedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	bits.wikipedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	en.wikipedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	zh.wikipedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	simple.wikipedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	wikibooks.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.wikibooks.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	en.wikibooks.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	zh.wikibooks.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	wikinews.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.wikinews.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	en.wikinews.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	zh.wikinews.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	wikiquote.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.wikiquote.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	en.wikiquote.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	zh.wikiquote.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	zh.wikisource.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	en.wikisource.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	wiktionary.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.wiktionary.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	en.wiktionary.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	zh.wiktionary.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	bugs.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	bugzilla.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	commons.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	dumps.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	download.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	irc.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	ftp.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	ganglia.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	mail.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	meta.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	news.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	noc.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	kate.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	kohl.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	stats.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	ticket.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	tools.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.211	upload.wikimedia.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	wikimediafoundation.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.wikimediafoundation.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	mediawiki.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo 208.80.152.201	www.mediawiki.org #HAC>>%windir%\System32\drivers\etc\hosts
+echo #HAC_Wikipedia END>>%windir%\System32\drivers\etc\hosts
 
 if defined CU for /L %%i in (7,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
