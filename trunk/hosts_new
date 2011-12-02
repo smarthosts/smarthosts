@@ -1,4 +1,4 @@
-#UPDATE:11-12-01 19:55
+#UPDATE:11-12-03 00:27
 
 127.0.0.1	localhost
 #Hosts START
@@ -524,8 +524,12 @@
 61.213.189.98	photos-f.ak.fbcdn.net
 61.213.189.113	photos-g.ak.fbcdn.net
 61.213.189.113	photos-h.ak.fbcdn.net
-69.63.180.51	upload.facebook.com
+69.171.229.35	pixel.facebook.com
+173.223.232.67	fbcdn-sphotos-a.akamaihd.net
+69.171.227.41	0-333.channel.facebook.com
+69.171.228.42	upload.facebook.com
 64.213.102.26	fbcdn-profile-a.akamaihd.net
+80.67.74.111	fbcdn-photos-a.akamaihd.net
 #Facebook END
 
 #Dropbox START
