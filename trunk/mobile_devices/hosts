@@ -1,4 +1,4 @@
-#UPDATE:11-11-15 23:50
+#UPDATE:11-12-05 00:22
 
 #Android & Google Services START
 203.208.45.200	0-focus-opensocial.googleusercontent.com
@@ -714,8 +714,12 @@
 61.213.189.98	photos-f.ak.fbcdn.net
 61.213.189.113	photos-g.ak.fbcdn.net
 61.213.189.113	photos-h.ak.fbcdn.net
-69.63.180.51	upload.facebook.com
+69.171.229.35	pixel.facebook.com
+173.223.232.67	fbcdn-sphotos-a.akamaihd.net
+69.171.227.41	0-333.channel.facebook.com
+69.171.228.42	upload.facebook.com
 64.213.102.26	fbcdn-profile-a.akamaihd.net
+80.67.74.111	fbcdn-photos-a.akamaihd.net
 #Facebook End
 
 #Twitter Start
@@ -740,13 +744,12 @@
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
-120.88.53.33	p.twimg.com
+184.169.75.33	p.twimg.com
 184.169.75.33	si0.twimg.com
 184.169.75.33	si1.twimg.com
 184.169.75.33	si2.twimg.com
 184.169.75.33	si3.twimg.com
 184.169.75.33	si4.twimg.com
-184.169.75.33	si5.twimg.com
 184.169.75.33	si5.twimg.com
 199.59.148.243	scribe.twitter.com
 199.59.148.138	betastream.twitter.com
@@ -780,7 +783,6 @@
 66.228.120.92	web8.twitpic.com
 74.86.100.160	web9.twitpic.com
 74.86.87.236	web10.twitpic.com
-69.58.188.39	bit.ly
 69.58.188.34	bitly.com
 208.94.0.61	a.yfrog.com
 208.94.0.61	yfrog.com

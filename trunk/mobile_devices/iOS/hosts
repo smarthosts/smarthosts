@@ -1,4 +1,4 @@
-#UPDATE:11-11-13 18:00
+#UPDATE:11-12-05 00:22
 
 127.0.0.1	localhost
 255.255.255.255	broadcasthost
@@ -2011,7 +2011,7 @@ fe80::1%lo0	localhost
 202.175.5.121 a2000.phobos.apple.com
 
 
-#Twitter 开始
+#Twitter START
 199.59.149.210	t.co
 199.59.149.243	upload.twitter.com
 199.59.149.243	pic.twitter.com
@@ -2033,7 +2033,7 @@ fe80::1%lo0	localhost
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
-120.88.53.33	p.twimg.com
+184.169.75.33	p.twimg.com
 184.169.75.33	si0.twimg.com
 184.169.75.33	si1.twimg.com
 184.169.75.33	si2.twimg.com
@@ -2078,9 +2078,9 @@ fe80::1%lo0	localhost
 208.94.0.61	www.yfrog.com
 199.59.149.208	scribe.twitter.com
 208.87.33.151	api.mobilepicture.com
-#Twitter 结束
+#Twitter END
 
-#Facebook 开始
+#Facebook START
 66.220.149.25	facebook.com
 66.220.149.25	www.facebook.com
 69.171.229.32	m.facebook.com
@@ -2117,18 +2117,18 @@ fe80::1%lo0	localhost
 61.213.189.113	photos-h.ak.fbcdn.net
 69.63.180.51	upload.facebook.com
 64.213.102.26	fbcdn-profile-a.akamaihd.net
-#Facebook 结束
+#Facebook END
 
-#Dropbox 开始
+#Dropbox START
 199.47.217.179	dropbox.com
 199.47.216.170	www.dropbox.com
 107.20.207.62	dl.dropbox.com
 107.20.207.62	dl-web.dropbox.com
 174.36.51.42	forums.dropbox.com
 174.36.51.42	wiki.dropbox.com
-#Dropbox 结束
+#Dropbox END
 
-#Flickr 开始
+#Flickr START
 66.94.233.186 flickr.com
 66.94.233.186 www.flickr.com
 68.142.214.43 static.flickr.com
@@ -2154,4 +2154,4 @@ fe80::1%lo0	localhost
 204.0.5.35 content.yieldmanager.edgesuite.net
 76.13.6.132 us.bc.yahoo.com
 204.0.5.34 us.js2.yimg.com
-#Flickr 结束
+#Flickr END
