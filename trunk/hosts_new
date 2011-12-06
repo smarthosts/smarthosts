@@ -1,4 +1,4 @@
-#UPDATE:11-12-03 00:27
+#UPDATE:11-12-06 23:15
 
 127.0.0.1	localhost
 #Hosts START
@@ -53,6 +53,7 @@
 203.208.45.208	bks9.books.google.com
 203.208.45.208	blogsearch.google.cn
 203.208.46.180	mail.google.com
+203.208.46.180	mail-attachment.googleusercontent.com
 203.208.45.208	www.gmail.com
 203.208.45.208	blogsearch.google.com.hk
 203.208.45.208	books.google.com
@@ -111,6 +112,7 @@
 203.208.45.208	gg.google.com
 203.208.45.208	ghs.google.com
 203.208.45.208	ghs.l.google.com
+203.208.45.208	gmail.com
 203.208.45.208	googlehosted.l.googleusercontent.com
 203.208.45.208	id.google.cn
 203.208.45.208	id.google.com
