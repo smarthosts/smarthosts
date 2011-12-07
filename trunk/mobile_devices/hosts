@@ -1,4 +1,4 @@
-#UPDATE:11-12-05 00:22
+#UPDATE:11-12-07 23:32
 
 #Android & Google Services START
 203.208.45.200	0-focus-opensocial.googleusercontent.com
@@ -100,7 +100,6 @@
 203.208.45.200	m.google.com
 203.208.45.200	mail.google.com
 203.208.45.200	mail-attachment.googleusercontent.com
-
 203.208.45.200	mail.google.com
 203.208.45.200	maps.gstatic.com
 203.208.45.200	maps-api-ssl.google.com
@@ -732,7 +731,7 @@
 199.59.149.243	mobile.twitter.com
 199.59.149.243	api.twitter.com
 199.59.149.243	search.twitter.com
-199.59.148.139	userstream.twitter.com
+199.59.149.139	userstream.twitter.com
 199.59.149.243	ssl.twitter.com
 199.59.149.243	status.twitter.com
 199.59.149.243	assets0.twitter.com
@@ -751,7 +750,7 @@
 184.169.75.33	si3.twimg.com
 184.169.75.33	si4.twimg.com
 184.169.75.33	si5.twimg.com
-199.59.148.243	scribe.twitter.com
+199.59.149.243	scribe.twitter.com
 199.59.148.138	betastream.twitter.com
 184.106.20.99	posterous.com
 209.17.70.144	oi40.tinypic.com
