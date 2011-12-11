@@ -618,6 +618,7 @@ echo 199.59.149.243	assets2.twitter.com #HAC>>%windir%\System32\drivers\etc\host
 echo 199.59.149.243	assets3.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.243	static.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 184.29.36.124	platform.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
+echo 199.59.149.137	dev.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 219.76.10.138	platform0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.206	help.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.206	support.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
