@@ -1,5 +1,5 @@
 echo off
-set release=11-12-01 20:20
+set release=11-12-11 23:00
 set CU=123456789
 del %windir%\System32\drivers\etc\hosts_temp /s /q
 ipconfig /flushdns
