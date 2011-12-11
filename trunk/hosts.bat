@@ -907,7 +907,7 @@ goto tools
 
 :exit
 REM takeown /a /f %windir%\System32\drivers\etc\hosts
-attrib %windir%\System32\drivers\etc\hosts +s +r
+REM attrib %windir%\System32\drivers\etc\hosts +s +r
 REM echo y|cacls %windir%\System32\drivers\etc\hosts /g everyone:r
 del temp.bat /s /q
 cls
