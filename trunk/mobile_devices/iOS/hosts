@@ -1,4 +1,4 @@
-#UPDATE:11-12-07 23:32
+#UPDATE:11-12-13 00:05
 
 127.0.0.1	localhost
 255.255.255.255	broadcasthost
@@ -2034,6 +2034,8 @@ fe80::1%lo0	localhost
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
 184.169.75.33	p.twimg.com
+120.88.53.33	a1.twimg.com
+64.213.102.51	a0.twimg.com
 184.169.75.33	si0.twimg.com
 184.169.75.33	si1.twimg.com
 184.169.75.33	si2.twimg.com
