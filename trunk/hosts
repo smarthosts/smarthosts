@@ -1,9 +1,9 @@
-#UPDATE:11-12-13 00:05
+#UPDATE:12-01-02 23:10
 
 127.0.0.1	localhost
-#Hosts 开始
+#Hosts START
 
-#Google服务 开始
+#Google Services START
 203.208.46.180	www.google.com
 203.208.46.180	music.google.com
 203.208.46.180	music.googleusercontent.com
@@ -413,49 +413,51 @@
 203.208.45.200	magnifier.blogspot.com
 
 203.208.46.180	smarthosts.googlecode.com
-#Google服务 结束
+#Google Services END
 
-#苹果服务加速 开始
+#Apple Services START
 203.78.36.40	adcdownload.apple.com
 203.78.36.40	deimos3.apple.com
 203.78.36.40	appldnld.apple.com
 203.78.36.40	swcdn.apple.com
 203.78.36.40	developer.apple.com
-#苹果服务加速 结束
+#Apple Services END
 
-#Twitter 开始
-199.59.149.210	t.co
-199.59.149.243	upload.twitter.com
-199.59.149.243	pic.twitter.com
-199.59.149.243	oauth.twitter.com
-199.59.149.243	twitter.com
-199.59.149.243	www.twitter.com
-199.59.149.243	mobile.twitter.com
-199.59.149.243	api.twitter.com
-199.59.149.243	search.twitter.com
+#Twitter START
+199.59.149.208	oauth.twitter.com
+199.59.149.208	twitter.com
+199.59.149.208	www.twitter.com
+199.59.149.208	mobile.twitter.com
+199.59.149.208	api.twitter.com
+199.59.149.208	search.twitter.com
 199.59.148.139	userstream.twitter.com
-199.59.149.243	ssl.twitter.com
-199.59.149.243	status.twitter.com
-199.59.149.243	assets0.twitter.com
-199.59.149.243	assets1.twitter.com
-199.59.149.243	assets2.twitter.com
-199.59.149.243	assets3.twitter.com
-199.59.149.243	static.twitter.com
+199.59.149.208	ssl.twitter.com
+199.59.149.208	status.twitter.com
+199.59.149.208	assets0.twitter.com
+199.59.149.208	assets1.twitter.com
+199.59.149.208	assets2.twitter.com
+199.59.149.208	assets3.twitter.com
+199.59.149.208	static.twitter.com
 184.29.36.124	platform.twitter.com
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
 120.88.53.33	a1.twimg.com
 64.213.102.51	a0.twimg.com
-184.169.75.33	p.twimg.com
-184.169.75.33	si0.twimg.com
-184.169.75.33	si1.twimg.com
-184.169.75.33	si2.twimg.com
-184.169.75.33	si3.twimg.com
-184.169.75.33	si4.twimg.com
-184.169.75.33	si5.twimg.com
+209.84.4.102	si0.twimg.com
+184.28.97.55	p.twimg.com
+209.84.4.102	si0.twimg.com
+209.84.4.102	si1.twimg.com
+209.84.4.102	si2.twimg.com
+209.84.4.102	si3.twimg.com
+209.84.4.102	si4.twimg.com
+209.84.4.102	si5.twimg.com
 199.59.148.243	scribe.twitter.com
 199.59.148.138	betastream.twitter.com
+199.59.149.208	api.twitter.com
+199.59.149.208	status.twitter.com
+199.59.149.210	upload.twitter.com
+199.59.149.210	t.co
 184.106.20.99	posterous.com
 209.17.70.144	oi40.tinypic.com
 209.17.70.143	oi41.tinypic.com
@@ -493,9 +495,9 @@
 199.59.149.208	scribe.twitter.com
 208.87.33.151	api.mobilepicture.com
 199.59.149.137	dev.twitter.com
-#Twitter 结束
+#Twitter END
 
-#Facebook 开始
+#Facebook START
 66.220.149.25	facebook.com
 66.220.149.25	www.facebook.com
 69.171.229.32	m.facebook.com
@@ -536,18 +538,18 @@
 69.171.228.42	upload.facebook.com
 64.213.102.26	fbcdn-profile-a.akamaihd.net
 80.67.74.111	fbcdn-photos-a.akamaihd.net
-#Facebook 结束
+#Facebook END
 
-#Dropbox 开始
+#Dropbox START
 199.47.217.179	dropbox.com
 199.47.216.170	www.dropbox.com
 #107.20.207.62	dl.dropbox.com
 #107.20.207.62	dl-web.dropbox.com
 174.36.51.42	forums.dropbox.com
 174.36.51.42	wiki.dropbox.com
-#Dropbox 结束
+#Dropbox END
 
-#Flickr 开始
+#Flickr START
 66.94.233.186	flickr.com
 66.94.233.186	www.flickr.com
 68.142.214.43	static.flickr.com
@@ -573,9 +575,25 @@
 204.0.5.35	content.yieldmanager.edgesuite.net
 76.13.6.132	us.bc.yahoo.com
 204.0.5.34	us.js2.yimg.com
-#Flickr 结束
 
-#adobe激活服务器屏蔽 开始
+#data from HostsX
+76.13.18.78	bf1.farm3.static.flickr.com
+76.13.18.78	farm3.static.flickr.com
+76.13.18.78	gq1.farm3.static.flickr.com
+76.13.18.78	sp1.farm3.static.flickr.com
+76.13.18.79	bf1.farm5.static.flickr.com
+76.13.18.79	farm5.static.flickr.com
+76.13.18.79	gq1.farm5.static.flickr.com
+98.139.102.46	bf1.farm7.static.flickr.com
+98.139.102.46	farm7.static.flickr.com
+98.139.102.46	gq1.farm7.static.flickr.com
+98.139.102.46	ne1.farm7.static.flickr.com
+98.139.197.254	bf1.farm6.static.flickr.com
+98.139.197.254	farm6.static.flickr.com
+98.139.197.254	gq1.farm6.static.flickr.com
+#Flickr ?áê?
+
+#Adobe Activation START
 0.0.0.0	3dns-2.adobe.com
 0.0.0.0	3dns-3.adobe.com
 0.0.0.0	activate.adobe.com
@@ -591,21 +609,23 @@
 0.0.0.0	activate.wip3.adobe.com
 0.0.0.0	ereg.wip3.adobe.com
 0.0.0.0	wwis-dubc1-vip60.adobe.com
-#adobe激活服务器屏蔽 结束
+#Adobe Activation END
 
-#维基百科 开始
+#Wikipedia START
 208.80.152.201	wikipedia.org
 208.80.152.201	www.wikipedia.org
+208.80.152.201	bits.wikipedia.org
 208.80.152.201	en.wikipedia.org
 208.80.152.201	zh.wikipedia.org
-208.80.152.204	wikibooks.org
-208.80.152.204	www.wikibooks.org
-208.80.152.204	en.wikibooks.org
-208.80.152.204	zh.wikibooks.org
-208.80.152.206	wikinews.org
-208.80.152.206	www.wikinews.org
-208.80.152.206	en.wikinews.org
-208.80.152.206	zh.wikinews.org
+208.80.152.201	simple.wikipedia.org
+208.80.152.201	wikibooks.org
+208.80.152.201	www.wikibooks.org
+208.80.152.201	en.wikibooks.org
+208.80.152.201	zh.wikibooks.org
+208.80.152.201	wikinews.org
+208.80.152.201	www.wikinews.org
+208.80.152.201	en.wikinews.org
+208.80.152.201	zh.wikinews.org
 208.80.152.201	wikiquote.org
 208.80.152.201	www.wikiquote.org
 208.80.152.201	en.wikiquote.org
@@ -640,9 +660,9 @@
 208.80.152.201	www.wikimediafoundation.org
 208.80.152.201	mediawiki.org
 208.80.152.201	www.mediawiki.org
-#维基百科 结束
+#Wikipedia END
 
-#YouTube 开始
+#YouTube START
 203.208.45.206	www.youtube.com
 203.208.45.206	youtube.com
 203.208.45.206	ytimg.l.google.com
@@ -657,6 +677,6 @@
 203.208.45.206	i4.ytimg.com
 203.208.45.206	insight.youtube.com
 203.208.45.206	m.youtube.com
-#YouTube 结束
+#YouTube END
 
-#Hosts 结束
+#Hosts END

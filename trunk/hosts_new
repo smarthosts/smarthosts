@@ -1,4 +1,4 @@
-#UPDATE:11-12-13 00:05
+#UPDATE:12-01-02 23:10
 
 127.0.0.1	localhost
 #Hosts START
@@ -424,38 +424,40 @@
 #Apple Services END
 
 #Twitter START
-199.59.149.210	t.co
-199.59.149.243	upload.twitter.com
-199.59.149.243	pic.twitter.com
-199.59.149.243	oauth.twitter.com
-199.59.149.243	twitter.com
-199.59.149.243	www.twitter.com
-199.59.149.243	mobile.twitter.com
-199.59.149.243	api.twitter.com
-199.59.149.243	search.twitter.com
+199.59.149.208	oauth.twitter.com
+199.59.149.208	twitter.com
+199.59.149.208	www.twitter.com
+199.59.149.208	mobile.twitter.com
+199.59.149.208	api.twitter.com
+199.59.149.208	search.twitter.com
 199.59.148.139	userstream.twitter.com
-199.59.149.243	ssl.twitter.com
-199.59.149.243	status.twitter.com
-199.59.149.243	assets0.twitter.com
-199.59.149.243	assets1.twitter.com
-199.59.149.243	assets2.twitter.com
-199.59.149.243	assets3.twitter.com
-199.59.149.243	static.twitter.com
+199.59.149.208	ssl.twitter.com
+199.59.149.208	status.twitter.com
+199.59.149.208	assets0.twitter.com
+199.59.149.208	assets1.twitter.com
+199.59.149.208	assets2.twitter.com
+199.59.149.208	assets3.twitter.com
+199.59.149.208	static.twitter.com
 184.29.36.124	platform.twitter.com
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
 120.88.53.33	a1.twimg.com
 64.213.102.51	a0.twimg.com
+209.84.4.102	si0.twimg.com
 184.28.97.55	p.twimg.com
-184.169.75.33	si0.twimg.com
-184.169.75.33	si1.twimg.com
-184.169.75.33	si2.twimg.com
-184.169.75.33	si3.twimg.com
-184.169.75.33	si4.twimg.com
-184.169.75.33	si5.twimg.com
+209.84.4.102	si0.twimg.com
+209.84.4.102	si1.twimg.com
+209.84.4.102	si2.twimg.com
+209.84.4.102	si3.twimg.com
+209.84.4.102	si4.twimg.com
+209.84.4.102	si5.twimg.com
 199.59.148.243	scribe.twitter.com
 199.59.148.138	betastream.twitter.com
+199.59.149.208	api.twitter.com
+199.59.149.208	status.twitter.com
+199.59.149.210	upload.twitter.com
+199.59.149.210	t.co
 184.106.20.99	posterous.com
 209.17.70.144	oi40.tinypic.com
 209.17.70.143	oi41.tinypic.com
@@ -573,9 +575,25 @@
 204.0.5.35	content.yieldmanager.edgesuite.net
 76.13.6.132	us.bc.yahoo.com
 204.0.5.34	us.js2.yimg.com
-#Flickr END
 
-#Adobe Activation Disable START
+#data from HostsX
+76.13.18.78	bf1.farm3.static.flickr.com
+76.13.18.78	farm3.static.flickr.com
+76.13.18.78	gq1.farm3.static.flickr.com
+76.13.18.78	sp1.farm3.static.flickr.com
+76.13.18.79	bf1.farm5.static.flickr.com
+76.13.18.79	farm5.static.flickr.com
+76.13.18.79	gq1.farm5.static.flickr.com
+98.139.102.46	bf1.farm7.static.flickr.com
+98.139.102.46	farm7.static.flickr.com
+98.139.102.46	gq1.farm7.static.flickr.com
+98.139.102.46	ne1.farm7.static.flickr.com
+98.139.197.254	bf1.farm6.static.flickr.com
+98.139.197.254	farm6.static.flickr.com
+98.139.197.254	gq1.farm6.static.flickr.com
+#Flickr ?иви║?
+
+#Adobe Activation START
 0.0.0.0	3dns-2.adobe.com
 0.0.0.0	3dns-3.adobe.com
 0.0.0.0	activate.adobe.com
@@ -591,7 +609,7 @@
 0.0.0.0	activate.wip3.adobe.com
 0.0.0.0	ereg.wip3.adobe.com
 0.0.0.0	wwis-dubc1-vip60.adobe.com
-#Adobe Activation Disable END
+#Adobe Activation END
 
 #Wikipedia START
 208.80.152.201	wikipedia.org
