@@ -1,7 +1,7 @@
-#UPDATE:12-01-02 23:10
+#UPDATE:12-01-04 0:10
 
 127.0.0.1	localhost
-#Hosts START
+#SmartHosts START
 
 #Google Services START
 203.208.46.180	www.google.com
@@ -249,6 +249,10 @@
 203.208.45.200	3.docs.google.com
 203.208.45.200	4.docs.google.com
 203.208.45.200	5.docs.google.com
+203.208.45.200	6.docs.google.com
+203.208.45.200	7.docs.google.com
+203.208.45.200	8.docs.google.com
+203.208.45.200	9.docs.google.com
 203.208.45.200	spreadsheets-china.l.google.com
 203.208.45.200	writely-com.l.google.com
 203.208.45.200	dl.l.google.com
@@ -676,4 +680,4 @@
 203.208.45.206	m.youtube.com
 #YouTube END
 
-#Hosts END
+#SmartHosts END
