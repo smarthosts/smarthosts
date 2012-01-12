@@ -1,6 +1,8 @@
-#UPDATE:12-01-04 0:10
+#UPDATE:12-01-12 13:27
+#SmartHosts Basic
 
 127.0.0.1	localhost
+
 #SmartHosts START
 
 #Google Services START
@@ -428,38 +430,38 @@
 #Apple Services END
 
 #Twitter START
-199.59.149.208	oauth.twitter.com
-199.59.149.208	twitter.com
-199.59.149.208	www.twitter.com
-199.59.149.208	mobile.twitter.com
-199.59.149.208	api.twitter.com
-199.59.149.208	search.twitter.com
+199.59.149.210	t.co
+199.59.148.223	upload.twitter.com
+199.59.149.243	pic.twitter.com
+199.59.149.243	oauth.twitter.com
+199.59.148.15	twitter.com
+199.59.148.15	www.twitter.com
+199.59.148.221	mobile.twitter.com
+199.59.148.207	api.twitter.com
+199.59.149.243	search.twitter.com
 199.59.148.139	userstream.twitter.com
-199.59.149.208	ssl.twitter.com
-199.59.149.208	status.twitter.com
-199.59.149.208	assets0.twitter.com
-199.59.149.208	assets1.twitter.com
-199.59.149.208	assets2.twitter.com
-199.59.149.208	assets3.twitter.com
-199.59.149.208	static.twitter.com
+199.59.149.243	ssl.twitter.com
+199.59.149.243	status.twitter.com
+199.59.149.243	assets0.twitter.com
+199.59.149.243	assets1.twitter.com
+199.59.149.243	assets2.twitter.com
+199.59.149.243	assets3.twitter.com
+199.59.149.243	static.twitter.com
 184.29.36.124	platform.twitter.com
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.206	support.twitter.com
 120.88.53.33	a1.twimg.com
 64.213.102.51	a0.twimg.com
-209.84.4.102	si0.twimg.com
 184.28.97.55	p.twimg.com
-209.84.4.102	si1.twimg.com
-209.84.4.102	si2.twimg.com
-209.84.4.102	si3.twimg.com
-209.84.4.102	si4.twimg.com
-209.84.4.102	si5.twimg.com
+184.169.75.33	si0.twimg.com
+184.169.75.33	si1.twimg.com
+184.169.75.33	si2.twimg.com
+184.169.75.33	si3.twimg.com
+184.169.75.33	si4.twimg.com
+184.169.75.33	si5.twimg.com
 199.59.148.243	scribe.twitter.com
 199.59.148.138	betastream.twitter.com
-199.59.149.208	status.twitter.com
-199.59.149.210	upload.twitter.com
-199.59.149.210	t.co
 184.106.20.99	posterous.com
 209.17.70.144	oi40.tinypic.com
 209.17.70.143	oi41.tinypic.com
@@ -494,6 +496,7 @@
 208.94.0.61	a.yfrog.com
 208.94.0.61	yfrog.com
 208.94.0.61	www.yfrog.com
+199.59.149.208	scribe.twitter.com
 208.87.33.151	api.mobilepicture.com
 199.59.149.137	dev.twitter.com
 #Twitter END
