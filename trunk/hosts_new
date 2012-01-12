@@ -1,4 +1,4 @@
-#UPDATE:12-01-12 17:50
+#UPDATE:12-01-12 18:08
 #SmartHosts Basic
 
 127.0.0.1	localhost
@@ -595,7 +595,7 @@
 98.139.197.254	bf1.farm6.static.flickr.com
 98.139.197.254	farm6.static.flickr.com
 98.139.197.254	gq1.farm6.static.flickr.com
-#Flickr ?иви║?
+#Flickr END
 
 #Adobe Activation START
 0.0.0.0	3dns-2.adobe.com
