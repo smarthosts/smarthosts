@@ -1,4 +1,4 @@
-#UPDATE:12-01-12 18:08
+#UPDATE:12-01-13 00:00
 #SmartHosts Basic
 
 127.0.0.1	localhost
@@ -432,12 +432,12 @@
 #Twitter START
 199.59.149.210	t.co
 199.59.148.223	upload.twitter.com
-199.59.149.243	pic.twitter.com
+199.59.148.212	pic.twitter.com
 199.59.149.243	oauth.twitter.com
-199.59.148.105	twitter.com
-199.59.148.105	www.twitter.com
+199.59.148.104	twitter.com
+199.59.148.104	www.twitter.com
 199.59.148.221	mobile.twitter.com
-199.59.148.207	api.twitter.com
+199.59.148.105	api.twitter.com
 199.59.149.243	search.twitter.com
 199.59.148.139	userstream.twitter.com
 199.59.149.243	ssl.twitter.com
