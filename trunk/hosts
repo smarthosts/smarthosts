@@ -1,4 +1,4 @@
-#UPDATE:12-01-13 00:00
+#UPDATE:12-01-13 22:30
 #SmartHosts Basic
 
 127.0.0.1	localhost
@@ -6,9 +6,6 @@
 #SmartHosts START
 
 #Google Services START
-#----Using US Server to match certificate
-173.194.64.141	chrometophone.appspot.com
-#----Beijing Server
 203.208.46.180	www.google.com
 203.208.46.180	music.google.com
 203.208.46.180	music.googleusercontent.com
@@ -73,6 +70,7 @@
 203.208.45.200	chrome.google.com
 203.208.45.200	checkout.google.com
 203.208.45.200	checkout.l.google.com
+173.194.64.141	chrometophone.appspot.com
 203.208.45.200	clients1.google.com
 203.208.45.200	clients1.googleusercontent.com
 203.208.45.200	clients2.google.com
@@ -433,23 +431,23 @@
 #Apple Services END
 
 #Twitter START
-199.59.149.210	t.co
+199.59.148.210	t.co
 199.59.148.223	upload.twitter.com
 199.59.148.212	pic.twitter.com
-199.59.149.243	oauth.twitter.com
+199.59.148.223	oauth.twitter.com
 199.59.148.104	twitter.com
 199.59.148.104	www.twitter.com
-199.59.148.221	mobile.twitter.com
+199.59.148.210	mobile.twitter.com
 199.59.148.105	api.twitter.com
-199.59.149.243	search.twitter.com
+199.59.148.223	search.twitter.com
 199.59.148.139	userstream.twitter.com
-199.59.149.243	ssl.twitter.com
-199.59.149.243	status.twitter.com
-199.59.149.243	assets0.twitter.com
-199.59.149.243	assets1.twitter.com
-199.59.149.243	assets2.twitter.com
-199.59.149.243	assets3.twitter.com
-199.59.149.243	static.twitter.com
+199.59.148.223	ssl.twitter.com
+199.59.148.223	status.twitter.com
+199.59.148.223	assets0.twitter.com
+199.59.148.223	assets1.twitter.com
+199.59.148.223	assets2.twitter.com
+199.59.148.223	assets3.twitter.com
+199.59.148.223	static.twitter.com
 184.29.36.124	platform.twitter.com
 219.76.10.138	platform0.twitter.com
 199.59.148.206	help.twitter.com
