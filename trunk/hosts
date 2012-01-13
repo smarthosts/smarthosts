@@ -6,6 +6,9 @@
 #SmartHosts START
 
 #Google Services START
+#----Using US Server to match certificate
+173.194.64.141	chrometophone.appspot.com
+#----Beijing Server
 203.208.46.180	www.google.com
 203.208.46.180	music.google.com
 203.208.46.180	music.googleusercontent.com
