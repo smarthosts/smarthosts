@@ -1,6 +1,9 @@
 #UPDATE:11-12-24 14:19
 
 #Android & Google Services START
+#----Using US Server to match certificate
+173.194.64.141	chrometophone.appspot.com
+#----Beijing Server
 203.208.45.200	0-focus-opensocial.googleusercontent.com
 203.208.45.200	accounts.google.com
 203.208.45.200	android.clients.google.com
@@ -40,7 +43,6 @@
 203.208.45.200	checkout.google.com
 203.208.45.200	chrome.google.com
 203.208.45.200	buttons.googlesyndication.com
-203.208.45.200	chrometophone.appspot.com
 203.208.45.200	clients1.google.com
 203.208.45.200	clients1.googleusercontent.com
 203.208.45.200	clients2.google.com
