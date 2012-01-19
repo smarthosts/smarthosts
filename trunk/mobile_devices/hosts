@@ -1,4 +1,4 @@
-#UPDATE:12-01-13 22:00
+#UPDATE:12-01-19 23:00
 
 #Android & Google Services START
 #----Using US Server to match certificate
@@ -830,10 +830,10 @@
 199.59.148.223	upload.twitter.com
 199.59.148.212	pic.twitter.com
 199.59.148.223	oauth.twitter.com
-199.59.148.104	twitter.com
-199.59.148.104	www.twitter.com
+199.59.148.105	twitter.com
+199.59.148.105	www.twitter.com
 199.59.148.210	mobile.twitter.com
-199.59.148.105	api.twitter.com
+199.59.148.207	api.twitter.com
 199.59.148.223	search.twitter.com
 199.59.148.139	userstream.twitter.com
 199.59.148.223	ssl.twitter.com
@@ -889,9 +889,9 @@
 74.86.100.160	web9.twitpic.com
 74.86.87.236	web10.twitpic.com
 69.58.188.34	bitly.com
-208.94.0.61	a.yfrog.com
-208.94.0.61	yfrog.com
-208.94.0.61	www.yfrog.com
+208.94.0.61		a.yfrog.com
+208.94.0.61		yfrog.com
+208.94.0.61		www.yfrog.com
 199.59.149.208	scribe.twitter.com
 208.87.33.151	api.mobilepicture.com
 199.59.149.137	dev.twitter.com
