@@ -2153,10 +2153,10 @@ fe80::1%lo0	localhost
 199.59.148.223	upload.twitter.com
 199.59.148.212	pic.twitter.com
 199.59.148.223	oauth.twitter.com
-199.59.148.104	twitter.com
-199.59.148.104	www.twitter.com
+199.59.148.105	twitter.com
+199.59.148.105	www.twitter.com
 199.59.148.210	mobile.twitter.com
-199.59.148.105	api.twitter.com
+199.59.148.207	api.twitter.com
 199.59.148.223	search.twitter.com
 199.59.148.139	userstream.twitter.com
 199.59.148.223	ssl.twitter.com
