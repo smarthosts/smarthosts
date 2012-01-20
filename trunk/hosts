@@ -436,7 +436,7 @@
 # replace #IP please
 #IP	twitter.com
 #IP	www.twitter.com
-#IP	api.twitter.com
+199.59.148.207	api.twitter.com
 199.59.148.210	mobile.twitter.com
 199.59.148.223	search.twitter.com
 199.59.148.139	userstream.twitter.com
