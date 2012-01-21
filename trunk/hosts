@@ -433,9 +433,8 @@
 199.59.148.223	upload.twitter.com
 199.59.149.212	pic.twitter.com
 199.59.148.223	oauth.twitter.com
-# replace #IP please
-#IP	twitter.com
-#IP	www.twitter.com
+199.59.148.104	twitter.com
+199.59.148.104	www.twitter.com
 199.59.148.207	api.twitter.com
 199.59.148.210	mobile.twitter.com
 199.59.148.223	search.twitter.com
