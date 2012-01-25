@@ -1,4 +1,4 @@
-#UPDATE:12-01-20 17:15
+#UPDATE:12-01-25 20:15
 #SmartHosts Basic
 
 127.0.0.1	localhost
@@ -433,8 +433,8 @@
 199.59.148.223	upload.twitter.com
 199.59.149.212	pic.twitter.com
 199.59.148.223	oauth.twitter.com
-199.59.148.104	twitter.com
-199.59.148.104	www.twitter.com
+199.16.156.103	twitter.com #[BACKUP=C7109C69]
+199.16.156.103	www.twitter.com #[BACKUP=C7109C69]
 199.59.148.207	api.twitter.com
 199.59.148.210	mobile.twitter.com
 199.59.148.223	search.twitter.com
