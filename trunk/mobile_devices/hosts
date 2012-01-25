@@ -1,4 +1,4 @@
-#UPDATE:12-01-25 21:00
+#UPDATE:12-01-25 23:00
 
 #Android & Google Services START
 #----Using US Server to match certificate
@@ -787,7 +787,7 @@
 199.59.148.223	oauth.twitter.com
 199.59.148.105	twitter.com
 199.59.148.105	www.twitter.com
-199.59.148.210	mobile.twitter.com
+199.59.148.203	mobile.twitter.com
 199.59.148.207	api.twitter.com
 199.59.148.223	search.twitter.com
 199.59.148.139	userstream.twitter.com
