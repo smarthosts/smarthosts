@@ -1,4 +1,4 @@
-#UPDATE:12-01-26 20:00
+#UPDATE:12-01-27 11:30
 #SmartHosts Basic
 
 127.0.0.1	localhost
@@ -8,6 +8,7 @@
 #Google Services START
 203.208.45.200	0.docs.google.com
 203.208.45.200	0-open-opensocial.googleusercontent.com
+203.208.45.200	0-focus-opensocial.googleusercontent.com
 203.208.45.200	1.docs.google.com
 203.208.45.200	1-focus-opensocial.googleusercontent.com
 203.208.45.200	1-open-opensocial.googleusercontent.com
@@ -176,6 +177,12 @@
 203.208.45.200	id.l.google.com
 203.208.45.200	images.google.com
 203.208.45.200	images.google.com.hk
+203.208.45.200	images1-focus-opensocial.googleusercontent.com
+203.208.45.200	images2-focus-opensocial.googleusercontent.com
+203.208.45.200	images3-focus-opensocial.googleusercontent.com
+203.208.45.200	images4-focus-opensocial.googleusercontent.com
+203.208.45.200	images5-focus-opensocial.googleusercontent.com
+203.208.45.200	images6-focus-opensocial.googleusercontent.com
 203.208.45.200	images7-focus-opensocial.googleusercontent.com
 203.208.45.200	images8-focus-opensocial.googleusercontent.com
 203.208.45.200	images9-focus-opensocial.googleusercontent.com
