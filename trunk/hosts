@@ -1,4 +1,4 @@
-#UPDATE:12-01-27 11:30
+#UPDATE:12-01-28 11:36
 #SmartHosts Basic
 
 127.0.0.1	localhost
@@ -411,7 +411,7 @@
 69.58.188.34	bitly.com
 199.59.149.137	dev.twitter.com
 199.59.148.206	help.twitter.com
-199.59.148.210	mobile.twitter.com
+199.59.148.203	mobile.twitter.com
 199.59.148.223	oauth.twitter.com
 209.17.70.144	oi40.tinypic.com
 209.17.70.143	oi41.tinypic.com
@@ -449,26 +449,26 @@
 199.59.148.223	status.twitter.com
 199.59.148.206	support.twitter.com
 #199.59.148.210	t.co
-174.36.58.234	twitpic.com
+50.23.200.238	twitpic.com
 199.59.148.223	upload.twitter.com
 199.59.148.139	userstream.twitter.com
-174.36.58.204	web1.twitpic.com
-74.86.87.236	web10.twitpic.com
-174.36.58.224	web2.twitpic.com
-174.36.58.200	web3.twitpic.com
-174.37.33.184	web4.twitpic.com
-174.37.75.16	web5.twitpic.com
-174.36.35.60	web6.twitpic.com
-174.36.46.32	web7.twitpic.com
-66.228.120.92	web8.twitpic.com
-74.86.100.160	web9.twitpic.com
-174.36.58.234	www.twitpic.com
-199.16.156.103	twitter.com #[BACKUP=C7109C69]
-199.16.156.103	www.twitter.com #[BACKUP=C7109C69]
+174.37.33.172	m1.twitpic.com
+50.97.168.42	web1.twitpic.com
+50.23.200.233	web10.twitpic.com
+50.97.168.43	web2.twitpic.com
+50.97.168.43	web3.twitpic.com
+50.97.168.40	web4.twitpic.com
+50.97.168.41	web5.twitpic.com
+50.23.200.231	web6.twitpic.com
+50.23.200.232	web7.twitpic.com
+50.23.200.229	web8.twitpic.com
+50.23.200.228	web9.twitpic.com
+50.23.200.230	www.twitpic.com
+199.16.156.103	twitter.com
+199.16.156.103	www.twitter.com
 208.94.0.61	a.yfrog.com
 208.94.0.61	yfrog.com
 208.94.0.61	www.yfrog.com
-
 #Twitter END
 
 #Facebook START
@@ -639,8 +639,6 @@
 #YouTube START
 203.208.45.206	accounts.youtube.com
 203.208.45.206	apiblog.youtube.com
-203.208.45.206	clients1.youtube.com
-203.208.45.206	gdata.youtube.com
 203.208.45.206	help.youtube.com
 203.208.45.206	i.ytimg.com
 203.208.45.206	i1.ytimg.com
@@ -649,7 +647,6 @@
 203.208.45.206	i4.ytimg.com
 203.208.45.206	insight.youtube.com
 203.208.45.206	m.youtube.com
-203.208.45.206	s.youtube.com
 203.208.45.206	s.ytimg.com
 203.208.45.206	www.youtube.com
 203.208.45.206	youtube.com
