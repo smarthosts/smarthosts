@@ -25,7 +25,7 @@
 203.208.45.200	53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com
 203.208.45.200	59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com
 203.208.45.200	8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com
-#203.208.45.200	accounts.google.com
+203.208.45.200	accounts.google.com
 203.208.45.200	adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
 203.208.45.200	ajax.googleapis.com
 #203.208.45.200	a-oz-opensocial.googleusercontent.com
@@ -412,7 +412,7 @@
 199.59.149.137	dev.twitter.com
 199.59.148.206	help.twitter.com
 199.59.148.203	mobile.twitter.com
-199.59.148.223	oauth.twitter.com
+199.16.156.9	oauth.twitter.com
 209.17.70.144	oi40.tinypic.com
 209.17.70.143	oi41.tinypic.com
 209.17.70.143	oi42.tinypic.com
