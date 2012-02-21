@@ -342,9 +342,6 @@ echo %IP%	picasa.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	picasaweb.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	picasaweb.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	places.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	plus.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	plus.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	plusone.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	profiles.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	project-slingshot-gp.appspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	video.google.com #HAC>>%windir%\System32\drivers\etc\hosts
