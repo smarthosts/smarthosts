@@ -2049,7 +2049,6 @@ fe80::1%lo0	localhost
 203.208.45.200	browsersync.google.com
 203.208.45.200	cache.pack.google.com
 203.208.45.200	calendar.google.com
-203.208.45.200	chatenabled.mail.google.com
 203.208.45.200	checkout.google.com
 203.208.45.200	chrome.google.com
 203.208.45.200	buttons.googlesyndication.com
@@ -2111,9 +2110,7 @@ fe80::1%lo0	localhost
 #203.208.45.200	lh6.googleusercontent.com
 #203.208.45.200	lh6.googleusercontent.com
 203.208.45.200	m.google.com
-203.208.45.200	mail.google.com
 203.208.45.200	mail-attachment.googleusercontent.com
-203.208.45.200	mail.google.com
 203.208.45.200	maps.gstatic.com
 203.208.45.200	maps-api-ssl.google.com
 203.208.45.200	market.android.com

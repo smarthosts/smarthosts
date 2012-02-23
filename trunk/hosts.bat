@@ -224,7 +224,6 @@ echo %IP%	bks7.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	bks8.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	bks9.books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogsearch.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
-echo 203.208.46.180	mail.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	www.gmail.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogsearch.google.com.hk #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	books.google.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -277,7 +276,6 @@ echo %IP%	feedburner.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	feedproxy.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	feeds.feedburner.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	finance.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	filetransferenabled.mail.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	fonts.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g0.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	gg.google.com #HAC>>%windir%\System32\drivers\etc\hosts
