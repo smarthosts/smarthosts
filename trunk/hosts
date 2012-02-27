@@ -466,7 +466,6 @@
 #Twitter END
 
 #Facebook START
-69.171.227.41	0-333.channel.facebook.com
 66.220.147.47	api.facebook.com
 69.171.242.28	apps.facebook.com
 69.63.190.18	apps.facebook.com
@@ -506,6 +505,7 @@
 120.29.145.50	vthumb.ak.fbcdn.net
 66.220.149.25	www.facebook.com
 66.220.149.25	zh-CN.facebook.com
+66.220.156.33   developers.facebook.com
 #Facebook END
 
 #Dropbox START
