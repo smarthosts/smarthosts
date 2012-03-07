@@ -279,7 +279,6 @@ echo %IP%	finance.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	fonts.googleapis.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	g0.gstatic.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	gg.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	ghs.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	googlehosted.l.googleusercontent.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	id.google.cn #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	id.google.com #HAC>>%windir%\System32\drivers\etc\hosts
