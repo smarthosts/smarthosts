@@ -381,7 +381,6 @@ echo %IP%	clients.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	encrypted-tbn.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	ghs46.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	ghs46.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo %IP%	appspot.l.google.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	gv-gadget.appspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	googlesharedspaces.appspot.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo %IP%	blogsearch.google.com #HAC>>%windir%\System32\drivers\etc\hosts
