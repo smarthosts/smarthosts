@@ -727,7 +727,6 @@ echo 202.175.5.121	adcdownload.apple.com #HAC>>%windir%\System32\drivers\etc\hos
 echo 202.175.5.121	deimos3.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 202.175.5.121	appldnld.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 202.175.5.121	swcdn.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 202.175.5.121	developer.apple.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Apple END>>%windir%\System32\drivers\etc\hosts
 if defined CU for /L %%i in (6,1,9)do if not "!CU:%%i=!"=="!CU!" call :%%i 
 goto done
