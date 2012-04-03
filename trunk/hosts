@@ -32,8 +32,8 @@
 203.208.45.200	appengine.google.com
 203.208.45.200	apps.google.com
 203.208.45.200	appspot.com
-203.208.45.200	audio.top100.cn
-203.208.45.200	audio2.top100.cn
+#119.147.104.233	audio.top100.cn
+#203.208.45.200	audio2.top100.cn
 203.208.45.200	auth.keyhole.com
 203.208.45.200	autoproxy-gfwlist.googlecode.com
 203.208.45.200	bks0.books.google.com
@@ -256,7 +256,7 @@
 203.208.45.200	mts2.google.com
 203.208.45.200	mts3.google.com
 203.208.46.180	music.google.com
-203.208.45.200	music.googleusercontent.cn
+#203.208.45.200	music.googleusercontent.cn
 203.208.46.180	music.googleusercontent.com
 203.208.46.170	music-onebox.googleusercontent.com
 203.208.46.180	music-streaming.l.google.com
@@ -318,7 +318,7 @@
 203.208.46.170	spreadsheets-opensocial.googleusercontent.com
 203.208.45.200	ssl.google-analytics.com
 203.208.45.200	ssl.gstatic.com
-203.208.45.200	stat.top100.cn
+#203.208.45.200	stat.top100.cn
 203.208.45.200	static.cache.l.google.com
 203.208.45.200	suggestqueries.google.com
 203.208.45.200	suggestqueries.l.google.com
