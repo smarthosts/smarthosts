@@ -687,7 +687,6 @@
 64.213.102.51	a0.twimg.com
 120.88.53.33	a1.twimg.com
 208.87.33.151	api.mobilepicture.com
-199.59.148.207	api.twitter.com
 199.59.148.223	assets0.twitter.com
 199.59.148.223	assets1.twitter.com
 199.59.148.223	assets2.twitter.com
@@ -696,7 +695,6 @@
 69.58.188.34	bitly.com
 199.59.149.137	dev.twitter.com
 199.59.148.206	help.twitter.com
-199.59.148.96	mobile.twitter.com
 199.16.156.9	oauth.twitter.com
 209.17.70.144	oi40.tinypic.com
 209.17.70.143	oi41.tinypic.com
@@ -749,8 +747,6 @@
 50.23.200.229	web8.twitpic.com
 50.23.200.228	web9.twitpic.com
 50.23.200.230	www.twitpic.com
-199.59.150.7	twitter.com
-199.59.150.7	www.twitter.com
 208.94.0.61	a.yfrog.com
 208.94.0.61	yfrog.com
 208.94.0.61	www.yfrog.com
@@ -802,7 +798,7 @@
 69.63.177.71	irc.tfbnw.net
 66.220.144.43	ldap.thefacebook.com
 66.220.144.49	legacymail.thefacebook.com
-69.171.224.24	m.facebook.com
+69.171.229.34	m.facebook.com
 69.171.239.10	mx.facebook.com
 69.63.190.12	o.facebook.com
 69.171.227.28	orcart.facebook.com
