@@ -475,8 +475,6 @@
 69.171.240.99	d.facebook.com
 66.220.156.33	developers.facebook.com
 69.171.224.27	error.facebook.com
-66.220.149.25	facebook.com
-66.220.149.25	www.facebook.com
 61.213.189.113	fbcdn.net
 80.67.74.111	fbcdn-photos-a.akamaihd.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
@@ -534,7 +532,6 @@
 66.220.151.31	vupload.facebook.com
 66.220.146.45	www.connect.facebook.com
 66.220.146.61	www.fbplugin.com
-66.220.149.25	zh-CN.facebook.com
 #Facebook End
 
 #Dropbox START
