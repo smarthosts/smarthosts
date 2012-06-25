@@ -1,4 +1,4 @@
-#UPDATE:12-06-25 00:46
+#UPDATE:12-06-25 15:43
 
 #Android & Google Services START
 203.208.47.1	a-oz-opensocial.googleusercontent.com
@@ -36,13 +36,13 @@
 203.208.47.1	checkout.google.com
 203.208.47.1	chrome.google.com
 203.208.47.1	buttons.googlesyndication.com
-203.208.47.1	clients1.google.com
-203.208.47.1	clients2.google.com
-203.208.47.1	clients3.google.com
-203.208.47.1	clients4.google.com
-203.208.47.1	clients5.google.com
-203.208.47.1	clients6.google.com
-203.208.47.1	clients7.google.com
+74.125.227.2	clients1.google.com
+74.125.227.2	clients2.google.com
+74.125.227.2	clients3.google.com
+74.125.227.2	clients4.google.com
+74.125.227.2	clients5.google.com
+74.125.227.2	clients6.google.com
+74.125.227.2	clients7.google.com
 203.208.47.1	clients1.googleusercontent.com
 203.208.47.1	clients2.googleusercontent.com
 203.208.47.1	clients3.googleusercontent.com
@@ -57,7 +57,7 @@
 203.208.47.1	developer.android.com
 203.208.47.1	dl.google.com
 203.208.47.1	ditu.google.com
-203.208.47.1	docs.google.com
+74.125.227.2	docs.google.com
 203.208.47.1	drive.google.com
 203.208.47.1	encrypted.google.com
 203.208.47.1	googlehosted.l.google.com
@@ -436,7 +436,7 @@
 203.208.47.1	s6.googleusercontent.com
 203.208.47.1	sites.google.com
 203.208.47.1	ssl.google-analytics.com
-203.208.47.1	ssl.gstatic.com
+#203.208.47.1	ssl.gstatic.com
 203.208.47.1	t0.gstatic.com
 203.208.47.1	t0.gstatic.com
 203.208.47.1	t1.gstatic.com
