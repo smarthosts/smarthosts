@@ -1,0 +1,51 @@
+12-06-26 整理hosts，修改了一些Google服务的IP。非IE用户基本上使用无鸭梨，IE用户暂时无法使用G+。下次更新会解决。
+
+12-06-25 更新Android使用的Google Services IP。现在Android需要验证SSL证书，以后北京服务器的IP可能无法使用了，以后hosts翻墙基本看脸，大家准备好备梯。更新Android使用的Google Docs IP。现在可以正常使用了。
+
+12-05-03 添加了Google Drive
+
+12-04-14 Twitter 暂无可用IP。
+
+12-03-14 完美支持Facebook for Android v1.8.3 (不能从Market安装的可以从这里下载apk：http://apkbin.blogspot.in/2012/02/facebook-for-android-v183-apk.html)
+
+12-01-20 在翻墙状态下登录twitter后即可使用 https://api.twitter.com 上推。
+
+12-01-19 临时修复twitter api连接。twitter客户应该可以使用了。网页版没时间弄，敬请原谅，有时间立即搞
+
+12-01-14 更新Android Hosts，部分客户端可用。更新dnsmasq版，解决HostsX下不能更新的问题 ( issue 87 )。
+
+12-01-13 Twitter可以正常使用，t.co目前暂时不能使用。
+
+12-01-12 17：50的更新基本上解决了twitter不能访问的问题
+
+12-01-09 Android客户端更新至1.2
+
+12-01-02	[桌面]解决部分地区无法使用twitter的问题，停止对Beta3之前版本的支持，解决Flickr部分不能使用的问题（Flickr的数据来自HostsX，在此表示感谢）
+
+12-01-01	[其他]DNSMasq版解决谷歌音乐（中国特色版g.cn/music）不能加载音乐的问题
+
+11-12-24	Add sections to Dropbox/Youtube/Flickr. Facebook android client is now able to login and post.
+
+11-12-13	处理手机客户端中不能加载某些图片的问题
+
+11-12-07	解决水果服务器不能访问的问题,加入plus.url.google.com,Google的IP改为203.208.45.200,dnsmasq加入水果相关规则
+
+11-12-06	Issue 30
+
+11-12-02	处理 Issue 27 和Issue 29
+
+11-12-01	稳定版更新
+
+11-11-28	测试版暂停更新10天，将用Python重写。
+
+11-11-25	加入Dnsmasq和Linux/OSX版本(python)
+
+11-11-20	加入了大部分中文和英文的维基计划站点以及YouTube?的Hosts规则（YouTube?视频还是不能加载）
+
+11-11-19	Issue20 加入修复维基百科图片的Hosts。
+
+11-11-19	一键更新程序（测试版）支持使用www.g.cn的IP作为Hosts中谷歌服务的IP，也支持手动输入。
+
+11-11-16	一键更新程序（测试版）加入对各种编码的支持（写入的文件不再乱码）。
+
+11-11-15	解决Android下Google+客户端2.x版不能加载图片的问题。
