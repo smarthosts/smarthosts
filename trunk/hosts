@@ -1,4 +1,4 @@
-#UPDATE:12-07-13 20:30
+#UPDATE:12-08-01 23:14
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -521,7 +521,7 @@
 69.171.239.10	ah8.facebook.com
 69.63.189.53	api-read.facebook.com
 66.220.146.89	api.connect.facebook.com
-69.171.228.44	api.facebook.com
+69.171.225.13	api.facebook.com
 69.171.229.39	apps.facebook.com
 61.213.189.98	b.static.ak.facebook.com
 61.213.189.120	b.static.ak.fbcdn.net
@@ -539,7 +539,7 @@
 69.171.240.99	d.facebook.com
 66.220.156.33	developers.facebook.com
 69.171.224.27	error.facebook.com
-69.171.225.17	facebook.com
+69.171.225.13	facebook.com
 61.213.189.113	fbcdn.net
 80.67.74.111	fbcdn-photos-a.akamaihd.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
@@ -595,8 +595,8 @@
 66.220.144.41	vpn.tfbnw.net
 120.29.145.50	vthumb.ak.fbcdn.net
 66.220.151.31	vupload.facebook.com
-66.220.146.45	www.connect.facebook.com
-69.171.225.17	www.facebook.com
+69.171.225.31	www.connect.facebook.com
+69.171.225.13	www.facebook.com
 66.220.146.61	www.fbplugin.com
 #Facebook End
 

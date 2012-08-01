@@ -1,4 +1,4 @@
-#UPDATE:12-06-25 15:43
+#UPDATE:12-08-01 23:14
 
 #Android & Google Services START
 209.85.143.132	a-oz-opensocial.googleusercontent.com
@@ -772,7 +772,7 @@
 69.171.239.10	ah8.facebook.com
 69.63.189.53	api-read.facebook.com
 66.220.146.89	api.connect.facebook.com
-69.171.228.44	api.facebook.com
+69.171.225.13	api.facebook.com
 69.171.229.39	apps.facebook.com
 61.213.189.98	b.static.ak.facebook.com
 61.213.189.120	b.static.ak.fbcdn.net
@@ -790,8 +790,8 @@
 69.171.240.99	d.facebook.com
 66.220.156.33	developers.facebook.com
 69.171.224.27	error.facebook.com
-66.220.156.17	facebook.com
-66.220.156.17	www.facebook.com
+66.220.156.13	facebook.com
+66.220.156.13	www.facebook.com
 61.213.189.113	fbcdn.net
 80.67.74.111	fbcdn-photos-a.akamaihd.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
@@ -849,7 +849,7 @@
 66.220.151.31	vupload.facebook.com
 66.220.146.45	www.connect.facebook.com
 66.220.146.61	www.fbplugin.com
-66.220.149.25	zh-CN.facebook.com
+69.171.225.13	zh-CN.facebook.com
 #Facebook End
 
 #YouTube START

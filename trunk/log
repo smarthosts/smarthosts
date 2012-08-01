@@ -1,3 +1,5 @@
+12-08-01 更新部分Facebook IP.
+
 12-06-26 整理hosts，修改了一些Google服务的IP。非IE用户基本上使用无鸭梨，IE用户暂时无法使用G+。下次更新会解决。
 
 12-06-25 更新Android使用的Google Services IP。现在Android需要验证SSL证书，以后北京服务器的IP可能无法使用了，以后hosts翻墙基本看脸，大家准备好备梯。更新Android使用的Google Docs IP。现在可以正常使用了。
