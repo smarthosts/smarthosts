@@ -1,10 +1,10 @@
-#UPDATE:12-08-01 23:14
+#UPDATE:12-08-28 15:14
 
 127.0.0.1	localhost
 #SmartHosts START
 
 #Google Services START
- # google.com
+
 203.208.46.161	0.docs.google.com
 203.208.46.161	0.drive.google.com
 203.208.46.161	1.docs.google.com
@@ -222,6 +222,7 @@
 203.208.46.161	sb-ssl.l.google.com
 203.208.46.161	scholar.google.com
 203.208.46.161	scholar.l.google.com
+203.208.46.161	script.google.com
 203.208.46.161	services.google.com
 203.208.46.161	sites.google.com
 203.208.46.161	sketchup.google.com
@@ -258,6 +259,7 @@
 203.208.46.161	trends.google.com
 203.208.46.161	upload.docs.google.com
 203.208.46.161	upload.drive.google.com
+203.208.46.161	uploads.code.google.com
 203.208.46.161	uploadsj.clients.google.com
 203.208.46.161	video.google.com
 203.208.46.161	video-stats.l.google.com
@@ -277,7 +279,6 @@
 203.208.46.161	www4.l.google.com
 203.208.46.161	ytstatic.l.google.com
 
- # googleusercontent.com
 203.208.46.170	0-open-opensocial.googleusercontent.com
 203.208.46.170	0-focus-opensocial.googleusercontent.com
 203.208.46.170	1-focus-opensocial.googleusercontent.com
@@ -365,8 +366,6 @@
 203.208.46.170	www-opensocial-sandbox.googleusercontent.com
 203.208.46.170	www-oz-opensocial.googleusercontent.com
 
-
- # gstatic.com & ggpht.com
 203.208.46.175	csi.gstatic.com
 203.208.46.175	g0.gstatic.com
 203.208.46.175	g1.gstatic.com
@@ -401,8 +400,6 @@
 203.208.46.170	nt4.ggpht.com
 203.208.46.170	nt5.ggpht.com
 
-
- # appspot.com, googleapis.com & googlecode.com
 203.208.46.161	appspot.com
 173.194.64.141	chrometophone.appspot.com
 203.208.46.161	evolutionofweb.appspot.com
@@ -443,7 +440,6 @@
 203.208.46.161	gmaps-samples-flash.googlecode.com
 203.208.46.161	google-code-feed-gadget.googlecode.com
 
- # local
 203.208.46.161	blogsearch.google.cn
 203.208.46.161	ditu.google.cn
 203.208.46.161	gg.google.cn
@@ -484,7 +480,6 @@
 203.208.46.161	wenda.google.com.hk
 203.208.46.161	www.google.com.hk
 
- #others
 203.208.46.161	android.googlesource.com
 203.208.46.161	auth.keyhole.com
 203.208.46.161	chrome.angrybirds.com
@@ -511,9 +506,9 @@
 203.208.46.161	www.googlelabs.com
 203.208.46.222	www.googlesource.com
 
-173.194.38.105	plus.google.com
-173.194.38.105	plus.url.google.com
-173.194.38.105	plusone.google.com
+203.208.45.206	plus.google.com
+203.208.45.206	plus.url.google.com
+203.208.45.206	plusone.google.com
 #Google Services END
 
 #Facebook Start
@@ -539,7 +534,7 @@
 69.171.240.99	d.facebook.com
 66.220.156.33	developers.facebook.com
 69.171.224.27	error.facebook.com
-69.171.225.13	facebook.com
+66.220.152.16	facebook.com
 61.213.189.113	fbcdn.net
 80.67.74.111	fbcdn-photos-a.akamaihd.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
@@ -571,12 +566,13 @@
 69.171.240.14	pixmail.vip.tfbnw.net
 118.214.190.105	profile.ak.facebook.com
 61.213.189.114	profile.ak.fbcdn.net
-66.220.155.43	s-static.facebook.com
+69.171.247.22	s-static.facebook.com
 66.220.144.97	sb-dev.thefacebook.com
 66.220.144.98	sb-test.thefacebook.com
 66.220.144.99	sb.thefacebook.com
 61.213.189.113	s-hprofile-sf2p.fbcdn.net
-118.214.114.110	s-static.ak.facebook.com
+184.26.194.110	s-static.ak.facebook.com
+23.5.157.177	s-static.ak.fbcdn.net
 69.63.178.68	secure-media.facebook.com
 69.63.178.67	secure-media.fbcdn.net
 69.63.181.57	secure-media-sf2p.facebook.com
@@ -596,7 +592,7 @@
 120.29.145.50	vthumb.ak.fbcdn.net
 66.220.151.31	vupload.facebook.com
 69.171.225.31	www.connect.facebook.com
-69.171.225.13	www.facebook.com
+69.171.247.21	www.facebook.com
 66.220.146.61	www.fbplugin.com
 #Facebook End
 
