@@ -1,4 +1,4 @@
-#UPDATE:12-09-07 03:07
+#UPDATE:12-09-07 03:30
 
 #Android & Google Services START
 203.208.46.160	accounts.google.com
@@ -42,6 +42,7 @@
 203.208.46.160	id.google.com
 203.208.46.160	id.l.google.com
 203.208.46.160	images.google.com
+203.208.46.160	kh.google.com
 203.208.46.160	labs.google.com
 203.208.46.160	large-uploads.l.google.com
 203.208.46.160	mail.google.com
@@ -85,16 +86,16 @@
 #203.208.46.160	clients2.google.com
 #203.208.46.160	android.clients.google.com
 #203.208.46.160	android.l.google.com
-#203.208.46.160	m.google.com
+203.208.46.160	m.google.com
 
-203.208.46.234	a-oz-opensocial.googleusercontent.com
-203.208.46.234	clients1.googleusercontent.com
-203.208.46.234	clients2.googleusercontent.com
-203.208.46.234	clients3.googleusercontent.com
-203.208.46.234	clients4.googleusercontent.com
-203.208.46.234	clients5.googleusercontent.com
-203.208.46.234	clients6.googleusercontent.com
-203.208.46.234	clients7.googleusercontent.com
+209.85.143.132	a-oz-opensocial.googleusercontent.com
+209.85.143.132	clients1.googleusercontent.com
+209.85.143.132	clients2.googleusercontent.com
+209.85.143.132	clients3.googleusercontent.com
+209.85.143.132	clients4.googleusercontent.com
+209.85.143.132	clients5.googleusercontent.com
+209.85.143.132	clients6.googleusercontent.com
+209.85.143.132	clients7.googleusercontent.com
 203.208.46.234	code-opensocial.googleusercontent.com
 203.208.46.234	doc-0k-1s-docs.googleusercontent.com
 203.208.46.234	googlehosted.l.googleusercontent.com
@@ -136,7 +137,7 @@
 203.208.46.234	www-opensocial-sandbox.googleusercontent.com
 203.208.46.234	www-oz-opensocial.googleusercontent.com
 
-#203.208.46.175	csi.gstatic.com
+209.85.143.132	csi.gstatic.com
 203.208.46.175	maps.gstatic.com
 203.208.46.175	ssl.gstatic.com
 203.208.46.175	t0.gstatic.com
