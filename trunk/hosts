@@ -1,4 +1,4 @@
-#UPDATE:12-08-28 15:14
+#UPDATE:12-09-09 09:09
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -431,7 +431,7 @@
 203.208.46.161	mt3.googleapis.com
 203.208.46.161	redirector-bigcache.googleapis.com
 203.208.46.161	translate.googleapis.com
-203.208.46.161	www.googleapis.com
+#203.208.46.161	www.googleapis.com
 
 203.208.46.161	autoproxy-gfwlist.googlecode.com
 203.208.46.161	chromium.googlecode.com
