@@ -1,6 +1,7 @@
-#UPDATE:12-09-08 2:36
+#UPDATE:12-09-12 20:38
 
 #Android & Google Services START
+127.0.0.1	localhost
 203.208.46.160	accounts.google.com
 203.208.46.160	appengine.google.com
 203.208.46.160	bks0.books.google.com
