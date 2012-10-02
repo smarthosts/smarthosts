@@ -593,19 +593,7 @@ goto done
 echo.>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Twitter START>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.210	t.co #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	upload.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	pic.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	oauth.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	www.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	mobile.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	api.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	search.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.148.139	userstream.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	ssl.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	status.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	assets0.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 199.59.149.243	assets1.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.243	assets2.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.243	assets3.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 199.59.149.243	static.twitter.com #HAC>>%windir%\System32\drivers\etc\hosts
