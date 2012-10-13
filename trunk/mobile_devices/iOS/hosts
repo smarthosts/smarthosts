@@ -2845,15 +2845,6 @@ fe80::1%lo0	localhost
 66.220.149.25	zh-CN.facebook.com
 #Facebook End
 
-#Dropbox START
-199.47.217.179	dropbox.com
-199.47.216.170	www.dropbox.com
-107.20.207.62	dl.dropbox.com
-107.20.207.62	dl-web.dropbox.com
-174.36.51.42	forums.dropbox.com
-174.36.51.42	wiki.dropbox.com
-#Dropbox END
-
 #Flickr START
 66.94.233.186 flickr.com
 66.94.233.186 www.flickr.com
