@@ -666,15 +666,10 @@ echo 66.220.147.47	api.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 66.220.149.25	zh-CN.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.98	static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.98	b.static.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.57	secure-profile.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.57	secure-media-sf2p.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 69.63.181.15	ssl.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.63.190.18	apps.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 118.214.190.105	profile.ak.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.113	fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 97.65.135.139	external.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 120.29.145.50	vthumb.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 97.65.135.163	static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 66.220.149.25	graph.facebook.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.120	b.static.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
 echo 61.213.189.113	creative.ak.fbcdn.net #HAC>>%windir%\System32\drivers\etc\hosts
@@ -798,7 +793,6 @@ echo #HAC_Flickr START>>%windir%\System32\drivers\etc\hosts
 echo 66.94.233.186 flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 66.94.233.186 www.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 68.142.214.43 static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 66.196.118.49 farm1.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 69.147.90.159 farm2.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 76.13.18.78 farm3.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 67.195.19.66 farm4.static.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
@@ -811,14 +805,12 @@ echo 96.6.93.227 s.yimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 98.137.88.88 d.yimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 68.142.196.57 c5.ah.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 124.108.120.124 sa.edit.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
-echo 76.13.6.132 row.bc.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 66.163.168.247 open.login.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 209.191.92.114 login.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 209.191.92.115 edit.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 209.191.121.31 up.flickr.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 209.191.105.102 adjax.flickr.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 204.0.5.35 content.yieldmanager.edgesuite.net #HAC>>%windir%\System32\drivers\etc\hosts
-echo 76.13.6.132 us.bc.yahoo.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo 204.0.5.34 us.js2.yimg.com #HAC>>%windir%\System32\drivers\etc\hosts
 echo #HAC_Flickr END>>%windir%\System32\drivers\etc\hosts
 
