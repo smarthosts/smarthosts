@@ -17,6 +17,6 @@ alias=174.121.66.230,66.6.32.137
 alias=174.121.194.34,66.6.32.137
 EOF
 ) | awk 'BEGIN { RS = " " } ; { print $0 }'
-cat hosts| egrep -v "^#|^$|localhost|dropbox|0\.0\.0\.0|wiki|googleusercontent"|awk '{print "address=/"$2"/"$1; }'
+cat ../hosts| egrep -v "^#|^$|localhost|dropbox|0\.0\.0\.0|wiki|googleusercontent"|awk '{print "address=/"$2"/"$1; }'
 
 
