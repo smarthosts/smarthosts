@@ -526,12 +526,12 @@
 184.31.111.139	connect.facebook.net
 69.171.227.19	creativeupload.facebook.com
 69.171.240.99	d.facebook.com
-66.220.156.33	developers.facebook.com
+69.171.234.23	developers.facebook.com
 66.220.152.16	facebook.com
 61.213.189.113	fbcdn.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
 173.223.232.67	fbcdn-sphotos-a.akamaihd.net
-66.220.147.16	graph.facebook.com
+69.171.237.18	graph.facebook.com
 69.171.240.10	hphotos-ash4.fbcdn.net
 66.220.151.22	hphotos-snc6.fbcdn.net
 69.171.227.24	hphotos-snc7.fbcdn.net
@@ -558,8 +558,6 @@
 199.47.216.170	www.dropbox.com
 #107.20.207.62	dl.dropbox.com
 #107.20.207.62	dl-web.dropbox.com
-174.36.51.42	forums.dropbox.com
-174.36.51.42	wiki.dropbox.com
 #Dropbox END
 
 #Flickr START
