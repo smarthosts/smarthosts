@@ -400,10 +400,10 @@
 173.194.72.132  doc-10-7o-docs.googleusercontent.com
 173.194.72.132  doc-14-7o-docs.googleusercontent.com
 173.194.72.132  feedback.googleusercontent.com
-74.125.31.120   g0.gstatic.com
-173.194.72.120  g1.gstatic.com
-74.125.31.120   g2.gstatic.com
-74.125.31.120   g3.gstatic.com
+74.125.31.132   g0.gstatic.com
+74.125.31.132   g1.gstatic.com
+74.125.31.132   g2.gstatic.com
+74.125.31.132   g3.gstatic.com
 74.125.31.132   googlehosted.l.googleusercontent.com
 74.125.31.100   i.ytimg.com
 173.194.72.100  i1.ytimg.com
@@ -429,15 +429,15 @@
 74.125.31.132   lh5.googleusercontent.com
 74.125.31.132   lh6.ggpht.com
 74.125.31.132   lh6.googleusercontent.com
-74.125.31.120   maps.gstatic.com
-173.194.72.101  mt0.gstatic.com
-74.125.31.113   mt1.gstatic.com
-74.125.31.101   mt2.gstatic.com
-74.125.31.101   mt3.gstatic.com
-74.125.31.139   mt4.gstatic.com
-74.125.31.100   mt5.gstatic.com
-173.194.72.101  mt6.gstatic.com
-74.125.31.101   mt7.gstatic.com
+74.125.31.132   maps.gstatic.com
+74.125.31.132   mt0.gstatic.com
+74.125.31.132   mt1.gstatic.com
+74.125.31.132   mt2.gstatic.com
+74.125.31.132   mt3.gstatic.com
+74.125.31.132   mt4.gstatic.com
+74.125.31.132   mt5.gstatic.com
+74.125.31.132  mt6.gstatic.com
+74.125.31.132   mt7.gstatic.com
 74.125.31.132   music-onebox.googleusercontent.com
 74.125.31.132   music.googleusercontent.com
 74.125.31.132   nt1.ggpht.com
@@ -448,7 +448,7 @@
 173.194.72.132  ode25pfjgmvpquh3b1oqo31ti5ibg5fr-a-calendar.opensocial.googleusercontent.com
 74.125.39.132   plus.google.com
 74.125.39.132   plus.url.google.com
-74.125.31.100   plusone.google.com
+74.125.39.132   plusone.google.com
 74.125.31.132   qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com
 74.125.31.132   r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
 74.125.31.132   rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com
@@ -484,7 +484,7 @@
 74.125.31.82    www.googlesource.com
 173.194.72.132  www.googleusercontent.com
 74.125.31.120   www.gstatic.com
-74.125.31.102   ytimg.l.google.com
+74.125.31.120   ytimg.l.google.com
 
 173.194.64.141	chrometophone.appspot.com
 #Google Services END
