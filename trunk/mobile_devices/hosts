@@ -1,4 +1,4 @@
-#UPDATE:12-11-11 14:45
+#UPDATE:12-11-11 16:30
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -84,9 +84,9 @@
 72.14.203.106	www2.l.google.com
 72.14.203.106	www3.l.google.com
 
-#72.14.203.106	clients2.google.com
-#72.14.203.106	android.clients.google.com
-#72.14.203.106	android.l.google.com
+72.14.203.106	clients2.google.com
+72.14.203.106	android.clients.google.com
+72.14.203.106	android.l.google.com
 72.14.203.106	m.google.com
 
 72.14.203.106	a-oz-opensocial.googleusercontent.com
@@ -162,7 +162,7 @@
 72.14.203.106	lh6.ggpht.com
 
 72.14.203.106	ajax.googleapis.com
-#72.14.203.106	www.googleapis.com
+72.14.203.106	www.googleapis.com
 
 72.14.203.106	buttons.googlesyndication.com
 
