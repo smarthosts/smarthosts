@@ -1,4 +1,4 @@
-#UPDATE:12-11-12 09:54
+#UPDATE:12-11-12 10:55
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -49,6 +49,7 @@
 203.208.46.255	mail.google.com
 203.208.46.255	maps-api-ssl.google.com
 203.208.46.255	mobilemaps.clients.google.com
+203.208.46.255	mtalk.google.com
 203.208.46.255	music.google.com
 203.208.46.255	music-streaming.l.google.com
 203.208.46.255	mw2.google.com
@@ -64,6 +65,7 @@
 203.208.46.255	services.google.com
 203.208.46.255	reader.google.com
 203.208.46.255	sites.google.com
+203.208.46.255	talk.google.com
 203.208.46.255	talkgadget.google.com
 203.208.46.255	talkx.l.google.com
 203.208.46.255	tbn0.google.com
