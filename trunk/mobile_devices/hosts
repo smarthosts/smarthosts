@@ -1,8 +1,10 @@
-#UPDATE:12-11-18 22:38
+#UPDATE:12-12-09 17:59
 
 #Android & Google Services START
 127.0.0.1	localhost
+
 173.194.72.84	accounts.google.com
+
 74.125.31.190	appengine.google.com
 74.125.31.190	bks0.books.google.com
 74.125.31.190	bks1.books.google.com
@@ -35,8 +37,6 @@
 74.125.31.190	code.l.google.com
 74.125.31.190	dl.google.com
 74.125.31.190	ditu.google.com
-173.194.72.189	docs.google.com
-173.194.72.189	drive.google.com
 74.125.31.190	encrypted.google.com
 74.125.31.190	googlehosted.l.google.com
 74.125.31.190	groups.l.google.com
@@ -46,7 +46,21 @@
 74.125.31.190	kh.google.com
 74.125.31.190	labs.google.com
 74.125.31.190	large-uploads.l.google.com
-173.194.72.189	mail.google.com
+74.125.31.190	reader.google.com
+74.125.31.190	docs.google.com
+74.125.31.190	drive.google.com
+74.125.31.190	mail.google.com
+74.125.31.190	plus.google.com
+74.125.31.190	sites.google.com
+74.125.31.190	talkgadget.google.com
+
+#173.194.72.189	*.docs.google.com
+#173.194.72.189	*.drive.google.com
+#173.194.72.189	*.mail.google.com
+#173.194.72.189	*.plus.google.com
+#173.194.72.189	*.sites.google.com
+#173.194.72.189	*.talkgadget.google.com
+
 74.125.31.190	maps-api-ssl.google.com
 74.125.31.190	mobilemaps.clients.google.com
 74.125.31.190	mtalk.google.com
@@ -58,16 +72,14 @@
 74.125.31.190	picasaweb.google.com
 74.125.31.190	places.google.com
 74.125.31.190	play.google.com
-173.194.72.189	plus.google.com
+
 74.125.31.190	plus.url.google.com
 74.125.31.190	profiles.google.com
-74.125.31.190	reader.google.com
 74.125.31.190	services.google.com
-74.125.31.190	reader.google.com
-173.194.72.189	sites.google.com
+
 74.125.31.190	talk.google.com
-173.194.72.189	talkgadget.google.com
 74.125.31.190	talkx.l.google.com
+74.125.31.190	talk.l.google.com
 74.125.31.190	tbn0.google.com
 74.125.31.190	tbn1.google.com
 74.125.31.190	tbn2.google.com
@@ -91,54 +103,63 @@
 74.125.31.190	android.l.google.com
 74.125.31.190	m.google.com
 
-74.125.31.190	a-oz-opensocial.googleusercontent.com
-74.125.31.190	clients1.googleusercontent.com
-74.125.31.190	clients2.googleusercontent.com
-74.125.31.190	clients3.googleusercontent.com
-74.125.31.190	clients4.googleusercontent.com
-74.125.31.190	clients5.googleusercontent.com
-74.125.31.190	clients6.googleusercontent.com
-74.125.31.190	clients7.googleusercontent.com
-74.125.31.190	code-opensocial.googleusercontent.com
-74.125.31.190	doc-0k-1s-docs.googleusercontent.com
-74.125.31.190	googlehosted.l.googleusercontent.com
-74.125.31.190	images1-focus-opensocial.googleusercontent.com
-74.125.31.190	images2-focus-opensocial.googleusercontent.com
-74.125.31.190	images3-focus-opensocial.googleusercontent.com
-74.125.31.190	images4-focus-opensocial.googleusercontent.com
-74.125.31.190	images5-focus-opensocial.googleusercontent.com
-74.125.31.190	images6-focus-opensocial.googleusercontent.com
-74.125.31.190	images7-focus-opensocial.googleusercontent.com
-74.125.31.190	images8-focus-opensocial.googleusercontent.com
-74.125.31.190	images9-focus-opensocial.googleusercontent.com
-74.125.31.190	images-docs-opensocial.googleusercontent.com
-74.125.31.190	lh1.googleusercontent.com
-74.125.31.190	lh2.googleusercontent.com
-74.125.31.190	lh3.googleusercontent.com
-74.125.31.190	lh4.googleusercontent.com
-74.125.31.190	lh5.googleusercontent.com
-74.125.31.190	lh6.googleusercontent.com
-74.125.31.190	mail-attachment.googleusercontent.com
-74.125.31.190	music.googleusercontent.com
-74.125.31.190	oauth.googleusercontent.com
-74.125.31.190	s1.googleusercontent.com
-74.125.31.190	s2.googleusercontent.com
-74.125.31.190	s3.googleusercontent.com
-74.125.31.190	s4.googleusercontent.com
-74.125.31.190	s5.googleusercontent.com
-74.125.31.190	s6.googleusercontent.com
-74.125.31.190	t.doc-0-0-sj.sj.googleusercontent.com
-74.125.31.190	webcache.googleusercontent.com
-74.125.31.190	www.googleusercontent.com
-74.125.31.190	www-calendar-opensocial.googleusercontent.com
-74.125.31.190	www-fc-opensocial.googleusercontent.com
-74.125.31.190	www-focus-opensocial.googleusercontent.com
-74.125.31.190	www-gm-opensocial.googleusercontent.com
-74.125.31.190	www-kix-opensocial.googleusercontent.com
-74.125.31.190	www-open-opensocial.googleusercontent.com
-74.125.31.190	www-opensocial.googleusercontent.com
-74.125.31.190	www-opensocial-sandbox.googleusercontent.com
-74.125.31.190	www-oz-opensocial.googleusercontent.com
+74.125.31.132	a-oz-opensocial.googleusercontent.com
+74.125.31.132	clients1.googleusercontent.com
+74.125.31.132	clients2.googleusercontent.com
+74.125.31.132	clients3.googleusercontent.com
+74.125.31.132	clients4.googleusercontent.com
+74.125.31.132	clients5.googleusercontent.com
+74.125.31.132	clients6.googleusercontent.com
+74.125.31.132	clients7.googleusercontent.com
+74.125.31.132	code-opensocial.googleusercontent.com
+74.125.31.132	doc-0k-1s-docs.googleusercontent.com
+74.125.31.132	googlehosted.l.googleusercontent.com
+74.125.31.132	images1-focus-opensocial.googleusercontent.com
+74.125.31.132	images2-focus-opensocial.googleusercontent.com
+74.125.31.132	images3-focus-opensocial.googleusercontent.com
+74.125.31.132	images4-focus-opensocial.googleusercontent.com
+74.125.31.132	images5-focus-opensocial.googleusercontent.com
+74.125.31.132	images6-focus-opensocial.googleusercontent.com
+74.125.31.132	images7-focus-opensocial.googleusercontent.com
+74.125.31.132	images8-focus-opensocial.googleusercontent.com
+74.125.31.132	images9-focus-opensocial.googleusercontent.com
+74.125.31.132	images1-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images2-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images3-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images4-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images5-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images6-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images7-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images8-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images9-esmobile-opensocial.googleusercontent.com
+74.125.31.132	images-docs-opensocial.googleusercontent.com
+74.125.31.132	lh1.googleusercontent.com
+74.125.31.132	lh2.googleusercontent.com
+74.125.31.132	lh3.googleusercontent.com
+74.125.31.132	lh4.googleusercontent.com
+74.125.31.132	lh5.googleusercontent.com
+74.125.31.132	lh6.googleusercontent.com
+74.125.31.132	mail-attachment.googleusercontent.com
+74.125.31.132	music.googleusercontent.com
+74.125.31.132	oauth.googleusercontent.com
+74.125.31.132	s1.googleusercontent.com
+74.125.31.132	s2.googleusercontent.com
+74.125.31.132	s3.googleusercontent.com
+74.125.31.132	s4.googleusercontent.com
+74.125.31.132	s5.googleusercontent.com
+74.125.31.132	s6.googleusercontent.com
+74.125.31.132	t.doc-0-0-sj.sj.googleusercontent.com
+74.125.31.132	webcache.googleusercontent.com
+74.125.31.132	www.googleusercontent.com
+74.125.31.132	www-calendar-opensocial.googleusercontent.com
+74.125.31.132	www-fc-opensocial.googleusercontent.com
+74.125.31.132	www-focus-opensocial.googleusercontent.com
+74.125.31.132	www-gm-opensocial.googleusercontent.com
+74.125.31.132	www-kix-opensocial.googleusercontent.com
+74.125.31.132	www-open-opensocial.googleusercontent.com
+74.125.31.132	www-opensocial.googleusercontent.com
+74.125.31.132	www-opensocial-sandbox.googleusercontent.com
+74.125.31.132	www-oz-opensocial.googleusercontent.com
 
 74.125.31.190	csi.gstatic.com
 74.125.31.190	maps.gstatic.com
@@ -163,8 +184,10 @@
 74.125.31.190	lh5.ggpht.com
 74.125.31.190	lh6.ggpht.com
 
-74.125.31.190	ajax.googleapis.com
-74.125.31.190	www.googleapis.com
+74.125.137.95	ajax.googleapis.com
+74.125.137.95	www.googleapis.com
+74.125.137.95	googleapis.l.google.com
+74.125.137.95	android.googleapis.com
 
 74.125.31.190	buttons.googlesyndication.com
 
