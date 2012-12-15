@@ -188,7 +188,7 @@
 203.208.46.200	mt1.google.com
 203.208.46.200	mt2.google.com
 203.208.46.200	mt3.google.com
-203.208.46.200	mtalk.google.com
+#203.208.46.200	mtalk.google.com
 203.208.46.200	mts.google.com
 203.208.46.200	mts.l.google.com
 203.208.46.200	mts0.google.com
@@ -245,6 +245,7 @@
 203.208.46.200	suggestqueries.google.com
 203.208.46.200	suggestqueries.l.google.com
 203.208.46.200	support.google.com
+173.194.70.125	talk.google.com
 203.208.46.200	talkgadget.google.com
 203.208.46.200	tbn0.google.com
 203.208.46.200	tbn1.google.com
@@ -505,6 +506,7 @@
 203.208.46.200	m.googlemail.com
 203.208.46.200	market.android.com
 203.208.46.163	ngrams.googlelabs.com
+203.208.46.222	smarthosts.googlecode.com
 203.208.46.222	ssl.google-analytics.com
 203.208.46.200	www.blogger.com
 203.208.46.200	www.chromium.org
