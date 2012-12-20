@@ -1,4 +1,4 @@
-#UPDATE:12-12-15 16:42
+#UPDATE:12-12-20 13:18
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -221,10 +221,11 @@
 74.125.31.190	wenda.google.com.hk
 74.125.31.190	www.google.com.hk
 
+173.194.73.141	betaspike.appspot.com
 74.125.31.190	ssl.google-analytics.com
 74.125.31.190	www.googlelabs.com
-74.125.31.190	chrometophone.appspot.com
-74.125.31.190	lfe-alpo-gm.appspot.com
+173.194.73.141	chrometophone.appspot.com
+173.194.73.141	lfe-alpo-gm.appspot.com
 74.125.31.190	img0.gmodules.com
 #Google Services END
 
