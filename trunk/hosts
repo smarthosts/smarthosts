@@ -1,4 +1,4 @@
-#UPDATE:12-12-15 16:42
+#UPDATE:12-12-22 13:30
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -522,7 +522,7 @@
 #Google Services END
 
 #Facebook Start
-69.171.225.13	api.facebook.com
+173.252.100.18	api.facebook.com
 61.213.189.98	b.static.ak.facebook.com
 61.213.189.120	b.static.ak.fbcdn.net
 66.220.145.63	bigzipfiles.facebook.com
@@ -530,8 +530,8 @@
 184.31.111.139	connect.facebook.net
 69.171.227.19	creativeupload.facebook.com
 69.171.240.99	d.facebook.com
-69.171.234.23	developers.facebook.com
-66.220.152.16	facebook.com
+173.252.100.18	developers.facebook.com
+173.252.100.18	facebook.com
 61.213.189.113	fbcdn.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
 173.223.232.67	fbcdn-sphotos-a.akamaihd.net
@@ -553,7 +553,7 @@
 120.29.145.50	vthumb.ak.fbcdn.net
 66.220.151.31	vupload.facebook.com
 69.171.225.31	www.connect.facebook.com
-69.171.234.21	www.facebook.com
+173.252.100.18	www.facebook.com
 69.171.242.72	zh-CN.facebook.com
 #Facebook End
 

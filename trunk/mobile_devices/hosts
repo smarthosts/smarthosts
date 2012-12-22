@@ -1,4 +1,4 @@
-#UPDATE:12-12-20 13:18
+#UPDATE:12-12-22 13:29
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -230,8 +230,8 @@
 #Google Services END
 
 #Facebook Start
-69.171.247.22	api-read.facebook.com
-69.171.225.13	api.facebook.com
+173.252.100.18	api-read.facebook.com
+173.252.100.18	api.facebook.com
 69.171.237.36	apps.facebook.com
 61.213.189.98	b.static.ak.facebook.com
 61.213.189.120	b.static.ak.fbcdn.net
@@ -246,10 +246,11 @@
 69.171.240.99	d.facebook.com
 69.171.229.18	developers.facebook.com
 66.220.149.90	error.facebook.com
-66.220.152.16	facebook.com
+173.252.100.18	facebook.com
 61.213.189.113	fbcdn.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
 173.223.232.67	fbcdn-sphotos-a.akamaihd.net
+173.252.100.18	graph.facebook.com
 66.220.151.33	hphotos-ak-snc1.facebook.com
 66.220.151.33	hphotos-ak-snc3.facebook.com
 69.171.240.10	hphotos-ash4.fbcdn.net
@@ -259,9 +260,9 @@
 66.220.151.22	hphotos-snc6.fbcdn.net
 69.171.227.24	hphotos-snc7.fbcdn.net
 66.220.144.43	ldap.thefacebook.com
-66.220.147.97	m.facebook.com
+173.252.100.25	m.facebook.com
 66.220.149.96	o.facebook.com
-69.171.227.74	orcart.facebook.com
+69.171.233.33	orcart.facebook.com
 69.171.245.18	photos-ak-ash1.facebook.com
 69.171.245.18	photos-ash1.facebook.com
 66.220.149.90	pixel.facebook.com
