@@ -1,4 +1,4 @@
-#UPDATE:12-12-22 13:29
+#UPDATE:12-12-24 10:06
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -221,7 +221,11 @@
 74.125.31.190	wenda.google.com.hk
 74.125.31.190	www.google.com.hk
 
+# Ingress
 173.194.73.141	betaspike.appspot.com
+203.208.46.200	www.panoramio.com
+203.208.46.200	static.panoramio.com
+
 74.125.31.190	ssl.google-analytics.com
 74.125.31.190	www.googlelabs.com
 173.194.73.141	chrometophone.appspot.com
