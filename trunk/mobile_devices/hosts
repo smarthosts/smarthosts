@@ -25,7 +25,7 @@
 203.208.46.200	browsersync.google.com
 203.208.46.200	cache.pack.google.com
 203.208.46.200	calendar.google.com
-74.125.31.115	checkout.google.com
+203.208.46.200	checkout.google.com
 203.208.46.200	chrome.google.com
 203.208.46.200	clients1.google.com
 203.208.46.200	clients3.google.com
@@ -222,9 +222,10 @@
 74.125.31.190	www.google.com.hk
 
 # Ingress
-173.194.73.141	betaspike.appspot.com
-203.208.46.200	www.panoramio.com
-203.208.46.200	static.panoramio.com
+173.194.75.141	betaspike.appspot.com
+173.194.76.128	tatic.panoramio.com
+173.194.37.99	panoramio.com
+173.194.37.99	www.panoramio.com
 
 74.125.31.190	ssl.google-analytics.com
 74.125.31.190	www.googlelabs.com

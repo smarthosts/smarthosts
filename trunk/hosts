@@ -263,6 +263,7 @@
 203.208.46.200	upload.drive.google.com
 203.208.46.200	uploads.code.google.com
 203.208.46.200	uploadsj.clients.google.com
+203.208.46.200	v3.cache1.c.docs.google.com
 203.208.46.200	video.google.com
 203.208.46.200	video-stats.l.google.com
 203.208.46.200	voice.google.com
@@ -437,7 +438,7 @@
 203.208.46.200	mt3.googleapis.com
 203.208.46.200	redirector-bigcache.googleapis.com
 203.208.46.200	translate.googleapis.com
-#203.208.46.200	www.googleapis.com
+203.208.46.200	www.googleapis.com
 
 203.208.46.200	autoproxy-gfwlist.googlecode.com
 203.208.46.200	chromium.googlecode.com
