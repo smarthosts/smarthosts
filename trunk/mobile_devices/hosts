@@ -1,4 +1,4 @@
-#UPDATE:12-12-24 10:06
+#UPDATE:13-01-15 13:12
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -223,7 +223,7 @@
 
 # Ingress
 173.194.75.141	betaspike.appspot.com
-173.194.76.128	tatic.panoramio.com
+173.194.76.128	static.panoramio.com
 173.194.37.99	panoramio.com
 173.194.37.99	www.panoramio.com
 

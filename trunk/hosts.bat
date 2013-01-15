@@ -10,22 +10,22 @@ if "%1" == "auto" (goto auto) else if "%1" == "typical" (goto typical) else goto
 :begin
 cls
 echo ---------------------------------------------------------------------------
-echo Hosts×Ô¶¯ĞŞ¸Ä½Å±¾
-echo   ¸üĞÂÊ±¼ä£º%release%
+echo Hostsè‡ªåŠ¨ä¿®æ”¹è„šæœ¬
+echo   æ›´æ–°æ—¶é—´ï¼š%release%
 ver | find "5." >nul
-if errorlevel 1 echo.& echo ÇëÈ·ÈÏÄúÒÑ¾­ÒÔ¹ÜÀíÔ±Éí·İÔËĞĞ¡£
+if errorlevel 1 echo.& echo è¯·ç¡®è®¤æ‚¨å·²ç»ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œã€‚
 echo ---------------------------------------------------------------------------
 echo.
-echo 1.ÍêÈ«°²×°/¸üĞÂ
-echo 2.×Ô¶¨Òå°²×°/¸üĞÂ
+echo 1.å®Œå…¨å®‰è£…/æ›´æ–°
+echo 2.è‡ªå®šä¹‰å®‰è£…/æ›´æ–°
 echo.
-echo 3.Ğ¶ÔØ
-echo 4.¹¤¾ß
-echo 5.¸üĞÂËµÃ÷
+echo 3.å¸è½½
+echo 4.å·¥å…·
+echo 5.æ›´æ–°è¯´æ˜
 echo.
-echo 6.ÍË³ö
+echo 6.é€€å‡º
 echo.
-SET /P ST= ÇëÊäÈëÏàÓ¦ĞòºÅ(1-6)£¬»Ø³µ¼ü¿ÉÖ±½Ó°²×°:
+SET /P ST= è¯·è¾“å…¥ç›¸åº”åºå·(1-6)ï¼Œå›è½¦é”®å¯ç›´æ¥å®‰è£…:
 echo.
 if /I "%ST%"=="1" goto auto
 if /I "%ST%"=="2" goto manualset
@@ -39,11 +39,11 @@ exit
 :readme
 cls
 echo ---------------------------------------------------------------------------
-echo Hosts×Ô¶¯ĞŞ¸Ä½Å±¾
-echo   ¸üĞÂÊ±¼ä£º%release%
+echo Hostsè‡ªåŠ¨ä¿®æ”¹è„šæœ¬
+echo   æ›´æ–°æ—¶é—´ï¼š%release%
 echo ---------------------------------------------------------------------------
-echo ¸üĞÂÄÚÈİ£º
-echo ÕûÀí´úÂë£¬ºÍÍ¼ĞÎ°æ½øĞĞÕûºÏ¡£
+echo æ›´æ–°å†…å®¹ï¼š
+echo æ•´ç†ä»£ç ï¼Œå’Œå›¾å½¢ç‰ˆè¿›è¡Œæ•´åˆã€‚
 echo.
 echo.
 pause
@@ -55,16 +55,16 @@ echo ---------------------------------------------------------------------------
 echo HOSTSp v5_final Tools @ %release%
 echo ---------------------------------------------------------------------------
 echo.
-echo 1.»Ö¸´±¸·İ
-echo 2.´ÓIPÌí¼Ó..
-echo 3.×ÔĞĞ±à¼­hosts
-echo 4.Ê¹ÓÃwww.g.cnµÄIP
+echo 1.æ¢å¤å¤‡ä»½
+echo 2.ä»IPæ·»åŠ ..
+echo 3.è‡ªè¡Œç¼–è¾‘hosts
+echo 4.ä½¿ç”¨www.g.cnçš„IP
 echo.
-echo 5.·µ»ØÉÏ¼¶
-echo 6.ÍË³ö
+echo 5.è¿”å›ä¸Šçº§
+echo 6.é€€å‡º
 
 echo.
-SET /P TT= ÇëÊäÈëÏàÓ¦ĞòºÅ(1-6)£º
+SET /P TT= è¯·è¾“å…¥ç›¸åº”åºå·(1-6)ï¼š
 echo.
 if /I "%TT%"=="1" goto remove
 if /I "%TT%"=="2" goto manualip
@@ -83,12 +83,12 @@ goto install
 
 cls
 
-echo Hosts×Ô¶¯ĞŞ¸Ä½Å±¾
-echo ÇëÉÔµÈÒ»ÏÂ,ÕıÔÚÍ¨¹ıÍøÂç»ñÈ¡www.g.cnµÄIPµØÖ·...
+echo Hostsè‡ªåŠ¨ä¿®æ”¹è„šæœ¬
+echo è¯·ç¨ç­‰ä¸€ä¸‹,æ­£åœ¨é€šè¿‡ç½‘ç»œè·å–www.g.cnçš„IPåœ°å€...
 echo.
 
 for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208.45" >nul && echo »ñÈ¡µ½ÕıÈ·IP£º%IP% ||echo »ñÈ¡µ½´íÎóµÄIP£¬ÕıÔÚ»ñÈ¡gpcom.azlyfox.comµÄIPµØÖ· && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
+echo %IP%|findstr "203.208.45" >nul && echo è·å–åˆ°æ­£ç¡®IPï¼š%IP% ||echo è·å–åˆ°é”™è¯¯çš„IPï¼Œæ­£åœ¨è·å–gpcom.azlyfox.comçš„IPåœ°å€ && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
 
 goto custom
 
@@ -96,12 +96,12 @@ goto custom
 
 cls
 
-echo Hosts×Ô¶¯ĞŞ¸Ä½Å±¾
-echo ÇëÉÔµÈÒ»ÏÂ,ÕıÔÚÍ¨¹ıÍøÂç»ñÈ¡www.g.cnµÄIPµØÖ·...
+echo Hostsè‡ªåŠ¨ä¿®æ”¹è„šæœ¬
+echo è¯·ç¨ç­‰ä¸€ä¸‹,æ­£åœ¨é€šè¿‡ç½‘ç»œè·å–www.g.cnçš„IPåœ°å€...
 echo.
 
 for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208.45" >nul && echo »ñÈ¡µ½ÕıÈ·IP£º%IP% ||echo »ñÈ¡µ½´íÎóµÄIP£¬ÕıÔÚ»ñÈ¡gpcom.azlyfox.comµÄIPµØÖ· && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
+echo %IP%|findstr "203.208.45" >nul && echo è·å–åˆ°æ­£ç¡®IPï¼š%IP% ||echo è·å–åˆ°é”™è¯¯çš„IPï¼Œæ­£åœ¨è·å–gpcom.azlyfox.comçš„IPåœ°å€ && for /f "tokens=2 delims=[]" %%i in ('ping -n 1 gpcom.azlyfox.com') do set IP=%%i
 
 goto doit
 
@@ -109,12 +109,12 @@ goto doit
 
 cls
 
-echo Hosts×Ô¶¯ĞŞ¸Ä½Å±¾ 
-echo ÇëÉÔµÈÒ»ÏÂ,ÕıÔÚÍ¨¹ıÍøÂç»ñÈ¡www.g.cnµÄIPµØÖ·...
+echo Hostsè‡ªåŠ¨ä¿®æ”¹è„šæœ¬ 
+echo è¯·ç¨ç­‰ä¸€ä¸‹,æ­£åœ¨é€šè¿‡ç½‘ç»œè·å–www.g.cnçš„IPåœ°å€...
 echo.
 
 for /f "tokens=2 delims=[]" %%i in ('ping -n 1 www.g.cn') do set IP=%%i
-echo %IP%|findstr "203.208" >nul && echo »ñÈ¡µ½ÕıÈ·IP£º%IP% ||echo »ñÈ¡µ½·Ç203.208¿ªÍ·µÄIP£º%IP%£¬¿ÉÄÜÎŞ·¨Ê¹ÓÃ¡£ && SET /P ERR= ÊÇ·ñ¼ÌĞø£¿(y/n)£º 
+echo %IP%|findstr "203.208" >nul && echo è·å–åˆ°æ­£ç¡®IPï¼š%IP% ||echo è·å–åˆ°é203.208å¼€å¤´çš„IPï¼š%IP%ï¼Œå¯èƒ½æ— æ³•ä½¿ç”¨ã€‚ && SET /P ERR= æ˜¯å¦ç»§ç»­ï¼Ÿ(y/n)ï¼š 
 if /I "%ERR%"=="n" goto begin
  
 goto custom
@@ -123,13 +123,13 @@ goto custom
 
 cls
 
-echo Hosts×Ô¶¯ĞŞ¸Ä½Å±¾ 
+echo Hostsè‡ªåŠ¨ä¿®æ”¹è„šæœ¬ 
 echo.
 
 
-SET /P pingname= ÇëÊäÈëÒ»¸öIP£º
+SET /P pingname= è¯·è¾“å…¥ä¸€ä¸ªIPï¼š
 set IP=%pingname%
-echo %IP%|findstr "203.208" >nul && echo ÄúÊäÈëµÄIPÊÇ£º%IP% ||echo ÄúÊäÈëµÄIPÊÇ£º%IP%£¬¿ÉÄÜÎŞ·¨Ê¹ÓÃ¡£ && SET /P ERR= ÊÇ·ñ¼ÌĞø£¿(y/n)£º && if /I "%ERR%"=="n" goto manualip
+echo %IP%|findstr "203.208" >nul && echo æ‚¨è¾“å…¥çš„IPæ˜¯ï¼š%IP% ||echo æ‚¨è¾“å…¥çš„IPæ˜¯ï¼š%IP%ï¼Œå¯èƒ½æ— æ³•ä½¿ç”¨ã€‚ && SET /P ERR= æ˜¯å¦ç»§ç»­ï¼Ÿ(y/n)ï¼š && if /I "%ERR%"=="n" goto manualip
 
 goto custom
 
@@ -140,29 +140,29 @@ echo ---------------------------------------------------------------------------
 echo HOSTSp v5_a1 Tools @ %release%
 echo ---------------------------------------------------------------------------
 echo.
-echo                1.Google·şÎñ        2.Twitter         3.Facebook
-echo                    4.Dropbox       5.Æ»¹û·şÎñ¼ÓËÙ    
+echo                1.GoogleæœåŠ¡        2.Twitter         3.Facebook
+echo                    4.Dropbox       5.è‹¹æœæœåŠ¡åŠ é€Ÿ    
 
-echo                 6.ÆÁ±Î¹ã¸æ      7.ÆÁ±ÎAdobe¸üĞÂ·şÎñÆ÷   
+echo                 6.å±è”½å¹¿å‘Š      7.å±è”½Adobeæ›´æ–°æœåŠ¡å™¨   
 echo.
-echo                       c È¡ÏûĞŞ¸Ä²¢·µ»ØÖ÷²Ëµ¥
+echo                       c å–æ¶ˆä¿®æ”¹å¹¶è¿”å›ä¸»èœå•
 echo. 
-echo ÇëÊäÈëÏàÓ¦ĞòºÅ,Áô¿ÕÊ¹ÓÃÄ¬ÈÏÉèÖÃ¡£
-echo Ö§³Ö¶àÑ¡,Èç"1346","1234567"¡£
+echo è¯·è¾“å…¥ç›¸åº”åºå·,ç•™ç©ºä½¿ç”¨é»˜è®¤è®¾ç½®ã€‚
+echo æ”¯æŒå¤šé€‰,å¦‚"1346","1234567"ã€‚
 echo.
-SET /P CU=ÇëÑ¡Ôñ£º
+SET /P CU=è¯·é€‰æ‹©ï¼š
 if /I "%CU%"=="c" goto begin
 echo.
 goto doit
 exit
 
 :doit
-if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo ±¸·İÎÄ¼şÒÑ´æÔÚ¡£) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
+if exist "%windir%\System32\drivers\etc\hosts_hpbak" (echo å¤‡ä»½æ–‡ä»¶å·²å­˜åœ¨ã€‚) else copy %windir%\System32\drivers\etc\hosts %windir%\System32\drivers\etc\hosts_hpbak
 takeown /f "%windir%\system32\drivers\etc\hosts" && icacls "%windir%\system32\drivers\etc\hosts" /grant administrators:F
 attrib -s -h -r %windir%\system32\drivers\etc\hosts
 cls
-echo ÕıÔÚ½«IP %IP% Ğ´ÈëhostsÖĞ¡£
-echo ÏÔÊ¾¡°ÕÒ²»µ½ÎÄ¼ş¡±ÊôÕı³£ÏÖÏó¡£
+echo æ­£åœ¨å°†IP %IP% å†™å…¥hostsä¸­ã€‚
+echo æ˜¾ç¤ºâ€œæ‰¾ä¸åˆ°æ–‡ä»¶â€å±æ­£å¸¸ç°è±¡ã€‚
 type %windir%\System32\drivers\etc\hosts|find "#THISISNOTE" /i /v|find "#HAC" /i /v|find "#HostsAutoChanger" /i /v|find "#HWrite" /i /v|findstr ".">>%windir%\System32\drivers\etc\hosts_temp
 ren %windir%\System32\drivers\etc\hosts hosts_temp_del
 ren %windir%\System32\drivers\etc\hosts_temp hosts
@@ -832,7 +832,7 @@ ipconfig /flushdns
 cls
 echo.
 
-echo ÄúµÄhosts±à¼­Íê³É.
+echo æ‚¨çš„hostsç¼–è¾‘å®Œæˆ.
 echo.
 echo.
 echo.
@@ -842,7 +842,7 @@ goto exit
 
 :remove
 cls
-if exist "%windir%\System32\drivers\etc\hosts_hpbak" (goto removeit) else echo ±¸·İÎÄ¼ş²»´æÔÚ¡£ÄúÖ®Ç°Ğ¶ÔØ¹ıÁË°É£¿
+if exist "%windir%\System32\drivers\etc\hosts_hpbak" (goto removeit) else echo å¤‡ä»½æ–‡ä»¶ä¸å­˜åœ¨ã€‚æ‚¨ä¹‹å‰å¸è½½è¿‡äº†å§ï¼Ÿ
 goto begin
 
 :delchar
