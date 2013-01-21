@@ -1,4 +1,4 @@
-#UPDATE:12-12-22 13:30
+#UPDATE:13-01-21 22:11
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -507,8 +507,10 @@
 203.208.46.200	m.googlemail.com
 203.208.46.200	market.android.com
 203.208.46.163	ngrams.googlelabs.com
+173.194.37.99	panoramio.com
 203.208.46.222	smarthosts.googlecode.com
 203.208.46.222	ssl.google-analytics.com
+173.194.76.128	static.panoramio.com
 203.208.46.200	www.blogger.com
 203.208.46.200	www.chromium.org
 203.208.46.200	www.gmail.com
@@ -516,6 +518,7 @@
 203.208.46.222	www.google-analytics.com
 203.208.46.200	www.googlelabs.com
 203.208.46.222	www.googlesource.com
+173.194.37.99	www.panoramio.com
 
 203.208.46.200	plus.google.com
 203.208.46.200	plus.url.google.com
@@ -707,6 +710,16 @@
 203.208.46.206	www.youtube.com
 203.208.46.206	ytimg.l.google.com
 #YouTube END
+
+#GitHub START
+207.97.227.239	github.com
+204.232.175.94	gist.github.com
+107.21.116.220	help.github.com
+207.97.227.252	nodeload.github.com
+107.22.3.110	status.github.com
+204.232.175.78	training.github.com
+207.97.227.243	www.github.com
+#GitHub END
 
 38.229.72.14 www.torproject.org
 
