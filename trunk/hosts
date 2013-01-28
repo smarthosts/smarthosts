@@ -1,10 +1,12 @@
-#UPDATE:13-01-21 22:11
+#UPDATE:21:01 2013/1/28
 
 127.0.0.1	localhost
 #SmartHosts START
 
 #Google Services START
 
+203.208.46.200	chatenabled.mail.google.com
+203.208.46.200	static.googleusercontent.com
 203.208.46.200	0.docs.google.com
 203.208.46.200	0.drive.google.com
 203.208.46.200	1.docs.google.com
