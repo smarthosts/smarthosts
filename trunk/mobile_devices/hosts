@@ -1,4 +1,4 @@
-#UPDATE:13-01-15 13:12
+#UPDATE:13-02-01 10:08
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -236,8 +236,8 @@
 #Google Services END
 
 #Facebook Start
-173.252.100.18	api-read.facebook.com
-173.252.100.18	api.facebook.com
+173.252.100.17	api-read.facebook.com
+173.252.100.17	api.facebook.com
 69.171.237.36	apps.facebook.com
 61.213.189.98	b.static.ak.facebook.com
 61.213.189.120	b.static.ak.fbcdn.net
@@ -252,11 +252,11 @@
 69.171.240.99	d.facebook.com
 69.171.229.18	developers.facebook.com
 66.220.149.90	error.facebook.com
-173.252.100.18	facebook.com
+173.252.100.17	facebook.com
 61.213.189.113	fbcdn.net
 64.213.102.26	fbcdn-profile-a.akamaihd.net
 173.223.232.67	fbcdn-sphotos-a.akamaihd.net
-173.252.100.18	graph.facebook.com
+173.252.100.17	graph.facebook.com
 66.220.151.33	hphotos-ak-snc1.facebook.com
 66.220.151.33	hphotos-ak-snc3.facebook.com
 69.171.240.10	hphotos-ash4.fbcdn.net
