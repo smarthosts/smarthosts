@@ -1,4 +1,4 @@
-#UPDATE:21:01 2013/1/28
+#UPDATE:2013-01-28 21:01
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -440,7 +440,7 @@
 203.208.46.200	mt3.googleapis.com
 203.208.46.200	redirector-bigcache.googleapis.com
 203.208.46.200	translate.googleapis.com
-203.208.46.200	www.googleapis.com
+173.194.66.95	www.googleapis.com
 
 203.208.46.200	autoproxy-gfwlist.googlecode.com
 203.208.46.200	chromium.googlecode.com
@@ -674,6 +674,13 @@
 207.97.227.243	www.github.com
 #GitHub END
 
+#Feedly START
+173.194.38.137	feedly-beta.appspot.com
+173.194.72.121	s3.feedly.com
+#Feedly END
+
+#Others START
 38.229.72.14 www.torproject.org
+#Others END
 
 #SmartHosts END
