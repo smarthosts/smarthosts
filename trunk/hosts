@@ -1,4 +1,4 @@
-#UPDATE:2013-04-30 12:41
+#UPDATE:2013-05-10 22:51
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -113,6 +113,16 @@
 203.208.46.200	docs8.google.com
 203.208.46.200	docs9.google.com
 203.208.46.200	drive.google.com
+203.208.46.200	drive0.google.com
+203.208.46.200	drive1.google.com
+203.208.46.200	drive2.google.com
+203.208.46.200	drive3.google.com
+203.208.46.200	drive4.google.com
+203.208.46.200	drive5.google.com
+203.208.46.200	drive6.google.com
+203.208.46.200	drive7.google.com
+203.208.46.200	drive8.google.com
+203.208.46.200	drive9.google.com
 203.208.46.200	earth.google.com
 203.208.46.200	encrypted.google.com
 203.208.46.200	encrypted-tbn.l.google.com
@@ -323,6 +333,13 @@
 203.208.46.202	doc-14-7o-docs.googleusercontent.com
 203.208.46.202	feedback.googleusercontent.com
 203.208.46.202	googlehosted.l.googleusercontent.com
+203.208.46.202	gp0.googleusercontent.com 
+203.208.46.202	gp1.googleusercontent.com 
+203.208.46.202	gp2.googleusercontent.com 
+203.208.46.202	gp3.googleusercontent.com 
+203.208.46.202	gp4.googleusercontent.com 
+203.208.46.202	gp5.googleusercontent.com 
+203.208.46.202	gp6.googleusercontent.com 
 203.208.46.202	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
 203.208.46.202	i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
 203.208.46.202	images1-focus-opensocial.googleusercontent.com
@@ -493,9 +510,7 @@
 203.208.46.200	android.googlesource.com
 203.208.46.200	auth.keyhole.com
 203.208.46.200	chrome.angrybirds.com
-203.208.46.200	chromium.org
-203.208.46.200	codereview.chromium.org
-203.208.46.200	dev.chromium.org
+
 203.208.46.200	developer.android.com
 203.208.46.200	developer.chrome.com
 203.208.46.200	domains.googlesyndication.com
@@ -587,75 +602,16 @@
 #Facebook End
 
 
-#Twitter START
-199.16.156.18 twitter.com
-199.16.156.18 mobile.twitter.com
-199.16.156.18 api.twitter.com
-
-199.59.148.136	stream.twitter.com
-199.59.148.137	sitestream.twitter.com
-199.59.148.135	betastream.twitter.com
-199.59.148.148	upload.twitter.com
-199.59.149.137	dev.twitter.com
-199.59.149.91	pay.twitter.com
-199.59.148.149	urls-real.api.twitter.com
-199.16.156.81	userstream.twitter.com
-199.16.156.12	support.twitter.com
-
-#199.59.148.210	t.co
-69.58.188.34	bitly.com
-
-208.87.33.151	api.mobilepicture.com
-
-199.59.148.16	a0.twimg.com
-199.59.148.16	a1.twimg.com
-199.59.148.16	p.twimg.com
-184.169.75.33	si0.twimg.com
-184.169.75.33	si1.twimg.com
-184.169.75.33	si2.twimg.com
-184.169.75.33	si3.twimg.com
-184.169.75.33	si4.twimg.com
-184.169.75.33	si5.twimg.com
-199.16.156.77	image-proxy-origin.twimg.com
-
-209.17.70.144	oi40.tinypic.com
-209.17.70.143	oi41.tinypic.com
-209.17.70.143	oi42.tinypic.com
-209.17.70.143	oi43.tinypic.com
-209.17.70.143	oi44.tinypic.com
-209.17.70.143	oi45.tinypic.com
-209.17.70.143	oi46.tinypic.com
-209.17.70.143	oi47.tinypic.com
-209.17.70.143	oi48.tinypic.com
-209.17.70.143	oi49.tinypic.com
-209.17.70.143	oi50.tinypic.com
-209.17.70.144	oi51.tinypic.com
-209.17.70.144	oi52.tinypic.com
-209.17.70.144	oi53.tinypic.com
-209.17.70.144	oi54.tinypic.com
-209.17.70.144	oi55.tinypic.com
-209.17.70.144	oi56.tinypic.com
-
-50.97.168.42	web1.twitpic.com
-50.23.200.233	web10.twitpic.com
-50.97.168.43	web2.twitpic.com
-50.97.168.43	web3.twitpic.com
-50.97.168.40	web4.twitpic.com
-50.97.168.41	web5.twitpic.com
-50.23.200.231	web6.twitpic.com
-50.23.200.232	web7.twitpic.com
-50.23.200.229	web8.twitpic.com
-50.23.200.228	web9.twitpic.com
-174.37.33.172	m1.twitpic.com
-50.23.200.230	twitpic.com
-
-208.94.0.61	a.yfrog.com
-208.94.0.61	yfrog.com
-208.94.0.61	www.yfrog.com
-#Twitter END
-
-
 #Flickr START
+66.94.233.186	flickr.com
+66.94.233.186	www.flickr.com
+68.142.214.43	static.flickr.com
+69.147.90.159	farm2.static.flickr.com
+76.13.18.78	farm3.static.flickr.com
+67.195.19.66	farm4.static.flickr.com
+76.13.18.79	farm5.static.flickr.com
+98.139.197.254	farm6.static.flickr.com
+98.139.102.46	farm7.static.flickr.com
 98.136.43.76	geo.yahoo.com
 68.142.250.161	l.yimg.com
 96.6.93.227	s.yimg.com
@@ -671,30 +627,20 @@
 204.0.5.34	us.js2.yimg.com
 
 #data from HostsX
-68.142.214.24	flickr.com
-66.196.66.157	www.flickr.com
-68.142.214.43	static.flickr.com
-77.238.160.184	static.flickr.com
-209.191.105.102	adjax.flickr.yahoo.com
-68.142.214.43	farm1.staticflickr.com
-68.142.214.43	mud.farm1.staticflickr.com
-69.147.90.159	farm2.staticflickr.com
-69.147.90.159	sp1.farm2.staticflickr.com
-77.238.160.184	farm3.staticflickr.com
-98.137.205.236	bf1.farm3.staticflickr.com
-216.39.54.34	gq1.farm3.staticflickr.com
-69.147.90.215	sp1.farm3.staticflickr.com
-76.13.18.77	farm4.staticflickr.com
-76.13.18.77	ac4.farm4.staticflickr.com
-67.195.19.62	gq1.farm4.staticflickr.com
-76.13.18.79	farm5.staticflickr.com
-67.195.19.65	gq1.farm5.staticflickr.com
-98.136.171.208	farm6.staticflickr.com
-98.139.21.45	bf1.farm6.staticflickr.com
-98.136.171.208	gq1.farm6.staticflickr.com
-98.138.250.88	farm7.staticflickr.com
-98.139.235.135	bf1.farm7.staticflickr.com
-98.138.250.88	ne1.farm7.staticflickr.com
+76.13.18.78	bf1.farm3.static.flickr.com
+76.13.18.78	farm3.static.flickr.com
+76.13.18.78	gq1.farm3.static.flickr.com
+76.13.18.78	sp1.farm3.static.flickr.com
+76.13.18.79	bf1.farm5.static.flickr.com
+76.13.18.79	farm5.static.flickr.com
+76.13.18.79	gq1.farm5.static.flickr.com
+98.139.102.46	bf1.farm7.static.flickr.com
+98.139.102.46	farm7.static.flickr.com
+98.139.102.46	gq1.farm7.static.flickr.com
+98.139.102.46	ne1.farm7.static.flickr.com
+98.139.197.254	bf1.farm6.static.flickr.com
+98.139.197.254	farm6.static.flickr.com
+98.139.197.254	gq1.farm6.static.flickr.com
 #Flickr END
 
 #Adobe Activation START
