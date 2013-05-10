@@ -1,4 +1,4 @@
-#UPDATE:2013-03-24 14:43
+#UPDATE:2013-05-11 00:17
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -78,7 +78,7 @@
 173.194.38.136	cbks2.google.com
 173.194.38.136	cbks3.google.com
 173.194.38.136	chart.apis.google.com
-203.208.46.221	chatenabled.mail.google.com
+173.194.37.125	chatenabled.mail.google.com
 173.194.38.136	checkout.google.com
 173.194.38.136	checkout.l.google.com
 173.194.38.136	chrome.google.com
@@ -122,7 +122,7 @@
 173.194.38.136	encrypted-tbn3.google.com
 173.194.38.136	feedburner.google.com
 173.194.38.136	feedproxy.google.com
-203.208.46.221	filetransferenabled.mail.google.com
+173.194.37.125	filetransferenabled.mail.google.com
 173.194.38.136	finance.google.com
 173.194.38.136	fusion.google.com
 173.194.38.136	geoauth.google.com
@@ -175,7 +175,7 @@
 173.194.38.136	linkhelp.clients.google.com
 173.194.38.136	local.google.com
 173.194.38.136	m.google.com
-203.208.46.213	mail.google.com
+173.194.37.118	mail.google.com
 173.194.38.136	map.google.com
 173.194.38.136	maps.google.com
 173.194.38.136	maps.l.google.com
