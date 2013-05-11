@@ -323,13 +323,13 @@
 173.194.38.106	doc-14-7o-docs.googleusercontent.com
 173.194.38.106	feedback.googleusercontent.com
 173.194.38.106	googlehosted.l.googleusercontent.com
-173.194.38.106	gp0.googleusercontent.com 
-173.194.38.106	gp1.googleusercontent.com 
-173.194.38.106	gp2.googleusercontent.com 
-173.194.38.106	gp3.googleusercontent.com 
-173.194.38.106	gp4.googleusercontent.com 
-173.194.38.106	gp5.googleusercontent.com 
-173.194.38.106	gp6.googleusercontent.com 
+173.194.38.106	gp0.googleusercontent.com
+173.194.38.106	gp1.googleusercontent.com
+173.194.38.106	gp2.googleusercontent.com
+173.194.38.106	gp3.googleusercontent.com
+173.194.38.106	gp4.googleusercontent.com
+173.194.38.106	gp5.googleusercontent.com
+173.194.38.106	gp6.googleusercontent.com
 173.194.38.106	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
 173.194.38.106	i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
 173.194.38.106	images1-focus-opensocial.googleusercontent.com
@@ -585,9 +585,9 @@
 #Facebook End
 
 #Twitter START
-199.16.156.18 twitter.com
-199.16.156.18 mobile.twitter.com
-199.16.156.18 api.twitter.com
+199.16.156.18	twitter.com
+199.16.156.18	mobile.twitter.com
+199.16.156.18	api.twitter.com
 
 199.59.148.136	stream.twitter.com
 199.59.148.137	sitestream.twitter.com
@@ -730,7 +730,7 @@
 204.232.175.78	documentcloud.github.com
 207.97.227.239	github.com
 204.232.175.94	gist.github.com
-107.21.116.220	help.github.com
+107.20.136.254	help.github.com
 207.97.227.252	nodeload.github.com
 199.27.76.130	raw.github.com
 107.22.3.110	status.github.com
@@ -744,7 +744,7 @@
 #Feedly END
 
 #Others START
-38.229.72.14 www.torproject.org
+38.229.72.14	www.torproject.org
 #Others END
 
 #SmartHosts END

@@ -1,12 +1,10 @@
-#UPDATE:2013-05-10 22:51
+#UPDATE:2013-05-11 14:03
 
 127.0.0.1	localhost
 #SmartHosts START
 
 #Google Services START
 
-203.208.46.200	chatenabled.mail.google.com
-203.208.46.200	static.googleusercontent.com
 203.208.46.200	0.docs.google.com
 203.208.46.200	0.drive.google.com
 203.208.46.200	1.docs.google.com
@@ -333,13 +331,13 @@
 203.208.46.202	doc-14-7o-docs.googleusercontent.com
 203.208.46.202	feedback.googleusercontent.com
 203.208.46.202	googlehosted.l.googleusercontent.com
-203.208.46.202	gp0.googleusercontent.com 
-203.208.46.202	gp1.googleusercontent.com 
-203.208.46.202	gp2.googleusercontent.com 
-203.208.46.202	gp3.googleusercontent.com 
-203.208.46.202	gp4.googleusercontent.com 
-203.208.46.202	gp5.googleusercontent.com 
-203.208.46.202	gp6.googleusercontent.com 
+203.208.46.202	gp0.googleusercontent.com
+203.208.46.202	gp1.googleusercontent.com
+203.208.46.202	gp2.googleusercontent.com
+203.208.46.202	gp3.googleusercontent.com
+203.208.46.202	gp4.googleusercontent.com
+203.208.46.202	gp5.googleusercontent.com
+203.208.46.202	gp6.googleusercontent.com
 203.208.46.202	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
 203.208.46.202	i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
 203.208.46.202	images1-focus-opensocial.googleusercontent.com
@@ -375,6 +373,7 @@
 203.208.46.202	s5.googleusercontent.com
 203.208.46.202	s6.googleusercontent.com
 203.208.46.202	spreadsheets-opensocial.googleusercontent.com
+203.208.46.202	static.googleusercontent.com
 203.208.46.202	t.doc-0-0-sj.sj.googleusercontent.com
 203.208.46.202	themes.googleusercontent.com
 203.208.46.202	translate.googleusercontent.com
@@ -645,9 +644,9 @@
 #Flickr END
 
 #Twitter START
-199.16.156.18 twitter.com
-199.16.156.18 mobile.twitter.com
-199.16.156.18 api.twitter.com
+199.16.156.18	twitter.com
+199.16.156.18	mobile.twitter.com
+199.16.156.18	api.twitter.com
 
 199.59.148.136	stream.twitter.com
 199.59.148.137	sitestream.twitter.com
@@ -749,7 +748,7 @@
 204.232.175.78	documentcloud.github.com
 207.97.227.239	github.com
 204.232.175.94	gist.github.com
-107.21.116.220	help.github.com
+107.20.136.254	help.github.com
 207.97.227.252	nodeload.github.com
 199.27.76.130	raw.github.com
 107.22.3.110	status.github.com
@@ -763,7 +762,7 @@
 #Feedly END
 
 #Others START
-38.229.72.14 www.torproject.org
+38.229.72.14	www.torproject.org
 #Others END
 
 #SmartHosts END
