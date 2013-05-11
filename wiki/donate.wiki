@@ -8,7 +8,8 @@
 
 如果您觉得SmartHosts对您有用，请考虑对我们进行捐助。
 
-Paypal收款邮箱: azlyfox#gmail.com (# to @）
+Paypal:  azlyfox#gmail.com (# to @）
+Bitcoin： 1Kv1Ko3XnL8YdJbRi2wAMuspPxVZtU884X
 
 当然，您可以将捐助的钱省下来购买一个VPN/SSH帐号体验一下完全翻墙的快感，因为修改Hosts并不能完全解决翻墙的问题。
 
