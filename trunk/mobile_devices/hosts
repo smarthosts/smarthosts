@@ -1,4 +1,4 @@
-#UPDATE:2013-04-30 12:41
+#UPDATE:2013-05-12 9:53
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -64,7 +64,6 @@
 
 203.208.46.200	maps-api-ssl.google.com
 203.208.46.200	mobilemaps.clients.google.com
-#203.208.46.200	mtalk.google.com
 203.208.46.200	music.google.com
 203.208.46.200	music-streaming.l.google.com
 203.208.46.200	mw2.google.com
@@ -201,6 +200,8 @@
 173.194.72.95	googleapis.l.google.com
 173.194.72.95	android.googleapis.com
 
+173.194.79.188	mtalk.google.com
+
 74.125.31.190	buttons.googlesyndication.com
 
 74.125.31.190	developer.android.com
@@ -233,6 +234,20 @@
 173.194.73.141	chrometophone.appspot.com
 173.194.73.141	lfe-alpo-gm.appspot.com
 74.125.31.190	img0.gmodules.com
+
+# Google Play Download
+203.208.46.170	r1---sn-i3b7sn7d.c.android.clients.google.com
+203.208.46.170	r2---sn-npo7enee.c.android.clients.google.com
+203.208.46.170	r5---sn-npo7ene7.c.android.clients.google.com
+203.208.46.170	r6---sn-npo7enel.c.android.clients.google.com
+203.208.46.170	r12---pek01s02.c.android.clients.google.com
+203.208.46.170	r15---pek01s02.c.android.clients.google.com
+203.208.46.170	r16---pek01s02.c.android.clients.google.com
+203.208.46.170	r18---pek01s02.c.android.clients.google.com
+203.208.46.170	r19---pek01s02.c.android.clients.google.com
+203.208.46.170	r20---sn-npo7enel.c.android.clients.google.com
+203.208.46.170	r20---sn-i3b76n7e.c.android.clients.google.com
+
 #Google Services END
 
 #Facebook Start
