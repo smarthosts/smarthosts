@@ -1,4 +1,4 @@
-#UPDATE:2013-05-11 14:03
+#UPDATE:2013-05-12 10:22
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -648,7 +648,7 @@
 199.16.156.18	mobile.twitter.com
 199.16.156.18	api.twitter.com
 
-199.59.148.212	pic.twitter.com
+199.16.156.47	pic.twitter.com
 199.59.148.136	stream.twitter.com
 199.59.148.137	sitestream.twitter.com
 199.59.148.135	betastream.twitter.com
