@@ -26,7 +26,7 @@
 或直接执行如下命令（脚本下载）
 {{{
 sudo cp /etc/hosts /etc/hosts.bak
-sudo wget https://smarthosts.googlecode.com/svn/trunk/hosts -o /etc/hosts
+sudo wget https://smarthosts.googlecode.com/svn/trunk/hosts -O /etc/hosts
 }}}
 
 == Mac OS X ==
