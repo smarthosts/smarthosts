@@ -1,12 +1,10 @@
-#UPDATE:2013-05-11 00:17
+#UPDATE:2013-05-18 00£º05
 
 127.0.0.1	localhost
 #SmartHosts START
 
 #Google Services START
 
-173.194.38.136	chatenabled.mail.google.com
-173.194.38.136	static.googleusercontent.com
 173.194.38.136	0.docs.google.com
 173.194.38.136	0.drive.google.com
 173.194.38.136	1.docs.google.com
@@ -78,7 +76,7 @@
 173.194.38.136	cbks2.google.com
 173.194.38.136	cbks3.google.com
 173.194.38.136	chart.apis.google.com
-173.194.37.125	chatenabled.mail.google.com
+173.194.38.136	chatenabled.mail.google.com
 173.194.38.136	checkout.google.com
 173.194.38.136	checkout.l.google.com
 173.194.38.136	chrome.google.com
@@ -113,6 +111,16 @@
 173.194.38.136	docs8.google.com
 173.194.38.136	docs9.google.com
 173.194.38.136	drive.google.com
+173.194.38.136	drive0.google.com
+173.194.38.136	drive1.google.com
+173.194.38.136	drive2.google.com
+173.194.38.136	drive3.google.com
+173.194.38.136	drive4.google.com
+173.194.38.136	drive5.google.com
+173.194.38.136	drive6.google.com
+173.194.38.136	drive7.google.com
+173.194.38.136	drive8.google.com
+173.194.38.136	drive9.google.com
 173.194.38.136	earth.google.com
 173.194.38.136	encrypted.google.com
 173.194.38.136	encrypted-tbn.l.google.com
@@ -342,6 +350,7 @@
 173.194.38.106	images8-focus-opensocial.googleusercontent.com
 173.194.38.106	images9-focus-opensocial.googleusercontent.com
 173.194.38.106	images-docs-opensocial.googleusercontent.com
+173.194.38.106	images-oz-opensocial.googleusercontent.com
 173.194.38.106	k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com
 173.194.38.106	lh1.googleusercontent.com
 173.194.38.106	lh2.googleusercontent.com
@@ -365,6 +374,7 @@
 173.194.38.106	s5.googleusercontent.com
 173.194.38.106	s6.googleusercontent.com
 173.194.38.106	spreadsheets-opensocial.googleusercontent.com
+173.194.38.136	static.googleusercontent.com
 173.194.38.106	t.doc-0-0-sj.sj.googleusercontent.com
 173.194.38.106	themes.googleusercontent.com
 173.194.38.106	translate.googleusercontent.com
@@ -413,6 +423,8 @@
 173.194.37.107	nt1.ggpht.com
 173.194.37.107	nt2.ggpht.com
 173.194.37.107	nt3.ggpht.com
+173.194.37.107	nt4.ggpht.com
+173.194.37.107	nt5.ggpht.com
 
 173.194.64.141	appspot.com
 173.194.64.141	chrometophone.appspot.com
@@ -498,7 +510,6 @@
 203.208.46.200	auth.keyhole.com
 203.208.46.200	chrome.angrybirds.com
 173.194.37.102	developer.android.com
-173.194.72.141	developer.chrome.com
 203.208.46.200	domains.googlesyndication.com
 203.208.46.200	earthengine.googlelabs.com
 203.208.46.200	feeds.feedburner.com
@@ -510,12 +521,11 @@
 203.208.46.163	ngrams.googlelabs.com
 173.194.37.99	panoramio.com
 203.208.46.222	smarthosts.googlecode.com
-203.208.46.222	ssl.google-analytics.com
+#203.208.46.222	ssl.google-analytics.com
 173.194.76.128	static.panoramio.com
 173.194.72.191	www.blogger.com
-203.208.46.200	www.gmail.com
 203.208.46.200	www.googleadservices.com
-203.208.46.222	www.google-analytics.com
+#203.208.46.222	www.google-analytics.com
 203.208.46.200	www.googlelabs.com
 203.208.46.222	www.googlesource.com
 173.194.37.99	www.panoramio.com
@@ -526,6 +536,7 @@
 #Google Services END
 
 #Facebook Start
+69.171.235.16	5-pct.channel.facebook.com
 173.252.100.17	api-read.facebook.com
 173.252.100.17	api.facebook.com
 69.171.237.36	apps.facebook.com
@@ -561,7 +572,7 @@
 69.171.233.33	orcart.facebook.com
 69.171.245.18	photos-ak-ash1.facebook.com
 69.171.245.18	photos-ash1.facebook.com
-66.220.149.90	pixel.facebook.com
+173.252.100.27	pixel.facebook.com
 118.214.190.105	profile.ak.facebook.com
 61.213.189.114	profile.ak.fbcdn.net
 69.171.247.22	s-static.facebook.com
@@ -575,7 +586,7 @@
 69.63.189.76	star.facebook.com
 61.213.189.98	static.ak.facebook.com
 65.32.34.136	static.ak.fbcdn.net
-69.171.229.17	upload.facebook.com
+173.252.100.27	upload.facebook.com
 66.220.144.41	vpn.tfbnw.net
 120.29.145.50	vthumb.ak.fbcdn.net
 66.220.151.31	vupload.facebook.com
@@ -584,11 +595,54 @@
 69.171.242.72	zh-CN.facebook.com
 #Facebook End
 
+#Flickr START
+98.136.43.76	geo.yahoo.com
+68.142.250.161	l.yimg.com
+96.6.93.227	s.yimg.com
+98.137.88.88	d.yimg.com
+68.142.196.57	c5.ah.yahoo.com
+124.108.120.124	sa.edit.yahoo.com
+66.163.168.247	open.login.yahoo.com
+209.191.92.114	login.yahoo.com
+209.191.92.115	edit.yahoo.com
+209.191.121.31	up.flickr.com
+209.191.105.102	adjax.flickr.yahoo.com
+204.0.5.35	content.yieldmanager.edgesuite.net
+204.0.5.34	us.js2.yimg.com
+
+#data from HostsX
+68.142.214.24	flickr.com
+66.196.66.157	www.flickr.com
+68.142.214.43	static.flickr.com
+77.238.160.184	static.flickr.com
+209.191.105.102	adjax.flickr.yahoo.com
+68.142.214.43	farm1.staticflickr.com
+68.142.214.43	mud.farm1.staticflickr.com
+69.147.90.159	farm2.staticflickr.com
+69.147.90.159	sp1.farm2.staticflickr.com
+77.238.160.184	farm3.staticflickr.com
+98.137.205.236	bf1.farm3.staticflickr.com
+216.39.54.34	gq1.farm3.staticflickr.com
+69.147.90.215	sp1.farm3.staticflickr.com
+76.13.18.77	farm4.staticflickr.com
+76.13.18.77	ac4.farm4.staticflickr.com
+67.195.19.62	gq1.farm4.staticflickr.com
+76.13.18.79	farm5.staticflickr.com
+67.195.19.65	gq1.farm5.staticflickr.com
+98.136.171.208	farm6.staticflickr.com
+98.139.21.45	bf1.farm6.staticflickr.com
+98.136.171.208	gq1.farm6.staticflickr.com
+98.138.250.88	farm7.staticflickr.com
+98.139.235.135	bf1.farm7.staticflickr.com
+98.138.250.88	ne1.farm7.staticflickr.com
+#Flickr END
+
 #Twitter START
 199.16.156.18	twitter.com
 199.16.156.18	mobile.twitter.com
 199.16.156.18	api.twitter.com
 
+199.16.156.47	pic.twitter.com
 199.59.148.136	stream.twitter.com
 199.59.148.137	sitestream.twitter.com
 199.59.148.135	betastream.twitter.com
@@ -650,47 +704,6 @@
 208.94.0.61	yfrog.com
 208.94.0.61	www.yfrog.com
 #Twitter END
-
-#Flickr START
-66.94.233.186	flickr.com
-66.94.233.186	www.flickr.com
-68.142.214.43	static.flickr.com
-69.147.90.159	farm2.static.flickr.com
-76.13.18.78	farm3.static.flickr.com
-67.195.19.66	farm4.static.flickr.com
-76.13.18.79	farm5.static.flickr.com
-98.139.197.254	farm6.static.flickr.com
-98.139.102.46	farm7.static.flickr.com
-98.136.43.76	geo.yahoo.com
-68.142.250.161	l.yimg.com
-96.6.93.227	s.yimg.com
-98.137.88.88	d.yimg.com
-68.142.196.57	c5.ah.yahoo.com
-124.108.120.124	sa.edit.yahoo.com
-66.163.168.247	open.login.yahoo.com
-209.191.92.114	login.yahoo.com
-209.191.92.115	edit.yahoo.com
-209.191.121.31	up.flickr.com
-209.191.105.102	adjax.flickr.yahoo.com
-204.0.5.35	content.yieldmanager.edgesuite.net
-204.0.5.34	us.js2.yimg.com
-
-#data from HostsX
-76.13.18.78	bf1.farm3.static.flickr.com
-76.13.18.78	farm3.static.flickr.com
-76.13.18.78	gq1.farm3.static.flickr.com
-76.13.18.78	sp1.farm3.static.flickr.com
-76.13.18.79	bf1.farm5.static.flickr.com
-76.13.18.79	farm5.static.flickr.com
-76.13.18.79	gq1.farm5.static.flickr.com
-98.139.102.46	bf1.farm7.static.flickr.com
-98.139.102.46	farm7.static.flickr.com
-98.139.102.46	gq1.farm7.static.flickr.com
-98.139.102.46	ne1.farm7.static.flickr.com
-98.139.197.254	bf1.farm6.static.flickr.com
-98.139.197.254	farm6.static.flickr.com
-98.139.197.254	gq1.farm6.static.flickr.com
-#Flickr END
 
 #Adobe Activation START
 0.0.0.0	3dns-2.adobe.com

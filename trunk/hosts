@@ -1,4 +1,4 @@
-#UPDATE:2013-05-12 10:22
+#UPDATE:2013-05-18 00£º05
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -350,6 +350,7 @@
 203.208.46.202	images8-focus-opensocial.googleusercontent.com
 203.208.46.202	images9-focus-opensocial.googleusercontent.com
 203.208.46.202	images-docs-opensocial.googleusercontent.com
+203.208.46.202	images-oz-opensocial.googleusercontent.com
 203.208.46.202	k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com
 203.208.46.202	lh1.googleusercontent.com
 203.208.46.202	lh2.googleusercontent.com
@@ -509,17 +510,13 @@
 203.208.46.200	android.googlesource.com
 203.208.46.200	auth.keyhole.com
 203.208.46.200	chrome.angrybirds.com
-
 203.208.46.200	developer.android.com
-203.208.46.200	developer.chrome.com
 203.208.46.200	domains.googlesyndication.com
 203.208.46.200	earthengine.googlelabs.com
 203.208.46.200	feeds.feedburner.com
 203.208.46.200	g.co
-203.208.46.200	gmail.com
 203.208.46.200	goo.gl
 203.208.46.162	listen.googlelabs.com
-203.208.46.200	m.gmail.com
 203.208.46.200	m.googlemail.com
 203.208.46.200	market.android.com
 203.208.46.163	ngrams.googlelabs.com
@@ -528,8 +525,6 @@
 203.208.46.222	ssl.google-analytics.com
 173.194.76.128	static.panoramio.com
 203.208.46.200	www.blogger.com
-203.208.46.200	www.chromium.org
-203.208.46.200	www.gmail.com
 203.208.46.200	www.googleadservices.com
 203.208.46.222	www.google-analytics.com
 203.208.46.200	www.googlelabs.com
@@ -542,6 +537,7 @@
 #Google Services END
 
 #Facebook Start
+69.171.235.16	5-pct.channel.facebook.com
 173.252.100.17	api-read.facebook.com
 173.252.100.17	api.facebook.com
 69.171.237.36	apps.facebook.com
@@ -577,7 +573,7 @@
 69.171.233.33	orcart.facebook.com
 69.171.245.18	photos-ak-ash1.facebook.com
 69.171.245.18	photos-ash1.facebook.com
-66.220.149.90	pixel.facebook.com
+173.252.100.27	pixel.facebook.com
 118.214.190.105	profile.ak.facebook.com
 61.213.189.114	profile.ak.fbcdn.net
 69.171.247.22	s-static.facebook.com
@@ -591,7 +587,7 @@
 69.63.189.76	star.facebook.com
 61.213.189.98	static.ak.facebook.com
 65.32.34.136	static.ak.fbcdn.net
-69.171.229.17	upload.facebook.com
+173.252.100.27	upload.facebook.com
 66.220.144.41	vpn.tfbnw.net
 120.29.145.50	vthumb.ak.fbcdn.net
 66.220.151.31	vupload.facebook.com
@@ -599,7 +595,6 @@
 173.252.100.17	www.facebook.com
 69.171.242.72	zh-CN.facebook.com
 #Facebook End
-
 
 #Flickr START
 98.136.43.76	geo.yahoo.com
