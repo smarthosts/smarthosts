@@ -1,4 +1,4 @@
-#UPDATE:2013-05-18 00£º05
+#UPDATE:2013-05-25 11:50
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -604,7 +604,7 @@
 68.142.196.57	c5.ah.yahoo.com
 124.108.120.124	sa.edit.yahoo.com
 66.163.168.247	open.login.yahoo.com
-209.191.92.114	login.yahoo.com
+124.108.97.193	login.yahoo.com
 209.191.92.115	edit.yahoo.com
 209.191.121.31	up.flickr.com
 209.191.105.102	adjax.flickr.yahoo.com
@@ -753,8 +753,8 @@
 #GitHub END
 
 #Feedly START
-173.194.38.137	feedly-beta.appspot.com
-173.194.72.121	s3.feedly.com
+173.194.79.141	feedly-beta.appspot.com
+173.194.74.121	s3.feedly.com
 #Feedly END
 
 #Others START

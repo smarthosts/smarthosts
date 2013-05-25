@@ -1,4 +1,4 @@
-#UPDATE:2013-05-12 9:53
+#UPDATE:2013-05-25 11:50
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -214,13 +214,13 @@
 74.125.31.190	base4.googlehosted.com
 74.125.31.190	base5.googlehosted.com
 
-74.125.31.190	blogsearch.google.com.hk
-74.125.31.190	images.google.com.hk
-74.125.31.190	news.google.com.hk
-74.125.31.190	picasaweb.google.com.hk
-74.125.31.190	plus.url.google.com.hk
-74.125.31.190	wenda.google.com.hk
-74.125.31.190	www.google.com.hk
+203.208.46.170	blogsearch.google.com.hk
+203.208.46.170	images.google.com.hk
+203.208.46.170	news.google.com.hk
+203.208.46.170	picasaweb.google.com.hk
+203.208.46.170	plus.url.google.com.hk
+203.208.46.170	wenda.google.com.hk
+203.208.46.170	www.google.com.hk
 
 # Ingress
 173.194.75.141	betaspike.appspot.com
@@ -237,16 +237,19 @@
 
 # Google Play Download
 203.208.46.170	r1---sn-i3b7sn7d.c.android.clients.google.com
-203.208.46.170	r2---sn-npo7enee.c.android.clients.google.com
+#203.208.46.170	r2---sn-npo7enee.c.android.clients.google.com
 203.208.46.170	r5---sn-npo7ene7.c.android.clients.google.com
 203.208.46.170	r6---sn-npo7enel.c.android.clients.google.com
+#203.208.46.170	r9---sn-i3b7sn7k.c.android.clients.google.com
 203.208.46.170	r12---pek01s02.c.android.clients.google.com
 203.208.46.170	r15---pek01s02.c.android.clients.google.com
 203.208.46.170	r16---pek01s02.c.android.clients.google.com
 203.208.46.170	r18---pek01s02.c.android.clients.google.com
 203.208.46.170	r19---pek01s02.c.android.clients.google.com
+203.208.46.170	r19---sn-i3b76n7l.c.android.clients.google.com
 203.208.46.170	r20---sn-npo7enel.c.android.clients.google.com
 203.208.46.170	r20---sn-i3b76n7e.c.android.clients.google.com
+203.208.46.170	r20---pek01s02.c.android.clients.google.com
 
 #Google Services END
 
