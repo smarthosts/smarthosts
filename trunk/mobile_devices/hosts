@@ -1,4 +1,4 @@
-#UPDATE:2013-05-25 11:50
+#UPDATE:2013-06-01 10:30
 
 #Android & Google Services START
 127.0.0.1	localhost
@@ -237,10 +237,13 @@
 
 # Google Play Download
 203.208.46.170	r1---sn-i3b7sn7d.c.android.clients.google.com
-#203.208.46.170	r2---sn-npo7enee.c.android.clients.google.com
+203.208.46.170	r2---sn-npo7enee.c.android.clients.google.com
+203.208.46.170	r3---sn-30a7en7d.c.android.clients.google.com
 203.208.46.170	r5---sn-npo7ene7.c.android.clients.google.com
 203.208.46.170	r6---sn-npo7enel.c.android.clients.google.com
-#203.208.46.170	r9---sn-i3b7sn7k.c.android.clients.google.com
+203.208.46.170	r8---pek01s02.c.android.clients.google.com
+203.208.46.170	r8---sn-30a7en7z.c.android.clients.google.com
+203.208.46.170	r9---sn-i3b7sn7k.c.android.clients.google.com
 203.208.46.170	r12---pek01s02.c.android.clients.google.com
 203.208.46.170	r15---pek01s02.c.android.clients.google.com
 203.208.46.170	r16---pek01s02.c.android.clients.google.com
