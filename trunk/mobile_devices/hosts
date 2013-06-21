@@ -1,10 +1,11 @@
-#UPDATE:2013-06-05 15:11
+#UPDATE:2013-06-21 10:10
 
 #Android & Google Services START
 127.0.0.1	localhost
 
 173.194.72.84	accounts.google.com
-173.194.72.84	www.google.com
+#173.194.72.84	www.google.com
+203.208.46.200	www.google.com
 
 203.208.46.200	appengine.google.com
 203.208.46.200	bks0.books.google.com
@@ -220,7 +221,7 @@
 203.208.46.170	picasaweb.google.com.hk
 203.208.46.170	plus.url.google.com.hk
 203.208.46.170	wenda.google.com.hk
-#203.208.46.170	www.google.com.hk
+203.208.46.170	www.google.com.hk
 
 # Ingress
 173.194.75.141	betaspike.appspot.com
