@@ -17,7 +17,7 @@ SmartHosts是一个托管在谷歌代码上的项目，您可以轻松利用本�
 
 注：YouTube的视频无法加载，但视频页可以打开。
 
-SmartHosts?不会在Hosts中加入来路不明的IP，所有IP都处于官方服务器所使用的IP段中。
+SmartHosts不会在Hosts中加入来路不明的IP，所有IP都处于官方服务器所使用的IP段中。
 某些网站需要您使用https方式打开，例如:
 
 Facebook: https://www.facebook.com
