@@ -1,4 +1,4 @@
-#UPDATE:2013-05-25 11:50
+#UPDATE:2013-12-07 12:16
 
 127.0.0.1	localhost
 #SmartHosts START
@@ -531,70 +531,74 @@
 203.208.46.222	www.googlesource.com
 173.194.37.99	www.panoramio.com
 
-203.208.46.200	plus.google.com
-203.208.46.200	plus.url.google.com
-203.208.46.200	plusone.google.com
+173.194.126.128	plus.google.com
+173.194.126.128	plus.url.google.com
+173.194.126.128	plusone.google.com
 #Google Services END
 
+
 #Facebook Start
-69.171.235.16	5-pct.channel.facebook.com
-173.252.100.17	api-read.facebook.com
-173.252.100.17	api.facebook.com
-69.171.237.36	apps.facebook.com
+173.252.112.28	api-read.facebook.com
+173.252.112.28	api.facebook.com
+173.252.112.28	apps.facebook.com
+173.252.112.28	developers.facebook.com
+173.252.112.28	facebook.com
+173.252.112.28	graph.facebook.com
+173.252.112.28	orcart.facebook.com
+173.252.112.28	www.facebook.com
+173.252.112.28	zh-CN.facebook.com
+
+173.252.100.25	m.facebook.com
+
 61.213.189.98	b.static.ak.facebook.com
 61.213.189.120	b.static.ak.fbcdn.net
 66.220.145.63	bigzipfiles.facebook.com
 61.213.189.113	creative.ak.fbcdn.net
 66.152.103.74	external.ak.fbcdn.net
-66.220.149.88	c.facebook.com
-69.171.227.26	chat.facebook.com
-66.220.147.96	check4.facebook.com
-184.31.111.139	connect.facebook.net
-69.171.227.19	creativeupload.facebook.com
-69.171.240.99	d.facebook.com
-173.252.100.17	developers.facebook.com
-66.220.149.90	error.facebook.com
-173.252.100.18	facebook.com
-61.213.189.113	fbcdn.net
-64.213.102.26	fbcdn-profile-a.akamaihd.net
-173.223.232.67	fbcdn-sphotos-a.akamaihd.net
-173.252.100.17	graph.facebook.com
-66.220.151.33	hphotos-ak-snc1.facebook.com
-66.220.151.33	hphotos-ak-snc3.facebook.com
-69.171.240.10	hphotos-ash4.fbcdn.net
-69.63.183.200	hphotos-pao1.fbcdn.net
-66.220.151.33	hphotos-snc1.fbcdn.net
-66.220.151.32	hphotos-snc3.fbcdn.net
-66.220.151.22	hphotos-snc6.fbcdn.net
-69.171.227.24	hphotos-snc7.fbcdn.net
-66.220.144.43	ldap.thefacebook.com
-173.252.100.25	m.facebook.com
-66.220.149.96	o.facebook.com
-69.171.233.33	orcart.facebook.com
-69.171.245.18	photos-ak-ash1.facebook.com
-69.171.245.18	photos-ash1.facebook.com
-173.252.100.27	pixel.facebook.com
-118.214.190.105	profile.ak.facebook.com
-61.213.189.114	profile.ak.fbcdn.net
-69.171.247.22	s-static.facebook.com
-61.213.189.113	s-hprofile-sf2p.fbcdn.net
-184.26.194.110	s-static.ak.facebook.com
-23.5.157.177	s-static.ak.fbcdn.net
-69.171.227.30	secure-media.facebook.com
-69.171.227.30	secure-media.fbcdn.net
-66.220.149.96	ssl.facebook.com
-69.171.247.38	ssl.connect.facebook.com
-69.63.189.76	star.facebook.com
-61.213.189.98	static.ak.facebook.com
-65.32.34.136	static.ak.fbcdn.net
-173.252.100.27	upload.facebook.com
-66.220.144.41	vpn.tfbnw.net
-120.29.145.50	vthumb.ak.fbcdn.net
-66.220.151.31	vupload.facebook.com
-69.171.225.31	www.connect.facebook.com
-173.252.100.17	www.facebook.com
-69.171.242.72	zh-CN.facebook.com
+
+#66.220.149.88	c.facebook.com
+#69.171.227.26	chat.facebook.com
+#66.220.147.96	check4.facebook.com
+#184.31.111.139	connect.facebook.net
+#69.171.227.19	creativeupload.facebook.com
+#69.171.240.99	d.facebook.com
+#66.220.149.90	error.facebook.com
+#61.213.189.113	fbcdn.net
+#64.213.102.26	fbcdn-profile-a.akamaihd.net
+#173.223.232.67	fbcdn-sphotos-a.akamaihd.net
+#66.220.151.33	hphotos-ak-snc1.facebook.com
+#66.220.151.33	hphotos-ak-snc3.facebook.com
+#69.171.240.10	hphotos-ash4.fbcdn.net
+#69.63.183.200	hphotos-pao1.fbcdn.net
+#66.220.151.33	hphotos-snc1.fbcdn.net
+#66.220.151.32	hphotos-snc3.fbcdn.net
+#66.220.151.22	hphotos-snc6.fbcdn.net
+#69.171.227.24	hphotos-snc7.fbcdn.net
+#66.220.144.43	ldap.thefacebook.com
+#66.220.149.96	o.facebook.com
+#69.171.245.18	photos-ak-ash1.facebook.com
+#69.171.245.18	photos-ash1.facebook.com
+#66.220.149.90	pixel.facebook.com
+#118.214.190.105	profile.ak.facebook.com
+#61.213.189.114	profile.ak.fbcdn.net
+#69.171.247.22	s-static.facebook.com
+#61.213.189.113	s-hprofile-sf2p.fbcdn.net
+#184.26.194.110	s-static.ak.facebook.com
+#23.5.157.177	s-static.ak.fbcdn.net
+#69.171.227.30	secure-media.facebook.com
+#69.171.227.30	secure-media.fbcdn.net
+#66.220.149.96	ssl.facebook.com
+#69.171.247.38	ssl.connect.facebook.com
+#69.63.189.76	star.facebook.com
+#61.213.189.98	static.ak.facebook.com
+#65.32.34.136	static.ak.fbcdn.net
+#69.171.229.17	upload.facebook.com
+#66.220.144.41	vpn.tfbnw.net
+#120.29.145.50	vthumb.ak.fbcdn.net
+#66.220.151.31	vupload.facebook.com
+#69.171.225.31	www.connect.facebook.com
 #Facebook End
+
 
 #Flickr START
 98.136.43.76	geo.yahoo.com
@@ -639,9 +643,9 @@
 #Flickr END
 
 #Twitter START
-199.16.156.18	twitter.com
-199.16.156.18	mobile.twitter.com
-199.16.156.18	api.twitter.com
+199.59.150.141	twitter.com
+#199.59.150.141	mobile.twitter.com
+199.59.150.142	api.twitter.com
 
 199.16.156.47	pic.twitter.com
 199.59.148.136	stream.twitter.com
@@ -739,18 +743,6 @@
 203.208.46.206	www.youtube.com
 203.208.46.206	ytimg.l.google.com
 #YouTube END
-
-#GitHub START
-204.232.175.78	documentcloud.github.com
-207.97.227.239	github.com
-204.232.175.94	gist.github.com
-107.20.136.254	help.github.com
-207.97.227.252	nodeload.github.com
-199.27.76.130	raw.github.com
-107.22.3.110	status.github.com
-204.232.175.78	training.github.com
-207.97.227.243	www.github.com
-#GitHub END
 
 #Feedly START
 173.194.79.141	feedly-beta.appspot.com
